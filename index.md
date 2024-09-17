@@ -7,13 +7,13 @@ nav_exclude: true
 
 &nbsp;
 
-A standardized JSON interface for RACF that enables seemless exploitation by programming languages that have a foreign language interface for C and native JSON support.
+A standardized JSON interface for RACF that enables seemless exploitation by programming languages that have a foreign language interface for C/C++ and native JSON support.
 {: .fs-6 .fw-300 }
 
 &nbsp;
 
 {: .development_status }
-> _**RACFu** is currently in **Alpha**, meaning that some core functionality may still be missing, unstable, and or may still needs more thorough testing._
+> _**RACFu** is currently in **Alpha**, meaning that some core functionality may still be missing, unstable, and or may still need more thorough testing._
 
 &nbsp;
 
@@ -119,7 +119,7 @@ While there are a number of languages that can be used to manage RACF, _(from lo
         RACFu --- Add(Add)
         RACFu --- Alter(Alter)
         RACFu --- Delete(Delete)
-        Add-- XML (EBCDIC) ---IRRSMO00("IRRSMO00 (64-bit XPLINK EBCDIC)")
+        Add-- XML (EBCDIC) ---IRRSMO00("IRRSMO00 (64-bit OSLINK EBCDIC)")
         Alter-- XML (EBCDIC) ---IRRSMO00
         Delete-- XML (EBCDIC) ---IRRSMO00
         style IRRSMO00 fill:#33a,color:#fff,stroke:#33a
