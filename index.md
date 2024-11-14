@@ -50,40 +50,27 @@ The following authorizations are required in order exploit all of the functional
 | `READ` | `IRR.IRRSMO00.PRECHECK` | `XFACILIT` | **Alter** Profiles |
 | `UPDATE` | `<userid>.IRRSMO00` | `SURROGAT` | **Run RACF Commands as a Specific Userid** |
 
-## Installation
+### Install
 
 &nbsp;
 
-{: .note}
- > _RACFu will eventually be made available on [pypi.org](https://pypi.org/), but currently python wheel distributions for RACFu are only available for manual download and installation via GitHub._
-
- &nbsp;
-
-{: .warning}
-> _If you get the following error when trying to install pyRACF from GitHub using the provided commands, ensure that you have a `.curlrc` in your **Home Directory** that is configured to point to a **Trusted CA Certificate Bundle**._
->
-> ###### CA Certificate Verification Failure
-> ```console
->   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
->                                  Dload  Upload   Total   Spent    Left  Speed
->   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-> curl: (60) SSL certificate problem: unable to get local issuer certificate
-> More details here: https://curl.haxx.se/docs/sslcerts.html
-> 
-> curl failed to verify the legitimacy of the server and therefore could not
-> establish a secure connection to it. To learn more about this situation and
-> how to fix it, please visit the web page mentioned above.
-> ```
->
-> ###### .curlrc
-> ```properties
-> capath=/path/to/my/trusted/ca/
-> cacert=/path/to/my/trusted/ca/ca.pem
-> ```
+{: .note }
+> _You may also optionally [Download & Install RACFu From GitHub](https://github.com/ambitus/racfu/releases)._
 
 &nbsp;
 
-[Download & Install From GitHub](https://github.com/ambitus/racfu/releases)
+```shell
+pip install racfu
+```
+
+### Use
+
+```python
+>>> from racfu import racfu
+>>> result = racfu({"admin_type": "user", "operation": "extract", "profile_name": "SQUIDWRD"})
+>>> result.result
+{'admin_type': 'user', 'operation': 'extract', 'profile_name': 'SQUIDWRD', 'result': {'profile': {'base': {'base:audit_logging': False, 'base:audit_responsibility': False, 'base:auditor': False, 'base:automatic_data_set_protection': False, 'base:create_date': '11/14/24', 'base:default_group': 'SYS1', 'base:group_connections': [{'base:group_connection_auditor': False, 'base:group_connection_automatic_data_set_protection': False, 'base:group_connection_connect_date': '11/14/24', 'base:group_connection_connects': 0, 'base:group_connection_data_set_access': False, 'base:group_connection_group': 'SYS1', 'base:group_connection_last_connect_date': None, 'base:group_connection_last_connect_time': None, 'base:group_connection_operations': False, 'base:group_connection_owner': 'LEONARD', 'base:group_connection_resume_date': None, 'base:group_connection_revoke_date': None, 'base:group_connection_revoked': False, 'base:group_connection_special': False, 'base:group_connection_universal_access': 'NONE'}], 'base:group_data_set_access': False, 'base:has_passphrase': False, 'base:has_password': False, 'base:logon_allowed_days': [{'base:logon_allowed_day': 'SUNDAY'}, {'base:logon_allowed_day': 'MONDAY'}, {'base:logon_allowed_day': 'TUESDAY'}, {'base:logon_allowed_day': 'WEDNESDAY'}, {'base:logon_allowed_day': 'THURSDAY'}, {'base:logon_allowed_day': 'FRIDAY'}, {'base:logon_allowed_day': 'SATURDAY'}], 'base:logon_allowed_time': 'ANYTIME', 'base:mfa_password_fallback': False, 'base:operations': False, 'base:owner': 'LEONARD', 'base:passphrase_change_interval': 0, 'base:passphrase_enveloped': False, 'base:password_change_interval': 186, 'base:password_enveloped': False, 'base:protected': True, 'base:restrict_global_access_checking': False, 'base:revoked': False, 'base:special': False}}}, 'return_codes': {'return_codes': {'racf_reason_code': 0, 'racf_return_code': 0, 'racfu_return_code': 0, 'saf_return_code': 0}}}
+```
 
 ## Mission Statement
 

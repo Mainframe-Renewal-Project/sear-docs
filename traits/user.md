@@ -1,8 +1,8 @@
 ---
 layout: default
-parent: Request Traits
+parent: Traits
 ---
 
-# User Request Traits
+# User Traits
 
 TODO

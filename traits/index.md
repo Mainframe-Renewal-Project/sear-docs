@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Request Traits
+title: Traits
 has_children: true
 has_toc: false
 ---
 
-# Request Traits
+# Traits
 
-Request Traits For Add/Alter Operations
+Traits For Add And Alter Operations
 {: .fs-6 .fw-300 }
