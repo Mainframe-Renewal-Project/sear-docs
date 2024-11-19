@@ -55,7 +55,7 @@ RACFu provides the following standardized JSON schema for issuing security reque
   &nbsp;
 
 * `"traits"`<br>
-  A JSON structure describing the **Traits/Attributes** to **Add/Modify** in `"add"` and `"alter"` operations. See [Traits](../traits/) for more detail about how to specify **Trait Entries** and what **Traits** are supported for each **Admin Type**.
+  A JSON structure describing the **Traits/Attributes** to **Add/Modify** in `"add"` and `"alter"` **Operations**. See [Traits](../traits/) for more detail about how to specify **Trait Entries** and what **Traits** are supported for each **Admin Type**.
 
   &nbsp;
 
@@ -80,7 +80,12 @@ RACFu provides the following standardized JSON schema for issuing security reque
   &nbsp;
 
   {: .note }
-  > _Only the `"data-set"` and `"permission"` **Admin Types** can be used with `"volume"`, and **only** for `"add"`, `"alter"`, and `"delete"` operations._
+  > _Only the `"data-set"` and `"permission"` **Admin Types** can be used with `"volume"`, and **only** for `"add"`, `"alter"`, and `"delete"` **Operations**._
+
+  &nbsp;
+
+  {: .note }
+  > _Note that for the `"permission"` **Admin Type**, this parameter will only take effect if the `"class_name"` parameter is set to `"DATASET"`._
 
   &nbsp;
 
@@ -90,7 +95,12 @@ RACFu provides the following standardized JSON schema for issuing security reque
   &nbsp;
 
   {: .note }
-  > _Only the `"data-set"` and `"permission"` **Admin Types** can be used with `"generic"`, and **only** for `"add"`, `"alter"`, and `"delete"` operations._
+  > _Only the `"data-set"` and `"permission"` **Admin Types** can be used with `"generic"`, and **only** for `"add"`, `"alter"`, and `"delete"` **Operations**._
+
+  &nbsp;
+
+  {: .note }
+  > _Note that for the `"permission"` **Admin Type**, this parameter will only take effect if the `"class_name"` parameter is set to `"DATASET"`._
 
   &nbsp;
 

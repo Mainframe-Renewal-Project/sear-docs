@@ -23,7 +23,7 @@ The Python distribution of RACFu may also optionally be downloaded and installed
 ## `racfu.racfu()`
 
 ```python
-def racfu(request: dict) -> SecurityResult:
+def racfu(request: dict, debug: bool = False) -> SecurityResult:
 ```
 
 #### 📄 Description
@@ -34,6 +34,9 @@ Make a **Security Request** to RACF.
 
 * `request` <br>
   A dictionary that defines the **Security Request** to perform following the [RACFu Request JSON Format](../../request_format).
+
+* `debug` <br>
+  A boolean that if set to `True` indicates that **Debug Messages** should be printed. If set to `False`, no **Debug Messages** will be printed. 
 
 #### 📤 Returns
 * `SecurityResult`<br>
