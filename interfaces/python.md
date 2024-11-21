@@ -218,12 +218,10 @@ RACFu Result JSON:
     }
   },
   "return_codes": {
-    "return_codes": {
-      "racf_reason_code": 0,
-      "racf_return_code": 0,
-      "racfu_return_code": 0,
-      "saf_return_code": 0
-    }
+    "racf_reason_code": 0,
+    "racf_return_code": 0,
+    "racfu_return_code": 0,
+    "saf_return_code": 0
   }
 }
 ```

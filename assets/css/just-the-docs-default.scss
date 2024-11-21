@@ -169,6 +169,10 @@ a.nav-list-link {
     background-image: none;
 }
 
+th, td {
+    min-width: 0;
+}
+
 td {
     background-color: #334;
     border: 0;

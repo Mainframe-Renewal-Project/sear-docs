@@ -7,7 +7,9 @@ layout: default
 RACFu provides the following standardized JSON schema for issuing security requests to RACF.
 {: .fs-6 .fw-300 }
 
-#### 📥 Parameters *(JSON Keys)*
+## 📥 Parameters *(JSON Keys)*
+
+&nbsp;
 
 * `"admin_type"`<br>
   A string value describing the type of **Security Administration Request** to issue. The following table describes all of the valid values for `"admin_type"`.
@@ -25,7 +27,7 @@ RACFu provides the following standardized JSON schema for issuing security reque
   | `"group-connection"` | Used for **Group Connection** administration. |
   | `"resource"` | Used for **General Resource Profile** administration. |
   | `"data-set"` | Used for **Data Set** administration. |
-  | `"setropts"` | Used for **Setropts** administration. |
+  | `"racf-settings"` | Used for **RACF Settings** administration. |
   | `"permission"` | Used for **Permission** administration. |
 
 * `"operation"`<br>
@@ -34,7 +36,12 @@ RACFu provides the following standardized JSON schema for issuing security reque
   &nbsp;
 
   {: .note }
-  > _Only the `"alter"` and `"extract"` **Operations** are allowed for the `"setropts"` **Admin Type**._
+  > _Only the `"alter"` and `"extract"` **Operations** are allowed for the `"racf-settings"` **Admin Type**._
+
+  &nbsp;
+
+  {: .note }
+  > _Only the `"alter"`, `"extract"`, and `"delete"` **Operations** are allowed for the `"permission"` **Admin Type**._
 
   &nbsp;
 
@@ -50,7 +57,7 @@ RACFu provides the following standardized JSON schema for issuing security reque
   &nbsp;
 
   {: .note }
-  > _`"profile_name"` is **NOT** allowed to be used with the `"setropts"` **Admin Type** since there is only ever one **Setropts** "profile" to manage._
+  > _`"profile_name"` is **NOT** allowed to be used with the `"racf-settings"` **Admin Type** due to **RACF Settings** being a **Singleton** for which there is only ever one "profile" to manage._
 
   &nbsp;
 
@@ -124,12 +131,12 @@ RACFu provides the following standardized JSON schema for issuing security reque
 
   &nbsp;
 
-#### 💻 Examples
+## 💻 Request Examples
 
 &nbsp;
 
 {: .note }
-> * _These examples are **NOT** comprehensive and are primarily meant to show users the general structure of `"add"`, `"alter"`, `"extract"` and `"delete"` requests._
+> _These examples are **NOT** comprehensive and are primarily meant to show users the general structure of `"add"`, `"alter"`, `"extract"` and `"delete"` requests._
 
 &nbsp;
 
