@@ -26,28 +26,26 @@ Operators are specified using the format `<operator>:<segment>:<trait>`, where t
 
 | **Operator** | **Description** |
 | `"set"` | **Set** A **Trait** to a value. |
-| `"add"` | **Add** one or more values to an existing *"list"* **Trait**. |
-| `"remove"` | **Remove** one or more values from an existing *"list"* **Trait**. |
+| `"add"` | **Add** one or more items to a `string` `array` **Trait**. |
+| `"remove"` | **Remove** one or more items from a `string` `array` **Trait**. |
 | `"delete"`| **Delete** the existing value for a **Trait** if there is one. |
 
-&nbsp;
-
-## 💻 Example
+## 💻 Examples
 
 &nbsp;
 
 The following **RACFu Trait JSON** describes modifications to the following **User Traits**:
 * **Set** the **OMVS UID** to `24`.
-* **Add** `FACILITY` and `XFACILIT` to the existing **Class Authorizations** list.
-* **Remove** `TERMINAL` from the existing **Class Authorizations** list.
+* **Add** `FACILITY` and `XFACILIT` to the **Class Authorizations** list.
+* **Remove** `TERMINAL` from the **Class Authorizations** list.
 * **Delete** the existing value for **TSO User Data** if there is one.
 
 ###### JSON
 ```json
 {
   "set:omvs:uid": 24,
-  "add:base:class_authorizations": ["FACILITY", "XFACILIT"],
-  "remove:base:class_authorizations": "TERMINAL",
+  "add:base:class_authorization": ["FACILITY", "XFACILIT"],
+  "remove:base:class_authorization": "TERMINAL",
   "delete:tso:user_data": null
 }
 ```

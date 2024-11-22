@@ -12,13 +12,13 @@ RACFu provides the following standardized JSON schema for security results retur
 &nbsp;
 
 * `"commands"`<br>
-  A list of JSON structures describing one or more **RACF Commands** that were executed and the corresponding **Messages** produced after processing **Add**, **Alter**, and **Delete** requests.
+  An `object` `array` describing one or more **RACF Commands** that were executed and the corresponding **Messages** produced after processing **Add**, **Alter**, and **Delete** requests if there were any.
 
   * `"command"`<br>
-    A string value containing a **RACF Command** that was executed.
+    A **String** value containing a **RACF Command** that was executed.
 
   * `"messages"`<br>
-    A list of **Messages** produced during the processing of a **RACF Command** for which there may be **Zero**, **One**, or **Many**. These messages may be **Informational messages** or **Error messages**.
+    A `string` `array` containing the **Messages** produced during the processing of a **RACF Command** for which there may be **Zero**, **One**, or **Many**. These messages may be **Informational messages** or **Error messages**.
 
   ###### JSON
   ```json
@@ -40,18 +40,13 @@ RACFu provides the following standardized JSON schema for security results retur
 &nbsp;
 
 * `"profile"`<br>
-  A JSON structure describing **Profile Data** extracted as a result of an **Extract** **Operation**. This structure contains all of the **Profile Data** that corresponds to the profile specified in the `"profile_name"` **Parameter** of the corresponding request. The only exception is the **RACF Settings** **Admin Type**, where `"profile_name"` is **NOT** allowed in **RACF Settings Administration** requests due to **RACF Settings** being a **Singleton** for which there is only ever one *"profile"* to manage.
+  An `object` describing **Profile Data** extracted as a result of an `"extract"` **Operation**. This structure contains all of the **Profile Data** that corresponds to the profile specified in the `"profile_name"` **Parameter** of the corresponding request. The only exception is the `"racf-settings"` **Admin Type**, where `"profile_name"` is **NOT** allowed in **RACF Settings Administration** requests due to **RACF Settings** being a **Singleton** for which there is only ever one *"profile"* to manage.
 
   * `"<segment>"`<br>
-    A JSON structure describing a **RACF Segment**. At least one **Segment** will be returned, and each **Segment** returned will contain one or more **Traits**.
+    An `object` describing a **RACF Segment**. At least one **Segment** will be returned, and each **Segment** returned will contain one or more **Traits**.
 
   * `"<segment>:<trait>"`<br>
-    A JSON element that describes a **Trait**/**Attribute** within a **Segment**. The `<segment>` token describes the **Segment** that the **Trait** belongs to, and the `<trait>` token is the name of the **Trait**. `"<segment>:<trait>"` can be set to one of the following **Data Types**:
-      * **String**
-      * **Unsigned Integer**
-      * **Boolean**
-      * `null`
-      * A **List** of JSON structures containing more **Traits** or *"subtraits"*.
+    A **Key-Value Pair** that describes a **Trait**/**Attribute** within a **Segment**. The `<segment>` token describes the **Segment** that the **Trait** belongs to, and the `<trait>` token is the name of the **Trait**. See [Traits](../traits/) for more details about what **Traits** can be returned for each **Admin Type** and what **Data Types** are used for each one.
 
   ###### JSON
   ```json
@@ -79,7 +74,7 @@ RACFu provides the following standardized JSON schema for security results retur
 &nbsp;
   
 * `"errors"`<br>
-  A list of **Error Messages** produced when processing a **Security Request** if there were any.
+  A `string` `array` containing the **Error Messages** produced when processing a **Security Request** if there were any.
 
   &nbsp;
 
@@ -89,7 +84,7 @@ RACFu provides the following standardized JSON schema for security results retur
   &nbsp;
 
 * `"return_codes"`<br>
-  A JSON structure describing all of the **Return Codes** and **Reason Codes** for the **Security Administration Request** that was **Attempted**/**Performed**. The following table describes the **Subfields** that can be found in `"return_codes"`.
+  An `object` describing all of the **Return Codes** and **Reason Codes** for the **Security Administration Request** that was **Attempted**/**Performed**. The following table describes the **Subfields** that can be found in `"return_codes"`.
 
   &nbsp;
 
@@ -104,12 +99,10 @@ RACFu provides the following standardized JSON schema for security results retur
   &nbsp;
 
   | **Subfield** | **Description** |
-  | `"saf_return_code"` | An integer value describing the **SAF Return Code**. `"saf_return_code"` will be set to `null` when `"racfu_return_code"` is `8`. |
-  | `"racf_return_code"` | An integer value describing the **RACF Return Code**. `"racf_return_code"` will be set to `null` when `"racfu_return_code"` is `8`. |
-  | `"racf_reason_code"` | An integer value describing the **RACF Reason Code**. `"racf_reason_code"` will be set to `null` when `"racfu_return_code"` is `8`. |
-  | `"racfu_return_code"` | An integer value describing the **RACFu Return Code**. `"racfu_return_code"` will be set to `0` when there are no errors, `4` when an error occured within the call to the corresponding **RACF Callable Service**, and `8` when **RACFu** encounters an error that prevented the request from being **Proccessed** by the corresponding **RACF Callable Service** or prevented the result from the corresponding **RACF Callable Service** from being **Post-Processed**. |
-
-&nbsp;
+  | `"saf_return_code"` | A `number` describing the **SAF Return Code**. `"saf_return_code"` will be set to `null` when `"racfu_return_code"` is `8`. |
+  | `"racf_return_code"` | A `number` describing the **RACF Return Code**. `"racf_return_code"` will be set to `null` when `"racfu_return_code"` is `8`. |
+  | `"racf_reason_code"` | A `number` describing the **RACF Reason Code**. `"racf_reason_code"` will be set to `null` when `"racfu_return_code"` is `8`. |
+  | `"racfu_return_code"` | A `number` describing the **RACFu Return Code**. `"racfu_return_code"` will be set to `0` when there are no errors, `4` when an error occured within the call to the corresponding **RACF Callable Service**, and `8` when **RACFu** encounters an error that prevented the request from being **Proccessed** by the corresponding **RACF Callable Service** or prevented the result from the corresponding **RACF Callable Service** from being **Post-Processed**. |
 
 ## 💻 Result Examples
 
@@ -120,7 +113,7 @@ RACFu provides the following standardized JSON schema for security results retur
 
 &nbsp;
 
-The following **RACFu Result JSON** contains the result of an **Add** **Operation** that created a new **z/OS userid** called `SQUIDWRD` with the following **Traits**:
+The following **RACFu Result JSON** contains the result of an `"add"` **Operation** that created a new **z/OS Userid** called `SQUIDWRD` with the following **Traits**:
 * A **Name** of `"Squidward"`.
 * An **OMVS UID** of `24`.
 * An **OMVS Home Directory** of `"/u/squidwrd"`.
@@ -149,43 +142,31 @@ The following **RACFu Result JSON** contains the result of an **Add** **Operatio
 }
 ```
 
-The following **RACFu Result JSON** contains the result of an **Add** **Operation** that was unable to create a new **z/OS userid** called `SQUIDWRD` since a **z/OS userid** already exists on the system with that name.
-
-###### JSON
-```json
-{
-  "commands": [
-    {
-      "command": "ADDUSER SQUIDWRD ",
-      "messages": [
-        "IKJ56702I INVALID USERID, SQUIDWRD"
-      ]
-    },
-    {
-      "command": "ALTUSER SQUIDWRD     NAME        ('Squidward') OMVS     (HOME        ('/u/squidwrd') UID         (24))",
-      "messages": []
-    }
-  ],
-  "return_codes": {
-    "racf_reason_code": 0,
-    "racf_return_code": 4,
-    "racfu_return_code": 0,
-    "saf_return_code": 4
-  }
-}
-```
-
-The following **RACFu Result JSON** contains the result of a request that was never processed by RACF due to several **Error** in the corresponding **RACFu Request JSON**.
+The following **RACFu Result JSON** contains the result of an `"add"` **Operation** that was unable to create a new **z/OS Userid** called `SQUIDWRD` since a **z/OS Userid** already exists on the system with that name.
 
 ###### JSON
 ```json
 {
   "errors": [
-    "'junk' is not in '<segment>:<trait>' or '<operation>:<segment>:<trait>' format",
-    "'junkop' is not a valid trait operation",
-    "'omvs:junk' is not a valid trait",
-    "'omvs:uid' must be an 'unsigned integer' value",
-    "'remove' is not a valid operation for 'base:owner'"
+    "racfu: unable to add 'SQUIDWRD' because a profile already exists with that name"
+  ],
+  "return_codes": {
+    "racf_reason_code": 0,
+    "racf_return_code": 0,
+    "racfu_return_code": 4,
+    "saf_return_code": 0
+  }
+}
+```
+
+The following **RACFu Result JSON** contains the result of a request that was never processed by RACF due to **Errors** in the corresponding **RACFu Request JSON**.
+
+###### JSON
+```json
+{
+  "errors": [
+    "racfu: 'junk_operation' is not a valid value for 'operation'",
+    "racfu: 'junk_admin' is not a valid value for 'admin_type'"
   ],
   "return_codes": {
     "racf_reason_code": null,
@@ -196,7 +177,7 @@ The following **RACFu Result JSON** contains the result of a request that was ne
 }
 ```
 
-The following **RACFu Result JSON** contains the result of an **Extract** **Operation** that contains the **Profile Data** for a **z/OS userid** called `SQUIDWRD`. 
+The following **RACFu Result JSON** contains the result of an `"extract"` **Operation** that contains the **Profile Data** for a **z/OS Userid** called `SQUIDWRD`. 
 
 ###### JSON
 ```json
@@ -282,7 +263,7 @@ The following **RACFu Result JSON** contains the result of an **Extract** **Oper
 }
 ```
 
-The following **RACFu Result JSON** contains the result of an **Extract** **Operation** that failed because the **z/OS userid** `SQUIDWRD` does **NOT** exist. 
+The following **RACFu Result JSON** contains the result of an `"extract"` **Operation** that failed because the **z/OS Userid** `SQUIDWRD` does **NOT** exist. 
 
 ###### JSON
 ```json

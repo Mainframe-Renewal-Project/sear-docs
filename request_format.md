@@ -12,7 +12,7 @@ RACFu provides the following standardized JSON schema for issuing security reque
 &nbsp;
 
 * `"admin_type"`<br>
-  A string value describing the type of **Security Administration Request** to issue. The following table describes all of the valid values for `"admin_type"`.
+  A `string` value describing the type of **Security Administration Request** to issue. The following table describes all of the valid values for `"admin_type"`.
 
   &nbsp;
 
@@ -31,7 +31,7 @@ RACFu provides the following standardized JSON schema for issuing security reque
   | `"permission"` | Used for **Permission** administration. |
 
 * `"operation"`<br>
-  A string value describing the **Security Management Function** to perform. The following table describes all of the valid values for `"operation"`.
+  A `string` value describing the **Security Management Function** to perform. The following table describes all of the valid values for `"operation"`.
 
   &nbsp;
 
@@ -52,7 +52,7 @@ RACFu provides the following standardized JSON schema for issuing security reque
   | `"delete"` | **Delete** a security profile. |
 
 * `"profile_name"`<br>
-  A string value identifying a **Security Profile** to **Add**, **Alter**, **Extract**, or **Delete**.
+  A `string` value identifying a **Security Profile** to **Add**, **Alter**, **Extract**, or **Delete**.
 
   &nbsp;
 
@@ -62,7 +62,7 @@ RACFu provides the following standardized JSON schema for issuing security reque
   &nbsp;
 
 * `"traits"`<br>
-  A JSON structure describing the **Traits/Attributes** to **Add/Modify** in `"add"` and `"alter"` **Operations**. See [Traits](../traits/) for more detail about how to specify **Trait Entries** and what **Traits** are supported for each **Admin Type**.
+  An `object` describing the **Traits/Attributes** to **Add/Modify** in `"add"` and `"alter"` **Operations**. See [Traits](../traits/) for more detail about how to specify **Traits** for `"add"` and `"alter"` **Operations**, and what **Traits** are supported for each **Admin Type**.
 
   &nbsp;
 
@@ -72,7 +72,7 @@ RACFu provides the following standardized JSON schema for issuing security reque
   &nbsp;
 
 * `"class_name"`<br>
-  A string value identifying a **Class Name**.
+  A `string` value identifying a **Class Name**.
 
   &nbsp;
 
@@ -82,7 +82,7 @@ RACFu provides the following standardized JSON schema for issuing security reque
   &nbsp;
 
 * `"volume"`<br>
-  A string value identifying a **Volume**.
+  A `string` value identifying a **Volume**.
 
   &nbsp;
 
@@ -97,7 +97,7 @@ RACFu provides the following standardized JSON schema for issuing security reque
   &nbsp;
 
 * `"generic"`<br>
-  A string value identifying a **Security Profile** as **Generic** or **Not Generic**.
+  A `string` value identifying a **Security Profile** as **Generic** or **Not Generic**.
 
   &nbsp;
 
@@ -117,19 +117,17 @@ RACFu provides the following standardized JSON schema for issuing security reque
   &nbsp;
 
 * `"run_as_userid"`<br>
-  A string value identifying a **z/OS userid** to perform the **Security Operation** as.
+  A `string` value identifying a **z/OS Userid** to perform the **Security Operation** as.
 
   &nbsp;
 
   {: .note }
-  > _In order to use `"run_as_userid"`, the caller must have at least `UPDATE` access to the `<userid>.IRRSMO00` **General Resource Profile** in the `SURROGAT` **Class**, where `<userid>` represents the **z/OS userid** to perform **Security Operations** as. More information about **IRRSMO00 Authorizations** can be found [here](https://www.ibm.com/docs/en/zos/3.1.0?topic=operations-racf-authorization)._
+  > _In order to use `"run_as_userid"`, the caller must have at least `UPDATE` access to the `<userid>.IRRSMO00` **General Resource Profile** in the `SURROGAT` **Class**, where `<userid>` represents the **z/OS Userid** to perform **Security Operations** as. More information about **IRRSMO00 Authorizations** can be found [here](https://www.ibm.com/docs/en/zos/3.1.0?topic=operations-racf-authorization)._
 
   &nbsp;
 
   {: .note }
   > _`"run_as_userid"` is **NOT** allowed for `"extract"` **Operations**._
-
-  &nbsp;
 
 ## 💻 Request Examples
 
@@ -140,7 +138,7 @@ RACFu provides the following standardized JSON schema for issuing security reque
 
 &nbsp;
 
-The following **RACFu Request JSON** creates new new **z/OS userid** called `SQUIDWRD` with the following **Traits**:
+The following **RACFu Request JSON** creates new new **z/OS Userid** called `SQUIDWRD` with the following **Traits**:
 * A **Name** of `"Squidward"`.
 * An **OMVS UID** of `24`.
 * An **OMVS Home Directory** of `"/u/squidwrd"`.
@@ -159,7 +157,7 @@ The following **RACFu Request JSON** creates new new **z/OS userid** called `SQU
 }
 ```
 
-The following **RACFu Request JSON** alters an exsting **z/OS userid** called `SQUIDWRD` by **Changing/Setting** the **Name Trait** to `"Squilliam"`. 
+The following **RACFu Request JSON** alters an exsting **z/OS Userid** called `SQUIDWRD` by **Changing/Setting** the **Name Trait** to `"Squilliam"`. 
 
 ###### JSON
 ```json
@@ -173,7 +171,7 @@ The following **RACFu Request JSON** alters an exsting **z/OS userid** called `S
 }
 ```
 
-The following **RACFu Request JSON** deletes an exsting **z/OS userid** called `SQUIDWRD`. 
+The following **RACFu Request JSON** deletes an exsting **z/OS Userid** called `SQUIDWRD`. 
 
 ###### JSON
 ```json
@@ -184,7 +182,7 @@ The following **RACFu Request JSON** deletes an exsting **z/OS userid** called `
 }
 ```
 
-The following **RACFu Request JSON** extracts the **Profile Data** for a **z/OS userid** called `SQUIDWRD`. 
+The following **RACFu Request JSON** extracts the **Profile Data** for a **z/OS Userid** called `SQUIDWRD`. 
 
 ###### JSON
 ```json
