@@ -57,7 +57,12 @@ RACFu provides the following standardized JSON schema for issuing security reque
   &nbsp;
 
   {: .note }
-  > _`"profile_name"` is **NOT** allowed to be used with the `"racf-settings"` **Admin Type** due to **RACF Settings** being a **Singleton** for which there is only ever one "profile" to manage._
+  > _`"profile_name"` is **NOT** allowed to be used with the `"racf-settings"` **Admin Type** due to **RACF Settings** being a **Singleton** for which there is **NO** concept of multiple discrete "profiles" that can be created, deleted, and managed._
+
+  &nbsp;
+
+  {: .note }
+  > _`"class_name"` **MUST** be used to indicate which **Class Name** the specified **Security Profile** is associated with for the `"resource"` and `"permission"` **Admin Types**._
 
   &nbsp;
 
@@ -72,7 +77,7 @@ RACFu provides the following standardized JSON schema for issuing security reque
   &nbsp;
 
 * `"class_name"`<br>
-  A `string` value identifying a **Class Name**.
+  A `string` value identifying a **Class Name** that the specified **Security Profile** is associated with.
 
   &nbsp;
 
