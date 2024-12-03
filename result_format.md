@@ -40,7 +40,7 @@ RACFu provides the following standardized JSON schema for security results retur
 &nbsp;
 
 * `"profile"`<br>
-  An `object` describing **Profile Data** extracted as a result of an `"extract"` **Operation**. This structure contains all of the **Profile Data** that corresponds to the profile specified in the `"profile_name"` **Parameter** of the corresponding request. The only exception is the `"racf-settings"` **Admin Type**, where `"profile_name"` is **NOT** allowed in **RACF Settings Administration** requests due to **RACF Settings** being a **Singleton** for which there is **NO** concept of multiple discrete *"profiles"* that can be created, deleted, and managed.
+  An `object` describing **Profile Data** extracted as a result of an `"extract"` **Operation**. This structure contains all of the **Profile Data** that corresponds to the profile specified using the `"profile_name"` **Parameter** *(and the `"class_name"` **Parameter** for **Admin Types** that require it)* of the corresponding request. The only exception is the `"racf-options"` **Admin Type**, where `"profile_name"` is **NOT** allowed in **RACF Options Administration** requests due to **RACF Options** being a **Singleton** for which there is **NO** concept of multiple discrete *"profiles"* that can be created, deleted, and managed.
 
   * `"<segment>"`<br>
     An `object` describing a **RACF Segment**. At least one **Segment** will be returned, and each **Segment** returned will contain one or more **Traits**.

@@ -27,7 +27,7 @@ RACFu provides the following standardized JSON schema for issuing security reque
   | `"group-connection"` | Used for **Group Connection** administration. |
   | `"resource"` | Used for **General Resource Profile** administration. |
   | `"data-set"` | Used for **Data Set** administration. |
-  | `"racf-settings"` | Used for **RACF Settings** administration. |
+  | `"racf-options"` | Used for **RACF Options** administration. |
   | `"permission"` | Used for **Permission** administration. |
 
 * `"operation"`<br>
@@ -36,7 +36,7 @@ RACFu provides the following standardized JSON schema for issuing security reque
   &nbsp;
 
   {: .note }
-  > _Only the `"alter"` and `"extract"` **Operations** are allowed for the `"racf-settings"` **Admin Type**._
+  > _Only the `"alter"` and `"extract"` **Operations** are allowed for the `"racf-options"` **Admin Type**._
 
   &nbsp;
 
@@ -57,7 +57,7 @@ RACFu provides the following standardized JSON schema for issuing security reque
   &nbsp;
 
   {: .note }
-  > _`"profile_name"` is **NOT** allowed to be used with the `"racf-settings"` **Admin Type** due to **RACF Settings** being a **Singleton** for which there is **NO** concept of multiple discrete "profiles" that can be created, deleted, and managed._
+  > _`"profile_name"` is **NOT** allowed to be used with the `"racf-options"` **Admin Type** due to **RACF Options** being a **Singleton** for which there is **NO** concept of multiple discrete "profiles" that can be created, deleted, and managed._
 
   &nbsp;
 

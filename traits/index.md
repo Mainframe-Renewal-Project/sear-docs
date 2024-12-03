@@ -18,4 +18,4 @@ The following pages decribe all of the valid traits for each admin type.
 * [Data Set Traits]()
 * [General Resource Traits]()
 * [Permission Traits]()
-* [RACF Settings]()
+* [RACF Options]()

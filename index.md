@@ -54,7 +54,7 @@ The following authorizations are required in order exploit all of the functional
 | `READ` | `IRR.RADMIN.LISTGRP` | `FACILITY` | Extract **Group Profiles** |
 | `READ` | `IRR.RADMIN.RLIST` | `FACILITY` | Extract **General Resource Profiles** |
 | `READ` | `IRR.RADMIN.LISTDSD` | `FACILITY` | Extract **Data Set Profiles** |
-| `READ` | `IRR.RADMIN.SETROPTS.LIST` | `FACILITY` | List **RACF Settings** |
+| `READ` | `IRR.RADMIN.SETROPTS.LIST` | `FACILITY` | List **RACF Options** |
 | `READ` | `IRR.IRRSMO00.PRECHECK` | `XFACILIT` | **Alter** and **Add** Profiles |
 | `UPDATE` | `<userid>.IRRSMO00` | `SURROGAT` | **Run RACF Commands as a Specific Userid** |
 
