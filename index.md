@@ -7,7 +7,7 @@ nav_exclude: true
 
 &nbsp;
 
-A standardized JSON interface for RACF that enables seemless exploitation by programming languages that have a foreign language interface for C/C++ and native JSON support.
+A standardized JSON interface for RACF that enables seemless exploitation by programming languages that have a foreign language interface for C/C++ and native or third-party JSON support.
 {: .fs-6 .fw-300 }
 
 &nbsp;
@@ -26,6 +26,14 @@ A standardized JSON interface for RACF that enables seemless exploitation by pro
 > * _RACFu encodes the data it passes to RACF in Code Page `IBM-1047`._
 > * _If you are entering information with special or national characters, users viewing or altering this information from terminals using differnt or international codepages may see unexpected data._
 > * _Please consult a list of invariant characters to use for such information if this applies to you._
+
+## Mission Statement
+
+As automation becomes more and more prevalent, the need to manage the security environment programmaticaly increases. On z/OS that means managing a security product like the IBM **Resource Access Control Facility** _(RACF)_. RACF is the primary facility for managing identity, authority, and access control for z/OS. There are more than 50 callable services with assembler interfaces that are part of the RACF API. The complete set of interfaces can be found [here](http://publibz.boulder.ibm.com/epubs/pdf/ich2d112.pdf).
+
+&nbsp;
+
+While there are a number of languages that can be used to manage RACF, _(from low level lnaguages like Assembler to higher level languages like REXX)_, the need to be able to easily exploit RACF management functions using existing indurstry standard programming languages and even programming languages that don't exist yet is paramount. The RACFu project is focused on making RACF management functions available to all programming languages that have native or third-party JSON support and a foreign language interface for C/C++. This will make it easier to pivot to new tools and programming languages as technology, skills, and business needs continue to evolve in the forseeable future.
 
 ## Dependencies
 
@@ -46,52 +54,31 @@ The following authorizations are required in order exploit all of the functional
 | `READ` | `IRR.RADMIN.LISTGRP` | `FACILITY` | Extract **Group Profiles** |
 | `READ` | `IRR.RADMIN.RLIST` | `FACILITY` | Extract **General Resource Profiles** |
 | `READ` | `IRR.RADMIN.LISTDSD` | `FACILITY` | Extract **Data Set Profiles** |
-| `READ` | `IRR.RADMIN.SETROPTS.LIST` | `FACILITY` | List **Setropts** |
-| `READ` | `IRR.IRRSMO00.PRECHECK` | `XFACILIT` | **Alter** Profiles |
+| `READ` | `IRR.RADMIN.SETROPTS.LIST` | `FACILITY` | List **RACF Options** |
+| `READ` | `IRR.IRRSMO00.PRECHECK` | `XFACILIT` | **Alter** and **Add** Profiles |
 | `UPDATE` | `<userid>.IRRSMO00` | `SURROGAT` | **Run RACF Commands as a Specific Userid** |
 
-## Installation
+## Install
 
 &nbsp;
 
-{: .note}
- > _RACFu will eventually be made available on [pypi.org](https://pypi.org/), but currently python wheel distributions for RACFu are only available for manual download and installation via GitHub._
-
- &nbsp;
-
-{: .warning}
-> _If you get the following error when trying to install pyRACF from GitHub using the provided commands, ensure that you have a `.curlrc` in your **Home Directory** that is configured to point to a **Trusted CA Certificate Bundle**._
->
-> ###### CA Certificate Verification Failure
-> ```console
->   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
->                                  Dload  Upload   Total   Spent    Left  Speed
->   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-> curl: (60) SSL certificate problem: unable to get local issuer certificate
-> More details here: https://curl.haxx.se/docs/sslcerts.html
-> 
-> curl failed to verify the legitimacy of the server and therefore could not
-> establish a secure connection to it. To learn more about this situation and
-> how to fix it, please visit the web page mentioned above.
-> ```
->
-> ###### .curlrc
-> ```properties
-> capath=/path/to/my/trusted/ca/
-> cacert=/path/to/my/trusted/ca/ca.pem
-> ```
+{: .note }
+> _You may also optionally [Download & Install RACFu From GitHub](https://github.com/ambitus/racfu/releases)._
 
 &nbsp;
 
-[Download & Install From GitHub](https://github.com/ambitus/racfu/releases)
+```shell
+pip install racfu
+```
 
-## Mission Statement
+## Use
 
-As automation becomes more and more prevalent, the need to manage the security environment programmaticaly increases. On z/OS that means managing a security product like the IBM **Resource Access Control Facility** _(RACF)_. RACF is the primary facility for managing identity, authority, and access control for z/OS. There are more than 50 callable services with assembler interfaces that are part of the RACF API. The complete set of interfaces can be found [here](http://publibz.boulder.ibm.com/epubs/pdf/ich2d112.pdf).
-
-&nbsp;
-
-While there are a number of languages that can be used to manage RACF, _(from low level lnaguages like Assembler to higher level languages like REXX)_, the need to be able to easily exploit RACF management functions using existing indurstry standard programming languages and even programming languages that don't exist yet is paramount. The RACFu project is focused on making RACF management functions available to all programming languages that have native JSON support and a foreign language interface for C/C++. This will make it easier to pivot to new tools and programming languages as technology, skills, and business needs continue to evolve in the forseeable future.
+```python
+>>> from racfu import racfu
+>>> result = racfu({"admin_type": "user", "operation": "extract", "profile_name": "SQUIDWRD"})
+>>> result.result
+{'profile': {'base': {'base:audit_logging': False, 'base:audit_responsibility': False, 'base:auditor': False, 'base:automatic_data_set_protection': False, 'base:create_date': '11/14/24', 'base:default_group': 'SYS1', 'base:group_connections': [{'base:group_connection_auditor': False, 'base:group_connection_automatic_data_set_protection': False, 'base:group_connection_connect_date': '11/14/24', 'base:group_connection_connects': 0, 'base:group_connection_data_set_access': False, 'base:group_connection_group': 'SYS1', 'base:group_connection_last_connect_date': None, 'base:group_connection_last_connect_time': None, 'base:group_connection_operations': False, 'base:group_connection_owner': 'LEONARD', 'base:group_connection_resume_date': None, 'base:group_connection_revoke_date': None, 'base:group_connection_revoked': False, 'base:group_connection_special': False, 'base:group_connection_universal_access': 'NONE'}], 'base:group_data_set_access': False, 'base:has_passphrase': False, 'base:has_password': False, 'base:logon_allowed_days': [{'base:logon_allowed_day': 'SUNDAY'}, {'base:logon_allowed_day': 'MONDAY'}, {'base:logon_allowed_day': 'TUESDAY'}, {'base:logon_allowed_day': 'WEDNESDAY'}, {'base:logon_allowed_day': 'THURSDAY'}, {'base:logon_allowed_day': 'FRIDAY'}, {'base:logon_allowed_day': 'SATURDAY'}], 'base:logon_allowed_time': 'ANYTIME', 'base:mfa_password_fallback': False, 'base:operations': False, 'base:owner': 'LEONARD', 'base:passphrase_change_interval': 0, 'base:passphrase_enveloped': False, 'base:password_change_interval': 186, 'base:password_enveloped': False, 'base:protected': True, 'base:restrict_global_access_checking': False, 'base:revoked': False, 'base:special': False}}, 'return_codes': {'racf_reason_code': 0, 'racf_return_code': 0, 'racfu_return_code': 0, 'saf_return_code': 0}}
+```
 
 ## Architecture
 

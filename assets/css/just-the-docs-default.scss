@@ -108,7 +108,8 @@ a:not([class]):hover, a:not([class]):focus-visible {
     top: -9px;
 }
 
-.nav-list .nav-list-item:last-child > .nav-list .nav-list-item:last-child {
+.nav-list .nav-list-item:last-child > .nav-list .nav-list-item:last-child,
+.site-nav > .nav-list > li.nav-list-item.active:last-child > .nav-list > li.nav-list-item.active:last-child > .nav-list-link {
     border-radius: 0 0 0 10px;
 }
 
@@ -167,6 +168,10 @@ a.nav-list-link {
 .nav-list .nav-list-item .nav-list-expander:focus-visible {
     padding: 15px;
     background-image: none;
+}
+
+th, td {
+    min-width: 0;
 }
 
 td {
@@ -365,7 +370,8 @@ img {
     .nav-list .nav-list-item:last-child > .nav-list .nav-list-item:last-child > .nav-list-link:active,
     .nav-list .nav-list-item:last-child > .nav-list .nav-list-item:last-child > .nav-list-link.active,
     .nav-list .nav-list-item:last-child > .nav-list .nav-list-item:last-child > .nav-list-link:hover,
-    .nav-list .nav-list-item:last-child > .nav-list .nav-list-item:last-child > .nav-list-link:focus-visible {
+    .nav-list .nav-list-item:last-child > .nav-list .nav-list-item:last-child > .nav-list-link:focus-visible,
+    .site-nav > .nav-list > li.nav-list-item.active:last-child > .nav-list > li.nav-list-item.active:last-child > .nav-list-link {
         border-radius: 0;
     }
 }
