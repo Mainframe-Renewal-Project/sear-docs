@@ -15,7 +15,7 @@ Operators are specified using the format `<operator>:<segment>:<trait>`, where t
 &nbsp;
 
 {: .note }
-> _When **NO** **Operator** is **Explicitely** specified, `"set"` will be the assumed **Operator** when the corresponding **Trait** value is **NOT** `null`, and `"delete"` when the when the corresponding **Trait** value is `null`.  The only exception is for `boolean` **Traits**, which requires the `"delete"` **Operator** to be specified **Explicitely** when providing a `null` value. It is recommended to omit **Operators** when possible to keep the specification of **Traits** in `"add"` and `"alter"` **Operations** concise._
+> _When **NO** **Operator** is **Explicitly** specified, `"set"` will be the assumed **Operator** when the corresponding **Trait** value is **NOT** `null`, and `"delete"` when the when the corresponding **Trait** value is `null`.  The only exception is for `boolean` **Traits**, which requires the `"delete"` **Operator** to be specified **Explicitly** when providing a `null` value. It is recommended to omit **Operators** when possible to keep the specification of **Traits** in `"add"` and `"alter"` **Operations** concise._
 
 &nbsp;
 
