@@ -14,8 +14,8 @@ The following table provides some notes about how the standard JSON data types a
 | `string` |  |
 | `number` | This can only ever be a **Positive Unsigned Integer** for all supported **Traits**. |
 | `array` | For `"add"` and `"alter"` **Operations**, this will be a `string` `array`. For `"extract"` **Operations**, this will be an `object` `array` containing one or more *"Nested Traits"*. |
-| `boolean` | |
-| `null` | For `"add"` and `"alter"` **Operations**, `null` is used to **Unset** a **Trait** for which the `"delete"` **Operator** is **Allowed**. For `"extract"` **Operations**, some **Traits** may be returned with a `null` value if they are able to be **Unset** and do not currently have a value. |
+| `boolean` | This can only ever be `true` when *"setting"* the value with the `"set"` **Operator** and `false` when *"unsetting"* the value with the `"delete"` **Operator**. |
+| `null` | For `"add"` and `"alter"` **Operations**, `null` is used to **Unset** a **Trait** for which the `"delete"` **Operator** is **Allowed**. For `"extract"` **Operations**, some **Traits** may be returned with a `null` value if they are able to be **Unset** and do not currently have a value. The only exception is for `boolean` **Traits**, which can only every be set to `true` or `false` depending on the **Operator** used. |
 
 ## 💻 Examples
 
