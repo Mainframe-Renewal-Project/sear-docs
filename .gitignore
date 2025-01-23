@@ -10,3 +10,5 @@ Gemfile.lock
 .coverage
 pyracf/
 tests/
+artifacts/
+dist/
