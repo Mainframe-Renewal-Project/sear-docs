@@ -26,19 +26,18 @@ The following tables describes the permission segments and traits that are suppo
 ## Base Segment
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
-| `"base:access"` | `access` | `string` | `"set"` |  |
-| `"base:authid"` | `authid` | `string` | `"set"` |  |
-| `"base:model_profile_class"` | `fclass` | `string` | `"set"` |  |
-| `"base:model_profile"` | `fprofile` | `string` | `"set"` |  |
-| `"base:model_profile_generic"` | `fgeneric` | `boolean` | `"set"` |  |
-| `"base:model_profile_volume"` | `fvolume` | `string` | `"set"` |  |
-| `"base:reset"` | `reset` | `string` | `"set"` |  |
-| `"base:when_partner_lu_name"` | `whenappc` | `string` | `"set"` |  |
-| `"base:when_console"` | `whencons` | `string` | `"set"` |  |
-| `"base:when_jes"` | `whenjes` | `string` | `"set"` |  |
-| `"base:when_program"` | `whenprog` | `string` | `"set"` |  |
-| `"base:when_servauth"` | `whenserv` | `string` | `"set"` |  |
-| `"base:when_sms"` | `whensms` | `string` | `"set"` |  |
-| `"base:when_service"` | `whensrv` | `string` | `"set"` |  |
-| `"base:when_system"` | `whensys` | `string` | `"set"` |  |
-| `"base:when_terminal"` | `whenterm` | `string` | `"set"` |  |
+| `"base:access"` | `access` | `string` | `"set"` | `"extract"` |
+| `"base:model_profile_class"` | `fclass` | `string` | `"set"` | `"extract"` |
+| `"base:model_profile"` | `fprofile` | `string` | `"set"` | `"extract"` |
+| `"base:model_profile_generic"` | `fgeneric` | `boolean` | `"set"` | `"extract"` |
+| `"base:model_profile_volume"` | `fvolume` | `string` | `"set"` | `"extract"` |
+| `"base:reset"` | `reset` | `string` | `"set"` | `"extract"` |
+| `"base:when_partner_lu_name"` | `whenappc` | `string` | `"set"` | `"extract"` |
+| `"base:when_console"` | `whencons` | `string` | `"set"` | `"extract"` |
+| `"base:when_jes"` | `whenjes` | `string` | `"set"` | `"extract"` |
+| `"base:when_program"` | `whenprog` | `string` | `"set"` | `"extract"` |
+| `"base:when_servauth"` | `whenserv` | `string` | `"set"` | `"extract"` |
+| `"base:when_sms"` | `whensms` | `string` | `"set"` | `"extract"` |
+| `"base:when_service"` | `whensrv` | `string` | `"set"` | `"extract"` |
+| `"base:when_system"` | `whensys` | `string` | `"set"` | `"extract"` |
+| `"base:when_terminal"` | `whenterm` | `string` | `"set"` | `"extract"` |

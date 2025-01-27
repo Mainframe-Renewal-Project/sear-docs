@@ -90,7 +90,6 @@ The following tables describes the user segments and traits that are supported f
 | `"base:audit_logging"` | `uaudit` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:logon_allowed_day"` | `whendays` | `string` | `"set"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"base:logon_allowed_days"` | `whendyct` | `repeat` | N/A | `"extract"` |
-| `"base:logon_allowed_when_service"` | `whensrv` | `string` | `"set"` |  |
 | `"base:logon_allowed_time"` | `whentime` | `string` | `"set"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
 ## CICS Segment

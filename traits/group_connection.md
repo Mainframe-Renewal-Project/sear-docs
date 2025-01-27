@@ -26,19 +26,18 @@ The following tables describes the group-connection segments and traits that are
 ## Base Segment
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
-| `"base:automatic_data_set_protection"` | `adsp` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
-| `"base:auditor"` | `auditor` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
-| `"base:authority"` | `auth` | `string` | `"set"` | `"add"`<br>`"alter"`<br>`"extract"` |
+| `"base:automatic_data_set_protection"` | `adsp` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
+| `"base:auditor"` | `auditor` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
+| `"base:authority"` | `auth` | `string` | `"set"` | `"alter"`<br>`"extract"` |
 | `"base:connection_create_date"` | `cgauthda` | `string` | N/A | `"extract"` |
 | `"base:connection_used_count"` | `cginitct` | `uint` | N/A | `"extract"` |
 | `"base:connecion_last_used_date"` | `cgljdate` | `string` | N/A | `"extract"` |
 | `"base:connecion_last_used_time"` | `cgljtime` | `string` | N/A | `"extract"` |
-| `"base:group"` | `group` | `string` | `"set"` |  |
-| `"base:group_access"` | `grpacc` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
-| `"base:operations"` | `oper` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
-| `"base:owner"` | `owner` | `string` | `"set"` | `"add"`<br>`"alter"`<br>`"extract"` |
-| `"base:resume_date"` | `resume` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
-| `"base:revoke_date"` | `revoke` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
+| `"base:group_access"` | `grpacc` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
+| `"base:operations"` | `oper` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
+| `"base:owner"` | `owner` | `string` | `"set"` | `"alter"`<br>`"extract"` |
+| `"base:resume_date"` | `resume` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
+| `"base:revoke_date"` | `revoke` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:revoked"` | `revokefl` | `boolean` | N/A | `"extract"` |
-| `"base:special"` | `special` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
-| `"base:universal_access"` | `uacc` | `string` | `"set"` | `"add"`<br>`"alter"`<br>`"extract"` |
+| `"base:special"` | `special` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
+| `"base:universal_access"` | `uacc` | `string` | `"set"` | `"alter"`<br>`"extract"` |
