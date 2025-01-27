@@ -12,3 +12,4 @@ pyracf/
 tests/
 artifacts/
 dist/
+env/
