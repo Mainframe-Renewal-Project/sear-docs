@@ -3,15 +3,15 @@ layout: default
 parent: Traits
 ---
 
-# Data-Set Traits
+# Data Set Traits
 
-The following tables describes the data-set segments and traits that are supported for add and alter operations, and returned by extract operations.
+The following tables describes the data set segments and traits that are supported for add and alter operations, and returned by extract operations.
 {: .fs-6 .fw-300 }
 
 &nbsp;
 
 {: .note }
-> _More information about **RACF Keys** can be found [here](https://www.ibm.com/docs/en/zos/3.1.0?topic=tables-user-administration)._
+> _More information about **RACF Keys** can be found [here](https://www.ibm.com/docs/en/zos/latest?topic=services-reference-documentation-tables)._
 
 &nbsp;
 
@@ -23,7 +23,7 @@ The following tables describes the data-set segments and traits that are support
 {: .note }
 > _See [Operators](../operators) for more information about **Operator** usage._
 
-## Base Segment
+## `base`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"base:access_list"` | `aclcnt` | `repeat` | N/A | `"extract"` |
@@ -79,13 +79,13 @@ The following tables describes the data-set segments and traits that are support
 | `"base:resident_volumes"` | `volcnt` | `repeat` | N/A | `"extract"` |
 | `"base:warn_on_insufficient_access"` | `warning` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"` |
 
-## DFP Segment
+## `dfp`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"dfp:owner"` | `resowner` | `string` | N/A | `"extract"` |
 | `"dfp:ckds_data_key"` | `datakey` | `string` | N/A | `"extract"` |
 
-## TME Segment
+## `tme`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"tme:roles"` | `roles` | `string` | N/A | `"extract"` |

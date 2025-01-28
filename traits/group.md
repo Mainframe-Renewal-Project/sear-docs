@@ -11,7 +11,7 @@ The following tables describes the group segments and traits that are supported 
 &nbsp;
 
 {: .note }
-> _More information about **RACF Keys** can be found [here](https://www.ibm.com/docs/en/zos/3.1.0?topic=tables-user-administration)._
+> _More information about **RACF Keys** can be found [here](https://www.ibm.com/docs/en/zos/latest?topic=services-reference-documentation-tables)._
 
 &nbsp;
 
@@ -23,7 +23,7 @@ The following tables describes the group segments and traits that are supported 
 {: .note }
 > _See [Operators](../operators) for more information about **Operator** usage._
 
-## Base Segment
+## `base`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"base:connected_users"` | `connects` | `repeat` | N/A | `"extract"` |
@@ -39,7 +39,7 @@ The following tables describes the group segments and traits that are supported 
 | `"base:terminal_universal_access"` | `termuacc` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"base:universal"` | `universl` | `boolean` | `"set"` | `"add"`<br>`"extract"` |
 
-## DFP Segment
+## `dfp`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"dfp:data_application"` | `dataappl` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
@@ -47,19 +47,19 @@ The following tables describes the group segments and traits that are supported 
 | `"dfp:management_class"` | `mgmtclas` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"dfp:storage_class"` | `storclas` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
-## OMVS Segment
+## `omvs`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"omvs:auto_gid"` | `autogid` | `string` | `"set"` | `"add"`<br>`"alter"` |
 | `"omvs:gid"` | `gid` | `uint` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"omvs:shared"` | `shared` | `string` | `"set"` | `"add"`<br>`"alter"` |
 
-## OVM Segment
+## `ovm`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"ovm:gid"` | `gid` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
-## TME Segment
+## `tme`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"tme:roles"` | `roles` | `string` | `"set"` | `"add"`<br>`"alter"`<br>`"extract"` |

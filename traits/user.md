@@ -11,7 +11,7 @@ The following tables describes the user segments and traits that are supported f
 &nbsp;
 
 {: .note }
-> _More information about **RACF Keys** can be found [here](https://www.ibm.com/docs/en/zos/3.1.0?topic=tables-user-administration)._
+> _More information about **RACF Keys** can be found [here](https://www.ibm.com/docs/en/zos/latest?topic=services-reference-documentation-tables)._
 
 &nbsp;
 
@@ -23,7 +23,7 @@ The following tables describes the user segments and traits that are supported f
 {: .note }
 > _See [Operators](../operators) for more information about **Operator** usage._
 
-## Base Segment
+## `base`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"base:automatic_data_set_protection"` | `adsp` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
@@ -92,7 +92,7 @@ The following tables describes the user segments and traits that are supported f
 | `"base:logon_allowed_days"` | `whendyct` | `repeat` | N/A | `"extract"` |
 | `"base:logon_allowed_time"` | `whentime` | `string` | `"set"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
-## CICS Segment
+## `cics`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"cics:operator_class"` | `opclass` | `string` | `"set"`<br>`"add"`<br>`"remove"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
@@ -106,7 +106,7 @@ The following tables describes the user segments and traits that are supported f
 | `"cics:transaction_security_level_keys"` | `tslkeyn` | `repeat` | N/A | `"extract"` |
 | `"cics:force_signoff_when_xrf_takeover"` | `xrfsoff` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
-## DCE Segment
+## `dce`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"dce:auto_login"` | `autolog` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
@@ -115,7 +115,7 @@ The following tables describes the user segments and traits that are supported f
 | `"dce:home_cell_uuid"` | `homeuuid` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"dce:uuid"` | `uuid` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
-## DFP Segment
+## `dfp`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"dfp:data_application"` | `dataappl` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
@@ -123,12 +123,12 @@ The following tables describes the user segments and traits that are supported f
 | `"dfp:management_class"` | `mgmtclas` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"dfp:storage_class"` | `storclas` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
-## EIM Segment
+## `eim`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"eim:ldap_bind_profile"` | `ldapprof` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
-## KERB Segment
+## `kerb`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"kerb:encryption_algorithm"` | `encrypt` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
@@ -138,18 +138,18 @@ The following tables describes the user segments and traits that are supported f
 | `"kerb:key_version"` | `keyvers` | `string` | N/A | `"extract"` |
 | `"kerb:max_ticket_life"` | `maxtktlf` | `uint` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
-## LANGUAGE Segment
+## `language`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"language:primary"` | `primary` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"language:secondary"` | `second` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
-## LNOTES Segment
+## `lnotes`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"lnotes:zos_short_name"` | `sname` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
-## MFA Segment
+## `mfa`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"mfa:factor"` | `factor` | `string` | `"set"` | `"alter"`<br>`"extract"` |
@@ -158,12 +158,12 @@ The following tables describes the user segments and traits that are supported f
 | `"mfa:password_fallback"` | `mfaflbk` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"mfa:mfa_policy"` | `mfapolnm` | `string` | `"add"`<br>`"remove"` | `"alter"`<br>`"extract"` |
 
-## NDS Segment
+## `nds`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"nds:username"` | `uname` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
-## NETVIEW Segment
+## `netview`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"netview:default_mcs_console_name"` | `consname` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
@@ -176,7 +176,7 @@ The following tables describes the user segments and traits that are supported f
 | `"netview:operator_graphic_monitor_facility_display_authority"` | `ngmfvspn` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"netview:operator_scope_classes"` | `opclass` | `string` | `"set"`<br>`"add"`<br>`"remove"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
-## OMVS Segment
+## `omvs`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"omvs:max_address_space_size"` | `assize` | `uint` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
@@ -193,7 +193,7 @@ The following tables describes the user segments and traits that are supported f
 | `"omvs:max_threads"` | `threads` | `uint` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"omvs:uid"` | `uid` | `uint` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
-## OPERPARM Segment
+## `operparm`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"operparm:alternate_console_group"` | `altgrp` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
@@ -220,7 +220,7 @@ The following tables describes the user segments and traits that are supported f
 | `"operparm:receive_undelivered_messages"` | `ud` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"operparm:receive_unknown_console_id_messages"` | `unknids` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
-## OVM Segment
+## `ovm`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"ovm:file_system_root"` | `fsroot` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
@@ -228,14 +228,14 @@ The following tables describes the user segments and traits that are supported f
 | `"ovm:default_shell"` | `vprogram` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"ovm:uid"` | `vuid` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
-## PROXY Segment
+## `proxy`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"proxy:bind_distinguished_name"` | `binddn` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"proxy:bind_password"` | `bindpw` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"proxy:ldap_host"` | `ldaphost` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
-## TSO Segment
+## `tso`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"tso:account_number"` | `acctnum` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
@@ -252,7 +252,7 @@ The following tables describes the user segments and traits that are supported f
 | `"tso:data_set_allocation_unit"` | `unit` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"tso:user_data"` | `userdata` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
-## WORKATTR Segment
+## `workattr`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"workattr:account_number"` | `waaccnt` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |

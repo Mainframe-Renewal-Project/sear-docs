@@ -11,7 +11,7 @@ The following tables describes the resource segments and traits that are support
 &nbsp;
 
 {: .note }
-> _More information about **RACF Keys** can be found [here](https://www.ibm.com/docs/en/zos/3.1.0?topic=tables-user-administration)._
+> _More information about **RACF Keys** can be found [here](https://www.ibm.com/docs/en/zos/latest?topic=services-reference-documentation-tables)._
 
 &nbsp;
 
@@ -23,7 +23,7 @@ The following tables describes the resource segments and traits that are support
 {: .note }
 > _See [Operators](../operators) for more information about **Operator** usage._
 
-## Base Segment
+## `base`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"base:access_list"` | `aclcnt` | `repeat` | N/A | `"extract"` |
@@ -76,7 +76,7 @@ The following tables describes the resource segments and traits that are support
 | `"base:terminal_access_allowed_days"` | `whendyct` | `repeat` | N/A | `"extract"` |
 | `"base:terminal_access_allowed_time"` | `whentime` | `string` | `"set"` | `"add"`<br>`"alter"` |
 
-## CDTINFO Segment
+## `cdtinfo`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"cdtinfo:case_allowed"` | `cdtcase` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
@@ -101,7 +101,7 @@ The following tables describes the resource segments and traits that are support
 | `"cdtinfo:security_label_required"` | `cdtslreq` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"cdtinfo:default_universal_access"` | `cdtuacc` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
-## CFDEF Segment
+## `cfdef`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"cfdef:custom_field_data_type"` | `cfdtype` | `string` | `"set"` | `"add"`<br>`"extract"` |
@@ -115,14 +115,14 @@ The following tables describes the resource segments and traits that are support
 | `"cfdef:valid_other_characters"` | `cfother` | `string` | `"set"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"cfdef:validation_rexx_exec"` | `cfvalrx` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
-## DLFDATA Segment
+## `dlfdata`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"dlfdata:job_name"` | `jobname` | `string` | `"set"`<br>`"add"`<br>`"remove"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"dlfdata:job_names"` | `jobnmcnt` | `repeat` | N/A | `"extract"` |
 | `"dlfdata:retain_object_after_use"` | `retain` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
-## EIM Segment
+## `eim`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"eim:domain_distinguished_name"` | `domaindn` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
@@ -130,7 +130,7 @@ The following tables describes the resource segments and traits that are support
 | `"eim:local_registry"` | `localreg` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"eim:options"` | `options` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
-## KERB Segment
+## `kerb`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"kerb:validate_addresses"` | `chkaddrs` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
@@ -143,7 +143,7 @@ The following tables describes the resource segments and traits that are support
 | `"kerb:min_ticket_life"` | `mintktlf` | `uint` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"kerb:password"` | `password` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"` |
 
-## ICSF Segment
+## `icsf`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"icsf:certificate_label"` | `crtlbls` | `string` | `"set"`<br>`"add"`<br>`"remove"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
@@ -156,7 +156,7 @@ The following tables describes the resource segments and traits that are support
 | `"icsf:asymetric_key_usage"` | `usage` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"icsf:key_usage_options"` | `usagect` | `repeat` | N/A | `"extract"` |
 
-## ICTX Segment
+## `ictx`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"ictx:use_identity_map"` | `domap` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
@@ -164,19 +164,19 @@ The following tables describes the resource segments and traits that are support
 | `"ictx:identity_map_timeout"` | `maptimeo` | `uint` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"ictx:cache_application_provided_identity_map"` | `usemap` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
-## IDTPARMS Segment
+## `idtparms`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"idtparms:signature_algorithm"` | `sigalg` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"idtparms:identity_token_timeout"` | `idttimeo` | `uint` | `"set"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"idtparms:use_for_any_application"` | `anyappl` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
-## JES Segment
+## `jes`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"jes:icsf_key_label"` | `keylabel` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
-## MFPOLICY Segment
+## `mfpolicy`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"mfpolicy:factor"` | `factors` | `string` | `"set"`<br>`"add"`<br>`"remove"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
@@ -184,14 +184,14 @@ The following tables describes the resource segments and traits that are support
 | `"mfpolicy:token_timeout"` | `timeout` | `uint` | N/A | `"extract"` |
 | `"mfpolicy:reuse_token"` | `reuse` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
-## PROXY Segment
+## `proxy`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"proxy:bind_distinguished_name"` | `binddn` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"proxy:bind_password"` | `bindpw` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"` |
 | `"proxy:ldap_host"` | `ldaphost` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
-## SESSION Segment
+## `session`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"session:security_checking_level"` | `convsec` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
@@ -199,14 +199,14 @@ The following tables describes the resource segments and traits that are support
 | `"session:locked"` | `lock` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"session:session_key"` | `sesskey` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
-## SIGVER Segment
+## `sigver`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"sigver:fail_program_load_condition"` | `failload` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"sigver:log_signature_verification_events"` | `sigaudit` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"sigver:signature_required"` | `sigreqd` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
-## SSIGNON Segment
+## `ssignon`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"ssignon:encrypt_legacy_pass_ticket_key"` | `keycrypt` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"` |
@@ -217,7 +217,7 @@ The following tables describes the resource segments and traits that are support
 | `"ssignon:legacy_pass_ticket_label"` | `keylabel` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"ssignon:mask_legacy_pass_ticket_key"` | `keymask` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"` |
 
-## STDATA Segment
+## `stdata`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"stdata:group"` | `group` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
@@ -226,13 +226,13 @@ The following tables describes the resource segments and traits that are support
 | `"stdata:trusted"` | `trusted` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"stdata:userid"` | `user` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
-## SVFMR Segment
+## `svfmr`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"svfmr:parameter_list_name"` | `parmname` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"svfmr:script_name"` | `script` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
-## TME Segment
+## `tme`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"tme:child"` | `children` | `string` | `"set"`<br>`"add"`<br>`"remove"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |

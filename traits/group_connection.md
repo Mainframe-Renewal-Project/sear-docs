@@ -3,15 +3,15 @@ layout: default
 parent: Traits
 ---
 
-# Group-Connection Traits
+# Group Connection Traits
 
-The following tables describes the group-connection segments and traits that are supported for alter operations and returned by extract operations.
+The following tables describes the group connection segments and traits that are supported for alter operations and returned by extract operations.
 {: .fs-6 .fw-300 }
 
 &nbsp;
 
 {: .note }
-> _More information about **RACF Keys** can be found [here](https://www.ibm.com/docs/en/zos/3.1.0?topic=tables-user-administration)._
+> _More information about **RACF Keys** can be found [here](https://www.ibm.com/docs/en/zos/latest?topic=services-reference-documentation-tables)._
 
 &nbsp;
 
@@ -23,7 +23,7 @@ The following tables describes the group-connection segments and traits that are
 {: .note }
 > _See [Operators](../operators) for more information about **Operator** usage._
 
-## Base Segment
+## `base`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"base:automatic_data_set_protection"` | `adsp` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
