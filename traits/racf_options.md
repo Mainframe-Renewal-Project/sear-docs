@@ -3,7 +3,7 @@ layout: default
 parent: Traits
 ---
 
-# Racf Options Traits
+# RACF Options Traits
 
 The following tables describes the racf options segments and traits that are supported for alter operations and returned by extract operations.
 {: .fs-6 .fw-300 }
