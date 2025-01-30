@@ -40,6 +40,7 @@ While there are a number of languages that can be used to manage RACF, _(from lo
 * z/OS **2.4** or higher.
 * **R_SecMgtOper (IRRSMO00)**: Security Management Operations.
 * **R_Admin (IRRSEQ00)**: RACF Administration API.
+* **RACF Subsystem Address Space**: This is a dependency for both **IRRSMO00** and **IRRSEQ00**. More information can be found [here](https://www.ibm.com/docs/en/zos/latest?topic=considerations-racf-subsystem).
 
 ## Authorizations
 
