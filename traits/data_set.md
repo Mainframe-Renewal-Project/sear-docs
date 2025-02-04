@@ -1,6 +1,7 @@
 ---
 layout: default
 parent: Traits
+nav_order: 5
 ---
 
 # Data Set Traits

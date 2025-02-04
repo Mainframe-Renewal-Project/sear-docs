@@ -1,6 +1,7 @@
 ---
 layout: default
 parent: Traits
+nav_order: 6
 ---
 
 # Permission Traits
