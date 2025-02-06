@@ -24,7 +24,7 @@ A standardized JSON interface for RACF that enables seemless exploitation by pro
 
 ## Mission Statement
 
-As automation becomes more and more prevalent, the need to manage the security environment programmaticaly increases. On z/OS that means managing a security product like the IBM **Resource Access Control Facility** _(RACF)_. RACF is the primary facility for managing identity, authority, and access control for z/OS. There are more than 50 callable services with assembler interfaces that are part of the RACF API. The complete set of interfaces can be found [here](http://publibz.boulder.ibm.com/epubs/pdf/ich2d112.pdf).
+As automation becomes more and more prevalent, the need to manage the security environment programmaticaly increases. On z/OS that means managing a security product like the IBM **Resource Access Control Facility** _(RACF)_. RACF is the primary facility for managing identity, authority, and access control for z/OS. There are more than 50 callable services with assembler interfaces that are part of the RACF API. The complete set of interfaces can be found [here](https://www.ibm.com/docs/en/zos/latest?topic=racf-zos-security-server-callable-services).
 
 &nbsp;
 
@@ -57,7 +57,7 @@ The following authorizations are required in order exploit all of the functional
 | `READ` | `IRR.RADMIN.LISTDSD` | `FACILITY` | Extract **Data Set Profiles** |
 | `READ` | `IRR.RADMIN.SETROPTS.LIST` | `FACILITY` | List **RACF Options** |
 | `READ` | `IRR.IRRSMO00.PRECHECK` | `XFACILIT` | **Alter** and **Add** Profiles |
-| `UPDATE` | `<userid>.IRRSMO00` | `SURROGAT` | **Run RACF Commands as a Specific Userid** |
+| `UPDATE` | `<userid>.IRRSMO00` | `SURROGAT` | Run **Add**, **Alter**, and **Delete** **Commands** as a **Specific Userid** |
 
 ## Install
 
@@ -69,7 +69,7 @@ The following authorizations are required in order exploit all of the functional
 &nbsp;
 
 ```shell
-pip install racfu
+python3 -m pip install racfu
 ```
 
 ## Use
