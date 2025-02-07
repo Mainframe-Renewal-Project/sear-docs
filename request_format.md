@@ -24,7 +24,13 @@ RACFu provides the following standardized JSON schema for issuing security reque
   {: .note }
   > _Only the `"alter"`, `"extract"`, and `"delete"` **Operations** are allowed for the `"permission"` **Admin Type**._
 
-&nbsp;
+  &nbsp;
+
+  | **Operation** | **Description** |
+  | `"add"` | **Add/Create** a new security profile. |
+  | `"alter"` | **Alter** an existing security profile. |
+  | `"extract"` | **Extract** a security profile's data. |
+  | `"delete"` | **Delete** a security profile. |
 
 * `"admin_type"`<br>
   A `string` value describing the type of **Security Administration Request** to issue. The following table describes all of the valid values for `"admin_type"`.
@@ -44,14 +50,6 @@ RACFu provides the following standardized JSON schema for issuing security reque
   | `"data-set"` | Used for **Data Set** administration. |
   | `"racf-options"` | Used for **RACF Options** administration. |
   | `"permission"` | Used for **Permission** administration. |
-
-  &nbsp;
-
-  | **Operation** | **Description** |
-  | `"add"` | **Add/Create** a new security profile. |
-  | `"alter"` | **Alter** an existing security profile. |
-  | `"extract"` | **Extract** a security profile's data. |
-  | `"delete"` | **Delete** a security profile. |
 
 * `"profile_name"`<br>
   A `string` value identifying a **Security Profile** to **Add**, **Alter**, **Extract**, or **Delete**.
