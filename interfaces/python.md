@@ -15,7 +15,7 @@ The Python distribution of RACFu may be installed from [PyPi](https://pypi.org/p
 &nbsp;
 
 ```shell
-pip install racfu
+python3 -m pip install racfu
 ```
 
 The Python distribution of RACFu may also optionally be downloaded and installed from [GitHub](https://github.com/ambitus/racfu/releases).
