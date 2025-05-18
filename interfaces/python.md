@@ -18,7 +18,7 @@ The Python distribution of RACFu may be installed from [PyPi](https://pypi.org/p
 python3 -m pip install racfu
 ```
 
-The Python distribution of RACFu may also optionally be downloaded and installed from [GitHub](https://github.com/ambitus/racfu/releases).
+The Python distribution of SEAR may also optionally be downloaded and installed from [GitHub](https://github.com/ambitus/racfu/releases).
 
 ## `racfu.racfu()`
 
@@ -33,7 +33,7 @@ Make a **Security Request** to RACF.
 #### 📥 Parameters
 
 * `request` <br>
-  A **Dictionary** that defines the **Security Request** to perform following the [RACFu Request JSON Format](../../request_format).
+  A **Dictionary** that defines the **Security Request** to perform following the [SEAR Request JSON Format](../../request_format).
 
 * `debug` <br>
   A **Boolean** that if set to `True` indicates that **Debug Messages** should be printed. If set to `False`, no **Debug Messages** will be printed. 

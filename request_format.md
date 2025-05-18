@@ -143,7 +143,7 @@ RACFu provides the following standardized JSON schema for issuing security reque
 
 &nbsp;
 
-The following **RACFu Request JSON** creates new new **z/OS Userid** called `SQUIDWRD` with the following **Traits**:
+The following **SEAR Request JSON** creates new new **z/OS Userid** called `SQUIDWRD` with the following **Traits**:
 * A **Name** of `"Squidward"`.
 * An **OMVS UID** of `24`.
 * An **OMVS Home Directory** of `"/u/squidwrd"`.
@@ -162,7 +162,7 @@ The following **RACFu Request JSON** creates new new **z/OS Userid** called `SQU
 }
 ```
 
-The following **RACFu Request JSON** alters an exsting **z/OS Userid** called `SQUIDWRD` by **Changing/Setting** the **Name Trait** to `"Squilliam"`. 
+The following **SEAR Request JSON** alters an exsting **z/OS Userid** called `SQUIDWRD` by **Changing/Setting** the **Name Trait** to `"Squilliam"`. 
 
 ###### JSON
 ```json
@@ -176,7 +176,7 @@ The following **RACFu Request JSON** alters an exsting **z/OS Userid** called `S
 }
 ```
 
-The following **RACFu Request JSON** deletes an exsting **z/OS Userid** called `SQUIDWRD`. 
+The following **SEAR Request JSON** deletes an exsting **z/OS Userid** called `SQUIDWRD`. 
 
 ###### JSON
 ```json
@@ -187,7 +187,7 @@ The following **RACFu Request JSON** deletes an exsting **z/OS Userid** called `
 }
 ```
 
-The following **RACFu Request JSON** extracts the **Profile Data** for a **z/OS Userid** called `SQUIDWRD`. 
+The following **SEAR Request JSON** extracts the **Profile Data** for a **z/OS Userid** called `SQUIDWRD`. 
 
 ###### JSON
 ```json

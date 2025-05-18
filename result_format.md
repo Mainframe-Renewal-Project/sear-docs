@@ -4,7 +4,7 @@ layout: default
 
 # Result Format
 
-RACFu provides the following standardized JSON schema for security results returned by RACF.
+SEAR provides the following standardized JSON schema for security results returned by RACF.
 {: .fs-6 .fw-300 }
 
 ## 📤 Result Fields *(JSON Keys)*
@@ -113,7 +113,7 @@ RACFu provides the following standardized JSON schema for security results retur
 
 &nbsp;
 
-The following **RACFu Result JSON** contains the result of an `"add"` **Operation** that created a new **z/OS Userid** called `SQUIDWRD` with the following **Traits**:
+The following **SEAR Result JSON** contains the result of an `"add"` **Operation** that created a new **z/OS Userid** called `SQUIDWRD` with the following **Traits**:
 * A **Name** of `"Squidward"`.
 * An **OMVS UID** of `24`.
 * An **OMVS Home Directory** of `"/u/squidwrd"`.
@@ -142,7 +142,7 @@ The following **RACFu Result JSON** contains the result of an `"add"` **Operatio
 }
 ```
 
-The following **RACFu Result JSON** contains the result of an `"add"` **Operation** that was unable to create a new **z/OS Userid** called `SQUIDWRD` since a **z/OS Userid** already exists on the system with that name.
+The following **SEAR Result JSON** contains the result of an `"add"` **Operation** that was unable to create a new **z/OS Userid** called `SQUIDWRD` since a **z/OS Userid** already exists on the system with that name.
 
 ###### JSON
 ```json
