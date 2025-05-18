@@ -49,7 +49,7 @@ search.button: true
 # Aux links for the upper right navigation
 aux_links:
   "View/Contribute on GitHub":
-    - "https://github.com/ambitus/racfu"
+    - "https://github.com/Mainframe-Renewal-Project/sear"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: True
