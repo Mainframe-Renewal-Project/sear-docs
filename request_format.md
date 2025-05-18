@@ -4,7 +4,7 @@ layout: default
 
 # Request Format
 
-RACFu provides the following standardized JSON schema for issuing security requests to RACF.
+SEAR provides the following standardized JSON schema for issuing security requests to RACF.
 {: .fs-6 .fw-300 }
 
 ## 📥 Parameters *(JSON Keys)*
