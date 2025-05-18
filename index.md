@@ -3,7 +3,7 @@ layout: page
 nav_exclude: true
 ---
 
-![pyRACF Logo](/assets/images/logo.png)
+![SEAR logo](/assets/images/logo.svg)
 
 &nbsp;
 

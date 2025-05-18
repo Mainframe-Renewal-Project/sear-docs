@@ -19,7 +19,7 @@ racfu_version: 1.0a1
 description: >- # this means to ignore newlines until "baseurl:"
   Python interface to the RACF Command interface.
 permalink: /:title/ 
-logo: "/assets/images/logo.png"
+logo: "/assets/images/logo.svg"
 
 # Build settings
 remote_theme: just-the-docs/just-the-docs@v0.7.0
