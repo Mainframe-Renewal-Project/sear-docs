@@ -101,7 +101,7 @@ python3 -m pip install racfu
     java(Java Exploiter)-- JSON (ASCII) ---RACFu
     style java fill:#ec2025,color:#fff,stroke:#ec2025
     subgraph C/C+
-        RACFu(["RACFu (64-bit XPLINK ASCII)"])
+        RACFu(["SEAR (64-bit XPLINK ASCII)"])
         style RACFu fill:#0096ff,color:#fff,stroke:#0096ff
         RACFu --- Extract(Extract)
         RACFu --- Add(Add)
