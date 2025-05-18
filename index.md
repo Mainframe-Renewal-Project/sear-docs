@@ -13,12 +13,12 @@ A standardized JSON interface for RACF that enables seemless exploitation by pro
 &nbsp;
 
 {: .development_status }
-> _**RACFu** is currently in **Alpha**, meaning that some core functionality may still be missing, unstable, and or may still need more thorough testing._
+> _**SEAR** is currently in **Alpha**, meaning that some core functionality may still be missing, unstable, and or may still need more thorough testing._
 
 &nbsp;
 
 {: .warning }
-> * _RACFu encodes the data it passes to RACF in Code Page `IBM-1047`._
+> * SEAR encodes the data it passes to RACF in Code Page `IBM-1047`._
 > * _If you are entering information with special or national characters, users viewing or altering this information from terminals using differnt or international codepages may see unexpected data._
 > * _Please consult a list of invariant characters to use for such information if this applies to you._
 
