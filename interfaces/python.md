@@ -18,7 +18,7 @@ The Python distribution of RACFu may be installed from [PyPi](https://pypi.org/p
 python3 -m pip install racfu
 ```
 
-The Python distribution of SEAR may also optionally be downloaded and installed from [GitHub](https://github.com/ambitus/racfu/releases).
+The Python distribution of SEAR may also optionally be downloaded and installed from [GitHub](https://github.com/Mainframe-Renewal-Project/sear/discussions).
 
 ## `racfu.racfu()`
 
