@@ -5,12 +5,12 @@ parent: Interfaces
 
 # Python
 
-The following Python interface is provided to facilitate exploitation of RACFu by Python callers.
+The following Python interface is provided to facilitate exploitation of SEAR by Python callers.
 {: .fs-6 .fw-300 }
 
 &nbsp;
 
-The Python distribution of RACFu may be installed from [PyPi](https://pypi.org/project/racfu/) using `pip`.
+The Python distribution of SEAR may be installed from [PyPi](https://pypi.org/project/racfu/) using `pip`.
 
 &nbsp;
 
@@ -20,10 +20,10 @@ python3 -m pip install racfu
 
 The Python distribution of SEAR may also optionally be downloaded and installed from [GitHub](https://github.com/Mainframe-Renewal-Project/sear/discussions).
 
-## `racfu.racfu()`
+## `sear.sear()`
 
 ```python
-def racfu(request: dict, debug: bool = False) -> SecurityResult:
+def sear(request: dict, debug: bool = False) -> SecurityResult:
 ```
 
 #### 📄 Description
@@ -51,7 +51,7 @@ The following example issues a **Profile Extract** request to extract the profil
 
 ###### Python Script
 ```python
-from racfu import racfu
+from sear import sear
 
 request = {
     "operation": "extract",
@@ -59,10 +59,10 @@ request = {
     "profile_name": "SQUIDWRD"
 }
 
-result = racfu(request)
+result = sear(request)
 ```
 
-## `racfu.SecurityResult`
+## `sear.SecurityResult`
 
 ```python
 class SecurityResult:
@@ -106,7 +106,7 @@ The following example makes a **Profile Extract** request to extract the profile
 
 ###### Python Script
 ```python
-from racfu import racfu
+from sear import sear
 import json
 
 request = {
@@ -115,11 +115,11 @@ request = {
     "profile_name": "SQUIDWRD"
 }
 
-# The racfu() function always returns a SecurityResult object.
-result = racfu(request)
+# The sear() function always returns a SecurityResult object.
+result = sear(request)
 
 # These class attributes are more useful for debugging.
-print("RACFu Request JSON:")
+print("SEAR Request JSON:")
 print(json.dumps(result.request, indent=2))
 print("Raw Request to R_Admin:")
 print(result.raw_request.decode("cp1047"))
@@ -133,7 +133,7 @@ print(json.dumps(result.result, indent=2))
 
 ###### Console Output
 ```console
-RACFu Request JSON:
+SEAR Request JSON:
 {
   "operation": "extract",
   "admin_type": "user",
@@ -219,7 +219,7 @@ RACFu Result JSON:
   "return_codes": {
     "racf_reason_code": 0,
     "racf_return_code": 0,
-    "racfu_return_code": 0,
+    "sear_return_code": 0,
     "saf_return_code": 0
   }
 }
