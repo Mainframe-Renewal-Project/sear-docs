@@ -89,7 +89,7 @@ An **Object** that describes a **Security Request** that was made.
 #### 📒 Class Attributes
 
 * `request`<br>
-  A **Dictionary** that defines the **Security Request** that was made following the [RACFu Request JSON Format](../../request_format).
+  A **Dictionary** that defines the **Security Request** that was made following the [SEAR Request JSON Format](../../request_format).
 
 * `raw_request`<br>
   A **Bytes Object** containing the exact contents of the **Raw Request** made to the corresponding **RACF Callable Service**.
@@ -98,7 +98,7 @@ An **Object** that describes a **Security Request** that was made.
   A **Bytes Object** containing the exact contents of the **Raw Result** returned by the corresponding **RACF Callable Service** that was called.
 
 * `result` <br>
-  A **Dictionary** that contains the **Post-Processed Security Result** following the [RACFu Result JSON Format](../../result_format).
+  A **Dictionary** that contains the **Post-Processed Security Result** following the [SEAR Result JSON Format](../../result_format).
 
 #### 💻 Example
 

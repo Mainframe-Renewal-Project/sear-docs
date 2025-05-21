@@ -99,17 +99,17 @@ SEAR provides the following standardized JSON schema for security results return
   &nbsp;
 
   | **Subfield** | **Description** |
-  | `"saf_return_code"` | A `number` describing the **SAF Return Code**. `"saf_return_code"` will be set to `null` when `"racfu_return_code"` is `8`. |
-  | `"racf_return_code"` | A `number` describing the **RACF Return Code**. `"racf_return_code"` will be set to `null` when `"racfu_return_code"` is `8`. |
-  | `"racf_reason_code"` | A `number` describing the **RACF Reason Code**. `"racf_reason_code"` will be set to `null` when `"racfu_return_code"` is `8`. |
-  | `"racfu_return_code"` | A `number` describing the **RACFu Return Code**. `"racfu_return_code"` will be set to `0` when there are no errors, `4` when an error occured within the call to the corresponding **RACF Callable Service**, and `8` when **RACFu** encounters an error that prevented the request from being **Proccessed** by the corresponding **RACF Callable Service** or prevented the result from the corresponding **RACF Callable Service** from being **Post-Processed**. |
+  | `"saf_return_code"` | A `number` describing the **SAF Return Code**. `"saf_return_code"` will be set to `null` when `"sear_return_code"` is `8`. |
+  | `"racf_return_code"` | A `number` describing the **RACF Return Code**. `"racf_return_code"` will be set to `null` when `"sear_return_code"` is `8`. |
+  | `"racf_reason_code"` | A `number` describing the **RACF Reason Code**. `"racf_reason_code"` will be set to `null` when `"sear_return_code"` is `8`. |
+  | `"sear_return_code"` | A `number` describing the **SEAR Return Code**. `"sear_return_code"` will be set to `0` when there are no errors, `4` when an error occured within the call to the corresponding **RACF Callable Service**, and `8` when **SEAR** encounters an error that prevented the request from being **Proccessed** by the corresponding **RACF Callable Service** or prevented the result from the corresponding **RACF Callable Service** from being **Post-Processed**. |
 
 ## 💻 Result Examples
 
 &nbsp;
 
 {: .note }
-> _These examples are **NOT** comprehensive and are primarily meant to show users the general structure of the **RACFu Result JSON** in a handful of common scenarios._
+> _These examples are **NOT** comprehensive and are primarily meant to show users the general structure of the **SEAR Result JSON** in a handful of common scenarios._
 
 &nbsp;
 
@@ -136,7 +136,7 @@ The following **SEAR Result JSON** contains the result of an `"add"` **Operation
   "return_codes": {
     "racf_reason_code": 0,
     "racf_return_code": 0,
-    "racfu_return_code": 0,
+    "sear_return_code": 0,
     "saf_return_code": 0
   }
 }
@@ -148,36 +148,36 @@ The following **SEAR Result JSON** contains the result of an `"add"` **Operation
 ```json
 {
   "errors": [
-    "racfu: unable to add 'SQUIDWRD' because a 'user' profile already exists with that name"
+    "sear: unable to add 'SQUIDWRD' because a 'user' profile already exists with that name"
    ],
   "return_codes": {
     "racf_reason_code": 0,
     "racf_return_code": 0,
-    "racfu_return_code": 4,
+    "sear_return_code": 4,
     "saf_return_code": 0
   }
 }
 ```
 
-The following **RACFu Result JSON** contains the result of a request that was never processed by RACF due to **Errors** in the corresponding **RACFu Request JSON**.
+The following **SEAR Result JSON** contains the result of a request that was never processed by RACF due to **Errors** in the corresponding **sear Request JSON**.
 
 ###### JSON
 ```json
 {
   "errors": [
-    "racfu: 'junk_operation' is not a valid value for 'operation'",
-    "racfu: 'junk_admin' is not a valid value for 'admin_type'"
+    "sear: 'junk_operation' is not a valid value for 'operation'",
+    "sear: 'junk_admin' is not a valid value for 'admin_type'"
   ],
   "return_codes": {
     "racf_reason_code": null,
     "racf_return_code": null,
-    "racfu_return_code": 8,
+    "sear_return_code": 8,
     "saf_return_code": null
   }
 }
 ```
 
-The following **RACFu Result JSON** contains the result of an `"extract"` **Operation** that contains the **Profile Data** for a **z/OS Userid** called `SQUIDWRD`. 
+The following **SEAR Result JSON** contains the result of an `"extract"` **Operation** that contains the **Profile Data** for a **z/OS Userid** called `SQUIDWRD`. 
 
 ###### JSON
 ```json
@@ -257,24 +257,24 @@ The following **RACFu Result JSON** contains the result of an `"extract"` **Oper
   "return_codes": {
     "racf_reason_code": 0,
     "racf_return_code": 0,
-    "racfu_return_code": 0,
+    "sear_return_code": 0,
     "saf_return_code": 0
   }
 }
 ```
 
-The following **RACFu Result JSON** contains the result of an `"extract"` **Operation** that failed because the **z/OS Userid** `SQUIDWRD` does **NOT** exist. 
+The following **SEAR Result JSON** contains the result of an `"extract"` **Operation** that failed because the **z/OS Userid** `SQUIDWRD` does **NOT** exist. 
 
 ###### JSON
 ```json
 {
   "errors": [
-    "racfu: unable to extract 'user' profile 'SQUIDWRD'"
+    "sear: unable to extract 'user' profile 'SQUIDWRD'"
   ],
   "return_codes": {
     "racf_reason_code": 4,
     "racf_return_code": 4,
-    "racfu_return_code": 4,
+    "sear_return_code": 4,
     "saf_return_code": 4
   }
 }
