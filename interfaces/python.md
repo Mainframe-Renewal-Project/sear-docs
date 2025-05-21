@@ -71,7 +71,7 @@ class SecurityResult:
             request: dict,
             raw_request: bytes | None,
             raw_result: bytes | None,
-            result: dict | None
+            result: dict[str, Any] | None
     ):
 ```
 
