@@ -75,10 +75,10 @@ python3 -m pip install racfu
 ## Use
 
 ```python
->>> from racfu import racfu
->>> result = racfu({"operation": "extract", "admin_type": "user", "profile_name": "SQUIDWRD"})
+>>> from sear import sear
+>>> result = sear({"operation": "extract", "admin_type": "user", "profile_name": "SQUIDWRD"})
 >>> result.result
-{'profile': {'base': {'base:audit_logging': False, 'base:audit_responsibility': False, 'base:auditor': False, 'base:automatic_data_set_protection': False, 'base:create_date': '09/13/24', 'base:default_group': 'SYS1', 'base:group_connections': [{'base:group_connection_auditor': False, 'base:group_connection_automatic_data_set_protection': False, 'base:group_connection_create_date': '09/13/24', 'base:group_connection_data_set_access': False, 'base:group_connection_group': 'SYS1', 'base:group_connection_last_connect_date': None, 'base:group_connection_last_connect_time': None, 'base:group_connection_operations': False, 'base:group_connection_owner': 'LEONARD', 'base:group_connection_resume_date': None, 'base:group_connection_revoke_date': None, 'base:group_connection_revoked': False, 'base:group_connection_special': False, 'base:group_connection_universal_access': 'NONE', 'base:group_connection_used_count': 0}], 'base:group_data_set_access': False, 'base:has_passphrase': False, 'base:has_password': False, 'base:logon_allowed_days': [{'base:logon_allowed_day': 'SUNDAY'}, {'base:logon_allowed_day': 'MONDAY'}, {'base:logon_allowed_day': 'TUESDAY'}, {'base:logon_allowed_day': 'WEDNESDAY'}, {'base:logon_allowed_day': 'THURSDAY'}, {'base:logon_allowed_day': 'FRIDAY'}, {'base:logon_allowed_day': 'SATURDAY'}], 'base:logon_allowed_time': 'ANYTIME', 'base:mfa_password_fallback': False, 'base:name': 'SQUIDWARD', 'base:operations': False, 'base:owner': 'LEONARD', 'base:passphrase_change_interval': 0, 'base:passphrase_enveloped': False, 'base:password_change_interval': 186, 'base:password_enveloped': False, 'base:protected': True, 'base:restrict_global_access_checking': False, 'base:revoked': False, 'base:special': False}, 'omvs': {'omvs:home_directory': '/u/squidwrd', 'omvs:uid': 24}}, 'return_codes': {'racf_reason_code': 0, 'racf_return_code': 0, 'racfu_return_code': 0, 'saf_return_code': 0}}
+{'profile': {'base': {'base:audit_logging': False, 'base:audit_responsibility': False, 'base:auditor': False, 'base:automatic_data_set_protection': False, 'base:create_date': '09/13/24', 'base:default_group': 'SYS1', 'base:group_connections': [{'base:group_connection_auditor': False, 'base:group_connection_automatic_data_set_protection': False, 'base:group_connection_create_date': '09/13/24', 'base:group_connection_data_set_access': False, 'base:group_connection_group': 'SYS1', 'base:group_connection_last_connect_date': None, 'base:group_connection_last_connect_time': None, 'base:group_connection_operations': False, 'base:group_connection_owner': 'LEONARD', 'base:group_connection_resume_date': None, 'base:group_connection_revoke_date': None, 'base:group_connection_revoked': False, 'base:group_connection_special': False, 'base:group_connection_universal_access': 'NONE', 'base:group_connection_used_count': 0}], 'base:group_data_set_access': False, 'base:has_passphrase': False, 'base:has_password': False, 'base:logon_allowed_days': [{'base:logon_allowed_day': 'SUNDAY'}, {'base:logon_allowed_day': 'MONDAY'}, {'base:logon_allowed_day': 'TUESDAY'}, {'base:logon_allowed_day': 'WEDNESDAY'}, {'base:logon_allowed_day': 'THURSDAY'}, {'base:logon_allowed_day': 'FRIDAY'}, {'base:logon_allowed_day': 'SATURDAY'}], 'base:logon_allowed_time': 'ANYTIME', 'base:mfa_password_fallback': False, 'base:name': 'SQUIDWARD', 'base:operations': False, 'base:owner': 'LEONARD', 'base:passphrase_change_interval': 0, 'base:passphrase_enveloped': False, 'base:password_change_interval': 186, 'base:password_enveloped': False, 'base:protected': True, 'base:restrict_global_access_checking': False, 'base:revoked': False, 'base:special': False}, 'omvs': {'omvs:home_directory': '/u/squidwrd', 'omvs:uid': 24}}, 'return_codes': {'racf_reason_code': 0, 'racf_return_code': 0, 'sear_return_code': 0, 'saf_return_code': 0}}
 ```
 
 ## Architecture
@@ -92,21 +92,21 @@ python3 -m pip install racfu
 
 <pre class="mermaid">
   flowchart TD
-    c(C/C++ Exploiter)-- JSON (ASCII) ---RACFu
+    c(C/C++ Exploiter)-- JSON (ASCII) ---SEAR
     style c fill:#01559e,color:#fff,stroke:#01559e
-    python(Python Exploiter)-- JSON (ASCII) ---RACFu
+    python(Python Exploiter)-- JSON (ASCII) ---SEAR
     style python fill:#ffcb3c,color:#000,stroke:#ffcb3c
-    nodejs(Node.JS Exploiter)-- JSON (ASCII) ---RACFu
+    nodejs(Node.JS Exploiter)-- JSON (ASCII) ---SEAR
     style nodejs fill:#417e38,color:#fff,stroke:#417e38
-    java(Java Exploiter)-- JSON (ASCII) ---RACFu
+    java(Java Exploiter)-- JSON (ASCII) ---SEAR
     style java fill:#ec2025,color:#fff,stroke:#ec2025
     subgraph C/C+
-        RACFu(["SEAR (64-bit XPLINK ASCII)"])
-        style RACFu fill:#0096ff,color:#fff,stroke:#0096ff
-        RACFu --- Extract(Extract)
-        RACFu --- Add(Add)
-        RACFu --- Alter(Alter)
-        RACFu --- Delete(Delete)
+        SEAR(["SEAR (64-bit XPLINK ASCII)"])
+        style SEAR fill:#0096ff,color:#fff,stroke:#0096ff
+        SEAR --- Extract(Extract)
+        SEAR --- Add(Add)
+        SEAR --- Alter(Alter)
+        SEAR --- Delete(Delete)
         Add-- XML (EBCDIC) ---IRRSMO00("IRRSMO00 (64-bit OSLINK EBCDIC)")
         Alter-- XML (EBCDIC) ---IRRSMO00
         Delete-- XML (EBCDIC) ---IRRSMO00
