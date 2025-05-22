@@ -12,7 +12,7 @@ $body-heading-color: $grey-lt-000;
 $body-text-color: $sear-foreground;
 $link-color: $sear-tertiary;
 $nav-child-link-color: $grey-dk-000;
-$sidebar-color: $grey-dk-300;
+$sidebar-color: lighten($sear-background, 5%);
 $base-button-color: $grey-dk-250;
 $btn-primary-color: $blue-200;
 $code-background-color: lighten($sear-background, 5%);
