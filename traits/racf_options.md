@@ -27,28 +27,28 @@ The following tables describes the racf options segments and traits that are sup
 ## `base`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
-| `"base:add_creator_to_access_list"` | `addcreat` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
-| `"base:automatic_data_set_protection"` | `adsp` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
+| `"base:add_creator_to_access_list"` | `addcreat` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
+| `"base:automatic_data_set_protection"` | `adsp` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:application_logon_auditing"` | `applaudt` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:audit_classes"` | `audit` | `string` | `"add"`<br>`"remove"` | `"alter"`<br>`"extract"` |
 | `"base:uncataloged_data_set_access"` | `catdsns` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:active_classes"` | `classact` | `string` | `"add"`<br>`"remove"` | `"alter"`<br>`"extract"` |
-| `"base:statistics_classes"` | `classtat` | `string` | `"add"`<br>`"remove"` | `"alter"`<br>`"extract"` |
+| `"base:statistics_classes"` | `classtat` | `repeat` | `"add"`<br>`"remove"` | `"alter"`<br>`"extract"` |
 | `"base:log_racf_command_violations"` | `cmdviol` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
-| `"base:security_label_compatibility_mode"` | `compmode` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
+| `"base:security_label_compatibility_mode"` | `compmode` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:enhanced_generic_naming"` | `egn` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
-| `"base:erase_data_sets_on_delete"` | `erase` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
+| `"base:erase_data_sets_on_delete"` | `erase` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:erase_data_sets_on_delete_all"` | `eraseall` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:erase_data_sets_on_delete_security_level"` | `erasesec` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
-| `"base:generic_command_classes"` | `gencmd` | `string` | `"add"`<br>`"remove"` | `"alter"`<br>`"extract"` |
-| `"base:generic_profile_checking_classes"` | `generic` | `string` | `"add"`<br>`"remove"` | `"alter"`<br>`"extract"` |
+| `"base:generic_command_classes"` | `gencmd` | `repeat` | `"add"`<br>`"remove"` | `"alter"`<br>`"extract"` |
+| `"base:generic_profile_checking_classes"` | `generic` | `repeat` | `"add"`<br>`"remove"` | `"alter"`<br>`"extract"` |
 | `"base:generic_profile_sharing_classes"` | `genlist` | `string` | `"add"`<br>`"remove"` | `"alter"`<br>`"extract"` |
 | `"base:generic_owner"` | `genowner` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
-| `"base:global_access_classes"` | `global` | `string` | `"add"`<br>`"remove"` | `"alter"`<br>`"extract"` |
+| `"base:global_access_classes"` | `global` | `repeat` | `"add"`<br>`"remove"` | `"alter"`<br>`"extract"` |
 | `"base:list_of_groups_access_checking"` | `grplist` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:password_history"` | `history` | `uint` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:revoke_inactive_userids_interval"` | `inactive` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
-| `"base:record_user_verification_statistics"` | `initstat` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
+| `"base:record_user_verification_statistics"` | `initstat` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:max_password_change_interval"` | `interval` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:jes_batch"` | `jesbatch` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:jes_early_verification"` | `jesearly` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
@@ -80,11 +80,11 @@ The following tables describes the racf options segments and traits that are sup
 | `"base:primary_language"` | `primlang` | `string` | `"set"` | `"alter"`<br>`"extract"` |
 | `"base:protect_all_data_sets"` | `protall` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:password_encryption_algorithm"` | `pwdalg` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
-| `"base:special_character_password_support"` | `pwdspec` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
-| `"base:raclist"` | `raclist` | `string` | `"add"`<br>`"remove"` | `"alter"`<br>`"extract"` |
+| `"base:special_character_password_support"` | `pwdspec` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
+| `"base:raclist"` | `raclist` | `repeat` | `"add"`<br>`"remove"` | `"alter"`<br>`"extract"` |
 | `"base:log_real_data_set_name"` | `realdsn` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:refresh"` | `refresh` | `boolean` | `"set"` | `"alter"`<br>`"extract"` |
-| `"base:tape_data_set_security_retention_period"` | `retpd` | `string` | `"set"` | `"alter"`<br>`"extract"` |
+| `"base:tape_data_set_security_retention_period"` | `retpd` | `unit` | `"set"` | `"alter"`<br>`"extract"` |
 | `"base:max_incorrect_password_attempts"` | `revoke` | `uint` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:password_rules"` | `rules` | `boolean` | `"delete"` | `"alter"`<br>`"extract"` |
 | `"base:rvary_status_password_format"` | `rvarstfm` | `string` | N/A | `"extract"` |
