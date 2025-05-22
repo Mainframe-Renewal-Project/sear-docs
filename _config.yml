@@ -21,7 +21,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 permalink: /:title/ 
 
 # Build settings
-remote_theme: just-the-docs/just-the-docs@v0.7.0
+remote_theme: just-the-docs/just-the-docs@v0.10.1
 include:
   - contribute.markdown
 color_scheme: dark
