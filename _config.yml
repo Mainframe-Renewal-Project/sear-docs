@@ -24,7 +24,7 @@ permalink: /:title/
 remote_theme: just-the-docs/just-the-docs@v0.10.1
 include:
   - contribute.markdown
-color_scheme: dark
+color_scheme: sear
 
 # Enable or disable the site search
 # Supports true (default) or false

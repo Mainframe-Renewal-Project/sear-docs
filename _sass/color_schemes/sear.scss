@@ -1,0 +1,24 @@
+@import "./color_schemes/dark";
+
+$sear-primary: #FADC0D;
+$sear-secondary: #FF206E;
+$sear-tertiary: #41EAD4;
+$sear-background: #0C0F0A;
+$sear-foreground: #F7F7F9;
+
+$color-scheme: dark;
+$body-background-color: $sear-background;
+$body-heading-color: $grey-lt-000;
+$body-text-color: $sear-foreground;
+$link-color: $sear-tertiary;
+$nav-child-link-color: $grey-dk-000;
+$sidebar-color: $grey-dk-300;
+$base-button-color: $grey-dk-250;
+$btn-primary-color: $blue-200;
+$code-background-color: lighten($sear-background, 5%);
+$code-linenumber-color: $sear-foreground;
+$feedback-color: darken($sidebar-color, 3%);
+$table-background-color: $grey-dk-250;
+$search-background-color: $grey-dk-250;
+$search-result-preview-color: $grey-dk-000;
+$border-color: $grey-dk-200;
