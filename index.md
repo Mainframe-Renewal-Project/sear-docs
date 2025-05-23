@@ -7,7 +7,7 @@ nav_exclude: true
 
 &nbsp;
 
-Security API for RACF (SEAR) - A standardized JSON interface for RACF that enables seemless exploitation by programming languages that have a foreign language interface for C/C++ and native or third-party JSON support.
+Security API for RACF (SEAR) - A standardized JSON interface for RACF that enables seemless exploitation by programming languages that have a foreign language interface for C/C++ and native or third-party JSON support. SEAR is a fork of RACFu, an abandoned RACF API created by IBM.
 {: .fs-6 .fw-300 }
 
 &nbsp;
