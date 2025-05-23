@@ -10,7 +10,7 @@ The following Python interface is provided to facilitate exploitation of SEAR by
 
 &nbsp;
 
-The Python distribution of SEAR may be installed from [PyPi](https://pypi.org/project/racfu/) using `pip`.
+The Python distribution of SEAR may be installed from [PyPi](https://pypi.org/project/pysear/) using `pip`.
 
 &nbsp;
 
