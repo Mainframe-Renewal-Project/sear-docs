@@ -15,7 +15,7 @@ The Python distribution of SEAR may be installed from [PyPi](https://pypi.org/pr
 &nbsp;
 
 ```shell
-python3 -m pip install racfu
+python3 -m pip install pysear
 ```
 
 The Python distribution of SEAR may also optionally be downloaded and installed from [GitHub](https://github.com/Mainframe-Renewal-Project/sear/discussions).
@@ -40,7 +40,7 @@ Make a **Security Request** to RACF.
 
 #### 📤 Returns
 * `SecurityResult`<br>
-  An [Object](#racfusecurityresult) that describes the **Security Request** that was made. 
+  An [Object](#searsecurityresult) that describes the **Security Request** that was made. 
 
 #### ❌ Raises
 This method does **NOT** raise any exceptions.

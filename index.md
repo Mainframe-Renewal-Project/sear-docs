@@ -69,7 +69,7 @@ The following authorizations are required in order exploit all of the functional
 &nbsp;
 
 ```shell
-python3 -m pip install racfu
+python3 -m pip install pysear
 ```
 
 ## Use
