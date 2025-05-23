@@ -7,7 +7,7 @@ nav_exclude: true
 
 &nbsp;
 
-A standardized JSON interface for RACF that enables seemless exploitation by programming languages that have a foreign language interface for C/C++ and native or third-party JSON support.
+Security API for RACF (SEAR) - A standardized JSON interface for RACF that enables seemless exploitation by programming languages that have a foreign language interface for C/C++ and native or third-party JSON support.
 {: .fs-6 .fw-300 }
 
 &nbsp;
@@ -18,6 +18,7 @@ A standardized JSON interface for RACF that enables seemless exploitation by pro
 &nbsp;
 
 {: .warning }
+
 > * SEAR encodes the data it passes to RACF in Code Page `IBM-1047`._
 > * _If you are entering information with special or national characters, users viewing or altering this information from terminals using differnt or international codepages may see unexpected data._
 > * _Please consult a list of invariant characters to use for such information if this applies to you._
@@ -28,11 +29,12 @@ As automation becomes more and more prevalent, the need to manage the security e
 
 &nbsp;
 
-While there are a number of languages that can be used to manage RACF, _(from low level lnaguages like Assembler to higher level languages like REXX)_, the need to be able to easily exploit RACF management functions using existing indurstry standard programming languages and even programming languages that don't exist yet is paramount. The SEAR project is focused on making RACF management functions available to all programming languages that have native or third-party JSON support and a foreign language interface for C/C++. This will make it easier to pivot to new tools and programming languages as technology, skills, and business needs continue to evolve in the forseeable future.
+While there are a number of languages that can be used to manage RACF, _(from low level lnaguages like Assembler to higher level languages like REXX)_, the need to be able to easily exploit RACF management functions using existing industry standard programming languages and even programming languages that don't exist yet is paramount. The SEAR project is focused on making RACF management functions available to all programming languages that have native or third-party JSON support and a foreign language interface for C/C++. This will make it easier to pivot to new tools and programming languages as technology, skills, and business needs continue to evolve in the forseeable future.
 
 ## Minimum z/OS & Language Versions
 
 All versions of **z/OS** and the **IBM Open Enterprise SDK for Python** that are fully supported by IBM are supported by SEAR.
+
 * [z/OS Product Lifecycle](https://www.ibm.com/support/pages/lifecycle/search/?q=5655-ZOS,%205650-ZOS)
 * [IBM Open Enterprise SDK for Python Product Lifecycle](https://www.ibm.com/support/pages/lifecycle/search?q=5655-PYT)
 
@@ -45,6 +47,7 @@ All versions of **z/OS** and the **IBM Open Enterprise SDK for Python** that are
 ## Authorizations
 
 The following authorizations are required in order exploit all of the functionality that SEAR provides.
+
 * More details about the authorizations required for **IRRSMO00** can be found [here](https://www.ibm.com/docs/en/zos/latest?topic=operations-racf-authorization).
 * More details about the authorizations required for **IRRSEQ00** can be found [here](https://www.ibm.com/docs/en/zos/latest?topic=api-racf-authorization).
 
