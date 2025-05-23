@@ -8,7 +8,7 @@ $sear-foreground: #F7F7F9;
 
 $color-scheme: dark;
 $body-background-color: $sear-background;
-$body-heading-color: $grey-lt-000;
+$body-heading-color: $sear-foreground;
 $body-text-color: $sear-foreground;
 $link-color: $sear-tertiary;
 $nav-child-link-color: $grey-dk-000;
@@ -18,7 +18,7 @@ $btn-primary-color: $blue-200;
 $code-background-color: lighten($sear-background, 5%);
 $code-linenumber-color: $sear-foreground;
 $feedback-color: darken($sidebar-color, 3%);
-$table-background-color: $grey-dk-250;
-$search-background-color: $grey-dk-250;
+$table-background-color: lighten($sear-background, 15%);
+$search-background-color: lighten($sear-background, 15%);
 $search-result-preview-color: $grey-dk-000;
 $border-color: $grey-dk-200;
