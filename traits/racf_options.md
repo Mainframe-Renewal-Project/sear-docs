@@ -91,7 +91,7 @@ The following tables describes the racf options segments and traits that are sup
 | `"base:rvary_status_password"` | `rvarstpw` | `string` | `"set"` | `"alter"`<br>`"extract"` |
 | `"base:rvary_switch_password_format"` | `rvarswfn` | `string` | N/A | `"extract"` |
 | `"base:rvary_switch_password"` | `rvarswpw` | `string` | `"set"` | `"alter"`<br>`"extract"` |
-| `"base:log_commands_issuesd_by_special_users"` | `saudit` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
+| `"base:log_commands_issued_by_special_users"` | `saudit` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:security_label_control"` | `seclabct` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:secondary_language"` | `seclang` | `string` | `"set"` | `"alter"`<br>`"extract"` |
 | `"base:max_session_key_interval"` | `sessint` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
