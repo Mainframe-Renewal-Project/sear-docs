@@ -61,7 +61,7 @@ The following tables describes the user segments and traits that are supported f
 | `"base:has_passphrase"` | `hasphras` | `boolean` | N/A | `"extract"` |
 | `"base:has_password"` | `haspwd` | `boolean` | N/A | `"extract"` |
 | `"base:last_access_date"` | `lastdate` | `string` | N/A | `"extract"` |
-| `"base:last_acess_time"` | `lasttime` | `string` | N/A | `"extract"` |
+| `"base:last_access_time"` | `lasttime` | `string` | N/A | `"extract"` |
 | `"base:mfa_password_fallback"` | `mfaflbk` | `boolean` | N/A | `"extract"` |
 | `"base:mfa_policy"` | `mfapolnm` | `string` | N/A | `"extract"` |
 | `"base:mfa_policies"` | `mfapoln` | `repeat` | N/A | `"extract"` |
