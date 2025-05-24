@@ -51,7 +51,7 @@ The following tables describes the group segments and traits that are supported 
 ## `omvs`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
-| `"omvs:auto_gid"` | `autogid` | `string` | `"set"` | `"add"`<br>`"alter"` |
+| `"omvs:auto_gid"` | `autogid` | `boolean` | `"set"` | `"add"`<br>`"alter"` |
 | `"omvs:gid"` | `gid` | `uint` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"omvs:shared"` | `shared` | `string` | `"set"` | `"add"`<br>`"alter"` |
 
