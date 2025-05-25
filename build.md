@@ -1,6 +1,5 @@
 ---
-layout: page
-nav_exclude: true
+layout: default
 ---
 
 # Building from source
