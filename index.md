@@ -25,7 +25,7 @@ Security API for RACF (SEAR) - A standardized JSON interface for RACF that enabl
 
 ## Mission Statement
 
-As automation becomes more and more prevalent, the need to manage the security environment programmatically increases. On z/OS that means managing a security product like the IBM **Resource Access Control Facility** _(RACF)_. RACF is the primary facility for managing identity, authority, and access control for z/OS. There are more than 50 callable services with assembler interfaces that are part of the RACF API. The complete set of interfaces can be found [here](https://www.ibm.com/docs/en/zos/latest?topic=racf-zos-security-server-callable-services).
+As automation becomes more and more prevalent, the need to manage the security environment programmatically increases. On z/OS that means managing a security product like the IBM **Resource Access Control Facility** _(RACF)_. RACF is the primary facility for managing identity, authority, and access control for z/OS. There are more than 50 callable services with assembler interfaces that are part of the RACF API. The complete set of interfaces can be found [in the IBM documentation](https://www.ibm.com/docs/en/zos/latest?topic=racf-zos-security-server-callable-services).
 
 &nbsp;
 
@@ -42,14 +42,14 @@ All versions of **z/OS** and the **IBM Open Enterprise SDK for Python** that are
 
 * **R_SecMgtOper (IRRSMO00)**: Security Management Operations.
 * **R_Admin (IRRSEQ00)**: RACF Administration API.
-* **RACF Subsystem Address Space**: This is a dependency for both **IRRSMO00** and **IRRSEQ00**. More information can be found [here](https://www.ibm.com/docs/en/zos/latest?topic=considerations-racf-subsystem).
+* **RACF Subsystem Address Space**: This is a dependency for both **IRRSMO00** and **IRRSEQ00**. More information can be found [in the IBM documentation](https://www.ibm.com/docs/en/zos/latest?topic=considerations-racf-subsystem).
 
 ## Authorizations
 
 The following authorizations are required in order exploit all of the functionality that SEAR provides.
 
-* More details about the authorizations required for **IRRSMO00** can be found [here](https://www.ibm.com/docs/en/zos/latest?topic=operations-racf-authorization).
-* More details about the authorizations required for **IRRSEQ00** can be found [here](https://www.ibm.com/docs/en/zos/latest?topic=api-racf-authorization).
+* More details about the authorizations required for **IRRSMO00** can be found [in the IBM documentation](https://www.ibm.com/docs/en/zos/latest?topic=operations-racf-authorization).
+* More details about the authorizations required for **IRRSEQ00** can be found [in the IBM documentation](https://www.ibm.com/docs/en/zos/latest?topic=api-racf-authorization).
 
 &nbsp;
 
@@ -89,7 +89,7 @@ python3 -m pip install pysear
 &nbsp;
 
 {: .warning }
-> _Just because a **Programming Language Exploiter** is shown on this architecture diagram does not mean that there is or will be an interface created, maintained, and distributed by the SEAR team for that programming language. The interfaces currently maintained and distributed by the SEAR team can be found [here](./interfaces/)._
+> _Just because a **Programming Language Exploiter** is shown on this architecture diagram does not mean that there is or will be an interface created, maintained, and distributed by the SEAR team for that programming language. The interfaces currently maintained and distributed by the SEAR team can be found [in the interfaces page](./interfaces/)._
 
 &nbsp;
 
