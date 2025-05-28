@@ -4,8 +4,8 @@ has_children: true
 has_toc: false
 ---
 
-# Development
+# SEAR development
 
-The following pages contain information useful for contribution to the project or modifying the code:
+The following pages contain information useful for contributing to the project or modifying the code:
 
 * [Building from source](./build.md)

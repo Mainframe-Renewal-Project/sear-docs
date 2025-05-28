@@ -1,6 +1,6 @@
 ---
 layout: default
-parent: Development
+parent: SEAR development
 ---
 
 # Building from source
