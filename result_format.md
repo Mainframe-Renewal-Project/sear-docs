@@ -20,7 +20,8 @@ SEAR provides the following standardized JSON schema for security results return
   * `"messages"`<br>
     A `string` `array` containing the **Messages** produced during the processing of a **RACF Command** for which there may be **Zero**, **One**, or **Many**. These messages may be **Informational messages** or **Error messages**.
 
-  ###### JSON
+###### JSON
+
   ```json
   [
     {
@@ -48,7 +49,8 @@ SEAR provides the following standardized JSON schema for security results return
   * `"<segment>:<trait>"`<br>
     A **Key-Value Pair** that describes a **Trait**/**Attribute** within a **Segment**. The `<segment>` token describes the **Segment** that the **Trait** belongs to, and the `<trait>` token is the name of the **Trait**. See [Traits](../traits/) for more details about what **Traits** can be returned for each **Admin Type** and what **Data Types** are used for each one.
 
-  ###### JSON
+###### JSON
+
   ```json
   {
     "<segment>": {
@@ -114,11 +116,13 @@ SEAR provides the following standardized JSON schema for security results return
 &nbsp;
 
 The following **SEAR Result JSON** contains the result of an `"add"` **Operation** that created a new **z/OS Userid** called `SQUIDWRD` with the following **Traits**:
+
 * A **Name** of `"Squidward"`.
 * An **OMVS UID** of `24`.
 * An **OMVS Home Directory** of `"/u/squidwrd"`.
 
 ###### JSON
+
 ```json
 {
   "commands": [
@@ -145,6 +149,7 @@ The following **SEAR Result JSON** contains the result of an `"add"` **Operation
 The following **SEAR Result JSON** contains the result of an `"add"` **Operation** that was unable to create a new **z/OS Userid** called `SQUIDWRD` since a **z/OS Userid** already exists on the system with that name.
 
 ###### JSON
+
 ```json
 {
   "errors": [
@@ -162,6 +167,7 @@ The following **SEAR Result JSON** contains the result of an `"add"` **Operation
 The following **SEAR Result JSON** contains the result of a request that was never processed by RACF due to **Errors** in the corresponding **sear Request JSON**.
 
 ###### JSON
+
 ```json
 {
   "errors": [
@@ -180,6 +186,7 @@ The following **SEAR Result JSON** contains the result of a request that was nev
 The following **SEAR Result JSON** contains the result of an `"extract"` **Operation** that contains the **Profile Data** for a **z/OS Userid** called `SQUIDWRD`. 
 
 ###### JSON
+
 ```json
 {
   "profile": {
@@ -263,9 +270,10 @@ The following **SEAR Result JSON** contains the result of an `"extract"` **Opera
 }
 ```
 
-The following **SEAR Result JSON** contains the result of an `"extract"` **Operation** that failed because the **z/OS Userid** `SQUIDWRD` does **NOT** exist. 
+The following **SEAR Result JSON** contains the result of an `"extract"` **Operation** that failed because the **z/OS Userid** `SQUIDWRD` does **NOT** exist.
 
 ###### JSON
+
 ```json
 {
   "errors": [
