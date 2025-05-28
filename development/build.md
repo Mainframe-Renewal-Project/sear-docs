@@ -1,5 +1,6 @@
 ---
 layout: default
+parent: Development
 ---
 
 # Building from source
