@@ -12,3 +12,7 @@ The following programming language interfaces are currently available for SEAR.
 &nbsp;
 
 * [Python](./python.md)
+
+## Future interfaces
+
+On our [GitHub](https://github.com/Mainframe-Renewal-Project/sear/issues?q=is%3Aissue%20state%3Aopen%20label%3A%22language%20interface%22) you can see possible future language interfaces.
