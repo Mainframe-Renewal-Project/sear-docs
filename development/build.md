@@ -26,7 +26,7 @@ SEAR requires the following products from IBM:
 - RACF
 - z/OS 2.5 or later
 - [IBM OpenXL C/C++ 2.1](https://www.ibm.com/products/xl-cpp-compiler-zos) or later (1.1 won't work)
-- [Python](https://www.ibm.com/products/open-enterprise-python-zos) (3.13 or later)
+- [Python](https://www.ibm.com/products/open-enterprise-python-zos) (3.12 or later)
 
 This list will expand in the future as more language interfaces get added.
 
