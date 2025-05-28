@@ -7,7 +7,7 @@ nav_exclude: true
 
 &nbsp;
 
-Security API for RACF (SEAR) - A standardized JSON interface for RACF that enables seemless exploitation by programming languages that have a foreign language interface for C/C++ and native or third-party JSON support. SEAR is a fork of RACFu, an abandoned RACF API created by IBM.
+Security API for RACF (SEAR) - A standardized JSON interface for RACF that enables seamless exploitation by programming languages that have a foreign language interface for C/C++ and native or third-party JSON support. SEAR is a fork of RACFu, an abandoned RACF API created by IBM.
 {: .fs-6 .fw-300 }
 
 &nbsp;
@@ -20,16 +20,16 @@ Security API for RACF (SEAR) - A standardized JSON interface for RACF that enabl
 {: .warning }
 
 > * SEAR encodes the data it passes to RACF in Code Page `IBM-1047`._
-> * _If you are entering information with special or national characters, users viewing or altering this information from terminals using differnt or international codepages may see unexpected data._
+> * _If you are entering information with special or national characters, users viewing or altering this information from terminals using different or international codepages may see unexpected data._
 > * _Please consult a list of invariant characters to use for such information if this applies to you._
 
 ## Mission Statement
 
-As automation becomes more and more prevalent, the need to manage the security environment programmaticaly increases. On z/OS that means managing a security product like the IBM **Resource Access Control Facility** _(RACF)_. RACF is the primary facility for managing identity, authority, and access control for z/OS. There are more than 50 callable services with assembler interfaces that are part of the RACF API. The complete set of interfaces can be found [here](https://www.ibm.com/docs/en/zos/latest?topic=racf-zos-security-server-callable-services).
+As automation becomes more and more prevalent, the need to manage the security environment programmatically increases. On z/OS that means managing a security product like the IBM **Resource Access Control Facility** _(RACF)_. RACF is the primary facility for managing identity, authority, and access control for z/OS. There are more than 50 callable services with assembler interfaces that are part of the RACF API. The complete set of interfaces can be found [here](https://www.ibm.com/docs/en/zos/latest?topic=racf-zos-security-server-callable-services).
 
 &nbsp;
 
-While there are a number of languages that can be used to manage RACF, _(from low level lnaguages like Assembler to higher level languages like REXX)_, the need to be able to easily exploit RACF management functions using existing industry standard programming languages and even programming languages that don't exist yet is paramount. The SEAR project is focused on making RACF management functions available to all programming languages that have native or third-party JSON support and a foreign language interface for C/C++. This will make it easier to pivot to new tools and programming languages as technology, skills, and business needs continue to evolve in the forseeable future.
+While there are a number of languages that can be used to manage RACF, _(from low level languages like Assembler to higher level languages like REXX)_, the need to be able to easily exploit RACF management functions using existing industry standard programming languages and even programming languages that don't exist yet is paramount. The SEAR project is focused on making RACF management functions available to all programming languages that have native or third-party JSON support and a foreign language interface for C/C++. This will make it easier to pivot to new tools and programming languages as technology, skills, and business needs continue to evolve in the foreseeable future.
 
 ## Minimum z/OS & Language Versions
 

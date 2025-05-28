@@ -16,7 +16,7 @@ SEAR requires several things included with [zOpen](https://zopen.community/#/):
 - cmake
 - OpenSSL (necessary because of the certificate support)
 
-This list will expand in the future as more language intefaces get added.
+This list will expand in the future as more language interfaces get added.
 
 ### IBM
 
@@ -27,7 +27,7 @@ SEAR requires the following products from IBM:
 - [OpenXLC 2.1](https://www.ibm.com/products/xl-cpp-compiler-zos) or later (1.1 won't work)
 - [Python](https://www.ibm.com/products/open-enterprise-python-zos) (3.13 or later)
 
-This list will expand in the future as more language intefaces get added.
+This list will expand in the future as more language interfaces get added.
 
 ## Build process
 
