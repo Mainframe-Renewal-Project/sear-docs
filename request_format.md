@@ -149,6 +149,7 @@ The following **SEAR Request JSON** creates new new **z/OS Userid** called `SQUI
 * An **OMVS Home Directory** of `"/u/squidwrd"`.
 
 ###### JSON
+
 ```json
 {
   "operation": "add",
@@ -165,6 +166,7 @@ The following **SEAR Request JSON** creates new new **z/OS Userid** called `SQUI
 The following **SEAR Request JSON** alters an exsting **z/OS Userid** called `SQUIDWRD` by **Changing/Setting** the **Name Trait** to `"Squilliam"`. 
 
 ###### JSON
+
 ```json
 {
   "operation": "alter",
@@ -179,6 +181,7 @@ The following **SEAR Request JSON** alters an exsting **z/OS Userid** called `SQ
 The following **SEAR Request JSON** deletes an exsting **z/OS Userid** called `SQUIDWRD`. 
 
 ###### JSON
+
 ```json
 {
   "operation": "delete",
@@ -190,6 +193,7 @@ The following **SEAR Request JSON** deletes an exsting **z/OS Userid** called `S
 The following **SEAR Request JSON** extracts the **Profile Data** for a **z/OS Userid** called `SQUIDWRD`. 
 
 ###### JSON
+
 ```json
 {
   "operation": "extract",

@@ -26,30 +26,33 @@ The Python distribution of SEAR may also optionally be downloaded and installed 
 def sear(request: dict, debug: bool = False) -> SecurityResult:
 ```
 
-#### 📄 Description
+### 📄 Description
 
 Make a **Security Request** to RACF.
 
-#### 📥 Parameters
+### 📥 Parameters
 
 * `request` <br>
   A **Dictionary** that defines the **Security Request** to perform following the [SEAR Request JSON Format](../../request_format).
 
 * `debug` <br>
-  A **Boolean** that if set to `True` indicates that **Debug Messages** should be printed. If set to `False`, no **Debug Messages** will be printed. 
+  A **Boolean** that if set to `True` indicates that **Debug Messages** should be printed. If set to `False`, no **Debug Messages** will be printed.
 
-#### 📤 Returns
+### 📤 Returns
+
 * `SecurityResult`<br>
   An [Object](#searsecurityresult) that describes the **Security Request** that was made. 
 
-#### ❌ Raises
+### ❌ Raises
+
 This method does **NOT** raise any exceptions.
 
-#### 💻 Example
+### 💻 Example
 
 The following example issues a **Profile Extract** request to extract the profile data for the **z/OS Userid** `SQUIDWRD`.
 
-###### Python Script
+## Python Script
+
 ```python
 from sear import sear
 
@@ -75,7 +78,7 @@ class SecurityResult:
     ):
 ```
 
-#### 📄 Description
+### 📄 Description
 
 &nbsp;
 
@@ -100,11 +103,10 @@ An **Object** that describes a **Security Request** that was made.
 * `result` <br>
   A **Dictionary** that contains the **Post-Processed Security Result** following the [SEAR Result JSON Format](../../result_format).
 
-#### 💻 Example
+### 💻 Example
 
 The following example makes a **Profile Extract** request to extract the profile data for the **z/OS Userid** `SQUIDWRD`, and then displays all of the **Class Attributes** returned in the corresponding `SecurityResult` object.
 
-###### Python Script
 ```python
 from sear import sear
 import json
@@ -132,6 +134,7 @@ print(json.dumps(result.result, indent=2))
 ```
 
 ###### Console Output
+
 ```console
 SEAR Request JSON:
 {
