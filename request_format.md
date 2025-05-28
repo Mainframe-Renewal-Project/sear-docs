@@ -17,12 +17,12 @@ SEAR provides the following standardized JSON schema for issuing security reques
   &nbsp;
 
   {: .note }
-  > _Only the `"alter"` and `"extract"` **Operations** are allowed for the `"racf-options"` **Admin Type**._
+  > _Only the `"alter"` and `"extract"` **Operations** are allowed for the `"racf-options"` **Admin Type**.
 
   &nbsp;
 
   {: .note }
-  > _Only the `"alter"`, `"extract"`, and `"delete"` **Operations** are allowed for the `"permission"` **Admin Type**._
+  > _Only the `"alter"`, `"extract"`, and `"delete"` **Operations** are allowed for the `"permission"` **Admin Type**.
 
   &nbsp;
 
@@ -62,7 +62,7 @@ SEAR provides the following standardized JSON schema for issuing security reques
   &nbsp;
 
   {: .note }
-  > _`"class_name"` **MUST** be used to indicate which **Class Name** the specified **Security Profile** is associated with for the `"resource"` and `"permission"` **Admin Types**._
+  > _`"class_name"` **MUST** be used to indicate which **Class Name** the specified **Security Profile** is associated with for the `"resource"` and `"permission"` **Admin Types**.
 
   &nbsp;
 
@@ -72,7 +72,7 @@ SEAR provides the following standardized JSON schema for issuing security reques
   &nbsp;
 
   {: .note }
-  > _`"traits"` is **NOT** allowed to be used with `"extract"` and `"delete"` **Operations**._
+  > _`"traits"` is **NOT** allowed to be used with `"extract"` and `"delete"` **Operations**.
 
   &nbsp;
 
@@ -82,7 +82,7 @@ SEAR provides the following standardized JSON schema for issuing security reques
   &nbsp;
 
   {: .note }
-  > _`"class_name"` is **required** for and **only** allowed for the `"resource"` and `"permission"` **Admin Types**._
+  > _`"class_name"` is **required** for and **only** allowed for the `"resource"` and `"permission"` **Admin Types**.
 
   &nbsp;
 
@@ -92,12 +92,12 @@ SEAR provides the following standardized JSON schema for issuing security reques
   &nbsp;
 
   {: .note }
-  > _Only the `"data-set"` and `"permission"` **Admin Types** can be used with `"volume"`, and **only** for `"add"`, `"alter"`, and `"delete"` **Operations**._
+  > _Only the `"data-set"` and `"permission"` **Admin Types** can be used with `"volume"`, and **only** for `"add"`, `"alter"`, and `"delete"` **Operations**.
 
   &nbsp;
 
   {: .note }
-  > _Note that for the `"permission"` **Admin Type**, this parameter will only take effect if the `"class_name"` parameter is set to `"DATASET"`._
+  > _Note that for the `"permission"` **Admin Type**, this parameter will only take effect if the `"class_name"` parameter is set to `"DATASET"`.
 
   &nbsp;
 
@@ -107,12 +107,12 @@ SEAR provides the following standardized JSON schema for issuing security reques
   &nbsp;
 
   {: .note }
-  > _Only the `"data-set"` and `"permission"` **Admin Types** can be used with `"generic"`, and **only** for `"add"`, `"alter"`, and `"delete"` **Operations**._
+  > _Only the `"data-set"` and `"permission"` **Admin Types** can be used with `"generic"`, and **only** for `"add"`, `"alter"`, and `"delete"` **Operations**.
 
   &nbsp;
 
   {: .note }
-  > _Note that for the `"permission"` **Admin Type**, this parameter will only take effect if the `"class_name"` parameter is set to `"DATASET"`._
+  > _Note that for the `"permission"` **Admin Type**, this parameter will only take effect if the `"class_name"` parameter is set to `"DATASET"`.
 
   &nbsp;
 
@@ -139,16 +139,17 @@ SEAR provides the following standardized JSON schema for issuing security reques
 &nbsp;
 
 {: .note }
-> _These examples are **NOT** comprehensive and are primarily meant to show users the general structure of `"add"`, `"alter"`, `"extract"` and `"delete"` requests._
+> _These examples are **NOT** comprehensive and are primarily meant to show users the general structure of `"add"`, `"alter"`, `"extract"` and `"delete"` requests.
 
 &nbsp;
 
 The following **SEAR Request JSON** creates new new **z/OS Userid** called `SQUIDWRD` with the following **Traits**:
+
 * A **Name** of `"Squidward"`.
 * An **OMVS UID** of `24`.
 * An **OMVS Home Directory** of `"/u/squidwrd"`.
 
-###### JSON
+### JSON
 
 ```json
 {
@@ -163,9 +164,9 @@ The following **SEAR Request JSON** creates new new **z/OS Userid** called `SQUI
 }
 ```
 
-The following **SEAR Request JSON** alters an exsting **z/OS Userid** called `SQUIDWRD` by **Changing/Setting** the **Name Trait** to `"Squilliam"`. 
+The following **SEAR Request JSON** alters an exsting **z/OS Userid** called `SQUIDWRD` by **Changing/Setting** the **Name Trait** to `"Squilliam"`.
 
-###### JSON
+### JSON
 
 ```json
 {
@@ -178,9 +179,9 @@ The following **SEAR Request JSON** alters an exsting **z/OS Userid** called `SQ
 }
 ```
 
-The following **SEAR Request JSON** deletes an exsting **z/OS Userid** called `SQUIDWRD`. 
+The following **SEAR Request JSON** deletes an exsting **z/OS Userid** called `SQUIDWRD`.
 
-###### JSON
+### JSON
 
 ```json
 {
@@ -190,7 +191,7 @@ The following **SEAR Request JSON** deletes an exsting **z/OS Userid** called `S
 }
 ```
 
-The following **SEAR Request JSON** extracts the **Profile Data** for a **z/OS Userid** called `SQUIDWRD`. 
+The following **SEAR Request JSON** extracts the **Profile Data** for a **z/OS Userid** called `SQUIDWRD`.
 
 ###### JSON
 
