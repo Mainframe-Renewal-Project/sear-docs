@@ -104,7 +104,7 @@ SEAR provides the following standardized JSON schema for security results return
   | `"saf_return_code"` | A `number` describing the **SAF Return Code**. `"saf_return_code"` will be set to `null` when `"sear_return_code"` is `8`. |
   | `"racf_return_code"` | A `number` describing the **RACF Return Code**. `"racf_return_code"` will be set to `null` when `"sear_return_code"` is `8`. |
   | `"racf_reason_code"` | A `number` describing the **RACF Reason Code**. `"racf_reason_code"` will be set to `null` when `"sear_return_code"` is `8`. |
-  | `"sear_return_code"` | A `number` describing the **SEAR Return Code**. `"sear_return_code"` will be set to `0` when there are no errors, `4` when an error occured within the call to the corresponding **RACF Callable Service**, and `8` when **SEAR** encounters an error that prevented the request from being **Proccessed** by the corresponding **RACF Callable Service** or prevented the result from the corresponding **RACF Callable Service** from being **Post-Processed**. |
+  | `"sear_return_code"` | A `number` describing the **SEAR Return Code**. `"sear_return_code"` will be set to `0` when there are no errors, `4` when an error occurred within the call to the corresponding **RACF Callable Service**, and `8` when **SEAR** encounters an error that prevented the request from being **Processed** by the corresponding **RACF Callable Service** or prevented the result from the corresponding **RACF Callable Service** from being **Post-Processed**. |
 
 ## 💻 Result Examples
 
