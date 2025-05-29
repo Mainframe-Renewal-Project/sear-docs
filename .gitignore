@@ -5,7 +5,6 @@ _site
 vendor
 poetry.lock
 
-.vscode
 Gemfile.lock
 .coverage
 pyracf/
