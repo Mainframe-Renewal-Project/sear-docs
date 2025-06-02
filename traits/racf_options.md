@@ -12,7 +12,7 @@ The following tables describes the racf options segments and traits that are sup
 &nbsp;
 
 {: .note }
-> _More information about **RACF Keys** can be found [here](https://www.ibm.com/docs/en/zos/latest?topic=services-reference-documentation-tables)._
+> _More information about **RACF Keys** can be found [in the IBM documentation](https://www.ibm.com/docs/en/zos/latest?topic=services-reference-documentation-tables)._
 
 &nbsp;
 
