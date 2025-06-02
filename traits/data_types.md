@@ -25,6 +25,7 @@ The following table provides some notes about how the standard JSON data types a
 The following shows an example of a `string` **Trait**.
 
 ###### JSON
+
 ```json
 "base:name": "SQUIDWARD"
 ```
@@ -32,6 +33,7 @@ The following shows an example of a `string` **Trait**.
 The following shows an example of a `number` **Trait**.
 
 ###### JSON
+
 ```json
 "omvs:uid": 24
 ```
@@ -39,6 +41,7 @@ The following shows an example of a `number` **Trait**.
 The following shows an example of a `string` `array` **Trait** as it would be specified for an `"Add"` or `"alter"` **Operation**.
 
 ###### JSON
+
 ```json
 "add:base:class_authorization": ["FACILITY", "XFACILIT"]
 ```
@@ -46,6 +49,7 @@ The following shows an example of a `string` `array` **Trait** as it would be sp
 The following shows an example of an `object` `array` **Trait** as it would be returned as a result of an `"extract"` **Operation**.
 
 ###### JSON
+
 ```json
 "base:logon_allowed_days": [
   {
@@ -75,6 +79,7 @@ The following shows an example of an `object` `array` **Trait** as it would be r
 The following shows an example of a `boolean` **Trait**.
 
 ###### JSON
+
 ```json
 "base:special": true
 ```
@@ -82,6 +87,7 @@ The following shows an example of a `boolean` **Trait**.
 The following shows an example of a **Trait** that is being unset on an `"add"` or `"alter"` request by setting the value to `null`.
 
 ###### JSON
+
 ```json
 "base:installation_data": null
 ```
@@ -89,6 +95,7 @@ The following shows an example of a **Trait** that is being unset on an `"add"` 
 The following shows an example of a **Trait** that was returned as a result of an `"extract"` **Operation** that is **Unset** and therefore set to `null`.
 
 ###### JSON
+
 ```json
 "base:group_connection_last_connect_date": null
 ```
