@@ -1,7 +1,13 @@
 {
     "cSpell.words": [
+        "cdtinfo",
+        "cfdef",
         "cics",
         "codepages",
+        "dlfdata",
+        "icsf",
+        "ictx",
+        "idtparms",
         "IRRSEQ",
         "IRRSMO",
         "LISTDSD",
@@ -13,10 +19,12 @@
         "PRECHECK",
         "pysear",
         "racf",
+        "raclist",
         "RADMIN",
         "RLIST",
         "SETROPTS",
         "SURROGAT",
+        "vtoc",
         "XFACILIT"
     ]
 }
