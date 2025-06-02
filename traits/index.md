@@ -7,7 +7,7 @@ has_toc: false
 
 # Traits
 
-The following pages decribe all of the valid traits for each admin type.
+The following pages describe all of the valid traits for each admin type.
 {: .fs-6 .fw-300 }
 
 &nbsp;
