@@ -36,12 +36,14 @@ Operators are specified using the format `<operator>:<segment>:<trait>`, where t
 &nbsp;
 
 The following **SEAR Trait JSON** describes modifications to the following **User Traits**:
+
 * **Set** the **OMVS UID** to `24`.
 * **Add** `FACILITY` and `XFACILIT` to the **Class Authorizations** list.
 * **Remove** `TERMINAL` from the **Class Authorizations** list.
 * **Delete** the existing value for **TSO User Data** if there is one.
 
 ###### JSON
+
 ```json
 {
   "set:omvs:uid": 24,
@@ -52,10 +54,12 @@ The following **SEAR Trait JSON** describes modifications to the following **Use
 ```
 
 The following **SEAR Trait JSON** describes modifications to the following **User Traits** **Without** the use of **Operators**:
+
 * **Set** the **OMVS UID** to `24`.
 * **Delete** the existing value for **TSO User Data** if there is one.
 
 ###### JSON
+
 ```json
 {
   "omvs:uid": 24,
