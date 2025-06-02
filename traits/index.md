@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Traits
 has_children: true
 has_toc: false
 ---
