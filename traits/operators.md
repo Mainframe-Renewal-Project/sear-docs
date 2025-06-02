@@ -6,7 +6,7 @@ nav_order: z
 
 # Operators
 
-The following operators can be used to tell RACF how a trait should be processed by add and alter oprations.
+The following operators can be used to tell RACF how a trait should be processed by add and alter operations.
 {: .fs-6 .fw-300 }
 
 &nbsp;
