@@ -12,7 +12,7 @@ The following tables describes the group connection segments and traits that are
 &nbsp;
 
 {: .note }
-> _More information about **RACF Keys** can be found [here](https://www.ibm.com/docs/en/zos/latest?topic=services-reference-documentation-tables)._
+> _More information about **RACF Keys** can be found [in the IBM documentation](https://www.ibm.com/docs/en/zos/latest?topic=services-reference-documentation-tables)._
 
 &nbsp;
 
