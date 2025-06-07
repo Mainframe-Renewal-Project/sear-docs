@@ -9,3 +9,5 @@ Documentation site at [mainframe-renewal-project.github.io/sear-docs](https://ma
 Main repository at [github.com/Mainframe-Renewal-Project/sear](https://github.com/Mainframe-Renewal-Project/sear)
 
 Development discussions at [System Z Enthusiasts](https://discord.gg/sze)
+
+Download on [PyPi](https://pypi.org/project/pysear/)
