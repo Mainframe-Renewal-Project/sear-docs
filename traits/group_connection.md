@@ -32,8 +32,8 @@ The following tables describes the group connection segments and traits that are
 | `"base:authority"` | `auth` | `string` | `"set"` | `"alter"`<br>`"extract"` |
 | `"base:connection_create_date"` | `cgauthda` | `string` | N/A | `"extract"` |
 | `"base:connection_used_count"` | `cginitct` | `uint` | N/A | `"extract"` |
-| `"base:connecion_last_used_date"` | `cgljdate` | `string` | N/A | `"extract"` |
-| `"base:connecion_last_used_time"` | `cgljtime` | `string` | N/A | `"extract"` |
+| `"base:connection_last_used_date"` | `cgljdate` | `string` | N/A | `"extract"` |
+| `"base:connection_last_used_time"` | `cgljtime` | `string` | N/A | `"extract"` |
 | `"base:group_access"` | `grpacc` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:operations"` | `oper` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:owner"` | `owner` | `string` | `"set"` | `"alter"`<br>`"extract"` |

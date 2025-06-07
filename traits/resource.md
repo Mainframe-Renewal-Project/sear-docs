@@ -88,7 +88,7 @@ The following tables describes the resource segments and traits that are support
 | `"cdtinfo:generic_profile_sharing"` | `cdtgenl` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"cdtinfo:grouping_class_name"` | `cdtgroup` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"cdtinfo:key_qualifiers"` | `cdtkeyql` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
-| `"cdtinfo:manditory_access_control_processing"` | `cdtmac` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
+| `"cdtinfo:mandatory_access_control_processing"` | `cdtmac` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"cdtinfo:max_length"` | `cdtmaxln` | `uint` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"cdtinfo:max_length_entityx"` | `cdtmaxlx` | `uint` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"cdtinfo:member_class_name"` | `cdtmembr` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
@@ -154,7 +154,7 @@ The following tables describes the resource segments and traits that are support
 | `"icsf:symmetric_export_public_keys"` | `keylblct` | `repeat` | N/A | `"extract"` |
 | `"icsf:symmetric_cpacf_rewrap"` | `scpwrap` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"icsf:symmetric_cpacf_rewrap_return"` | `scpret` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
-| `"icsf:asymetric_key_usage"` | `usage` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
+| `"icsf:asyMmetric_key_usage"` | `usage` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"icsf:key_usage_options"` | `usagect` | `repeat` | N/A | `"extract"` |
 
 ## `ictx`
