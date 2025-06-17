@@ -27,7 +27,7 @@ The following tables describes the group connection segments and traits that are
 ## `base`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
-| `"base:automatic_data_set_protection"` | `adsp` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
+| `"base:automatic_dataset_protection"` | `adsp` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:auditor"` | `auditor` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:authority"` | `auth` | `string` | `"set"` | `"alter"`<br>`"extract"` |
 | `"base:connection_create_date"` | `cgauthda` | `string` | N/A | `"extract"` |
