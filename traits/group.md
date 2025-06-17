@@ -32,7 +32,7 @@ The following tables describes the group segments and traits that are supported 
 | `"base:connected_userid"` | `guserid` | `string` | N/A | `"extract"` |
 | `"base:create_date"` | `creatdat` | `string` | N/A | `"extract"` |
 | `"base:installation_data"` | `data` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
-| `"base:data_set_model"` | `model` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
+| `"base:dataset_model"` | `model` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"base:owner"` | `owner` | `string` | `"set"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"base:subgroups"` | `subgrpct` | `repeat` | N/A | `"extract"` |
 | `"base:subgroup"` | `subgroup` | `string` | `"set"`<br>`"delete"` | `"extract"` |

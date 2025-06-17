@@ -14,7 +14,7 @@ The following pages describe all of the valid traits for each admin type.
 * [User Traits](./user.md)
 * [Group Traits](./group.md)
 * [Group Connection](./group_connection.md)
-* [Data Set Traits](./data_set.md)
+* [Data Set Traits](./dataset.md)
 * [General Resource Traits](./resource.md)
 * [Permission Traits](./permission.md)
 * [RACF Options](./racf_options.md)

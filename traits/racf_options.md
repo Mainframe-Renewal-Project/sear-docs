@@ -28,18 +28,18 @@ The following tables describes the racf options segments and traits that are sup
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"base:add_creator_to_access_list"` | `addcreat` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
-| `"base:automatic_data_set_protection"` | `adsp` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
+| `"base:automatic_dataset_protection"` | `adsp` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:application_logon_auditing"` | `applaudt` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:audit_classes"` | `audit` | `string` | `"add"`<br>`"remove"` | `"alter"`<br>`"extract"` |
-| `"base:uncataloged_data_set_access"` | `catdsns` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
+| `"base:uncataloged_dataset_access"` | `catdsns` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:active_classes"` | `classact` | `string` | `"add"`<br>`"remove"` | `"alter"`<br>`"extract"` |
 | `"base:statistics_classes"` | `classtat` | `repeat` | `"add"`<br>`"remove"` | `"alter"`<br>`"extract"` |
 | `"base:log_racf_command_violations"` | `cmdviol` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:security_label_compatibility_mode"` | `compmode` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:enhanced_generic_naming"` | `egn` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
-| `"base:erase_data_sets_on_delete"` | `erase` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
-| `"base:erase_data_sets_on_delete_all"` | `eraseall` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
-| `"base:erase_data_sets_on_delete_security_level"` | `erasesec` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
+| `"base:erase_datasets_on_delete"` | `erase` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
+| `"base:erase_datasets_on_delete_all"` | `eraseall` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
+| `"base:erase_datasets_on_delete_security_level"` | `erasesec` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:generic_command_classes"` | `gencmd` | `repeat` | `"add"`<br>`"remove"` | `"alter"`<br>`"extract"` |
 | `"base:generic_profile_checking_classes"` | `generic` | `repeat` | `"add"`<br>`"remove"` | `"alter"`<br>`"extract"` |
 | `"base:generic_profile_sharing_classes"` | `genlist` | `string` | `"add"`<br>`"remove"` | `"alter"`<br>`"extract"` |
@@ -76,15 +76,15 @@ The following tables describes the racf options segments and traits that are sup
 | `"base:profile_modelling_user"` | `moduser` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:log_operator_actions"` | `operaudt` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:passphrase_change_interval"` | `phrint` | `string` | `"set"` | `"alter"`<br>`"extract"` |
-| `"base:data_set_single_level_name_prefix_protection"` | `prefix` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
+| `"base:dataset_single_level_name_prefix_protection"` | `prefix` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:primary_language"` | `primlang` | `string` | `"set"` | `"alter"`<br>`"extract"` |
-| `"base:protect_all_data_sets"` | `protall` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
+| `"base:protect_all_datasets"` | `protall` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:password_encryption_algorithm"` | `pwdalg` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:special_character_password_support"` | `pwdspec` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:raclist"` | `raclist` | `repeat` | `"add"`<br>`"remove"` | `"alter"`<br>`"extract"` |
-| `"base:log_real_data_set_name"` | `realdsn` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
+| `"base:log_real_dataset_name"` | `realdsn` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:refresh"` | `refresh` | `boolean` | `"set"` | `"alter"`<br>`"extract"` |
-| `"base:tape_data_set_security_retention_period"` | `retpd` | `unit` | `"set"` | `"alter"`<br>`"extract"` |
+| `"base:tape_dataset_security_retention_period"` | `retpd` | `unit` | `"set"` | `"alter"`<br>`"extract"` |
 | `"base:max_incorrect_password_attempts"` | `revoke` | `uint` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:password_rules"` | `rules` | `boolean` | `"delete"` | `"alter"`<br>`"extract"` |
 | `"base:rvary_status_password_format"` | `rvarstfm` | `string` | N/A | `"extract"` |
@@ -98,7 +98,7 @@ The following tables describes the racf options segments and traits that are sup
 | `"base:security_label_auditing"` | `slabaudt` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:security_label_system"` | `slbysys` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:security_level_auditing"` | `slevaudt` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
-| `"base:tape_data_set_protection"` | `tapedsn` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
+| `"base:tape_dataset_protection"` | `tapedsn` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:terminal_universal_access"` | `terminal` | `string` | `"set"` | `"alter"`<br>`"extract"` |
 | `"base:password_expiration_warning"` | `warning` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:program_control"` | `whenprog` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |

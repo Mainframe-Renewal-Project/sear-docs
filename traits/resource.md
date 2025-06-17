@@ -66,7 +66,7 @@ The following tables describes the resource segments and traits that are support
 | `"base:global_auditing"` | `rgaudit` | `string` | N/A | `"extract"` |
 | `"base:security_label"` | `seclabel` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"` |
 | `"base:security_level"` | `seclevel` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"` |
-| `"base:single_data_set_tape_volume"` | `singldsn` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"` |
+| `"base:single_dataset_tape_volume"` | `singldsn` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"` |
 | `"base:time_zone"` | `timezone` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"` |
 | `"base:tape_vtoc"` | `tvtoc` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"base:universal_access"` | `uacc` | `string` | `"set"` | `"add"`<br>`"alter"` |
