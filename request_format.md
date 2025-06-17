@@ -47,7 +47,7 @@ SEAR provides the following standardized JSON schema for issuing security reques
   | `"group"` | Used for **Group** administration. |
   | `"group-connection"` | Used for **Group Connection** administration. |
   | `"resource"` | Used for **General Resource Profile** administration. |
-  | `"data-set"` | Used for **Data Set** administration. |
+  | `"dataset"` | Used for **Data Set** administration. |
   | `"racf-options"` | Used for **RACF Options** administration. |
   | `"permission"` | Used for **Permission** administration. |
 
@@ -92,7 +92,7 @@ SEAR provides the following standardized JSON schema for issuing security reques
   &nbsp;
 
   {: .note }
-  > _Only the `"data-set"` and `"permission"` **Admin Types** can be used with `"volume"`, and **only** for `"add"`, `"alter"`, and `"delete"` **Operations**.
+  > _Only the `"dataset"` and `"permission"` **Admin Types** can be used with `"volume"`, and **only** for `"add"`, `"alter"`, and `"delete"` **Operations**.
 
   &nbsp;
 
@@ -107,7 +107,7 @@ SEAR provides the following standardized JSON schema for issuing security reques
   &nbsp;
 
   {: .note }
-  > _Only the `"data-set"` and `"permission"` **Admin Types** can be used with `"generic"`, and **only** for `"add"`, `"alter"`, and `"delete"` **Operations**.
+  > _Only the `"dataset"` and `"permission"` **Admin Types** can be used with `"generic"`, and **only** for `"add"`, `"alter"`, and `"delete"` **Operations**.
 
   &nbsp;
 

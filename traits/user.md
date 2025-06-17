@@ -27,7 +27,7 @@ The following tables describes the user segments and traits that are supported f
 ## `base`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
-| `"base:automatic_data_set_protection"` | `adsp` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
+| `"base:automatic_dataset_protection"` | `adsp` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"base:auditor"` | `auditor` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"base:default_group_authority"` | `auth` | `string` | `"set"` | `"add"`<br>`"alter"` |
 | `"base:security_category"` | `category` | `string` | `"add"`<br>`"remove"` | `"add"`<br>`"alter"`<br>`"extract"` |
@@ -35,11 +35,11 @@ The following tables describes the user segments and traits that are supported f
 | `"base:class_authorization"` | `clauth` | `string` | `"add"`<br>`"remove"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"base:class_authorizations"` | `clcnt` | `repeat` | N/A | `"extract"` |
 | `"base:group_connections"` | `connects` | `repeat` | N/A | `"extract"` |
-| `"base:group_connection_automatic_data_set_protection"` | `cadsp` | `boolean` | N/A | `"extract"` |
+| `"base:group_connection_automatic_dataset_protection"` | `cadsp` | `boolean` | N/A | `"extract"` |
 | `"base:group_connection_auditor"` | `cauditor` | `boolean` | N/A | `"extract"` |
 | `"base:group_connection_create_date"` | `cauthda` | `string` | N/A | `"extract"` |
 | `"base:group_connection_group"` | `cgroup` | `string` | N/A | `"extract"` |
-| `"base:group_connection_data_set_access"` | `cgrpacc` | `string` | N/A | `"extract"` |
+| `"base:group_connection_dataset_access"` | `cgrpacc` | `string` | N/A | `"extract"` |
 | `"base:group_connection_used_count"` | `cinitct` | `uint` | N/A | `"extract"` |
 | `"base:group_connection_last_connect_date"` | `cljdate` | `string` | N/A | `"extract"` |
 | `"base:group_connection_last_connect_time"` | `cljtime` | `string` | N/A | `"extract"` |
@@ -57,7 +57,7 @@ The following tables describes the user segments and traits that are supported f
 | `"base:mfa_factors"` | `factorn` | `repeat` | N/A | `"extract"` |
 | `"base:mfa_active"` | `facactv` | `boolean` | N/A | `"extract"` |
 | `"base:group"` | `group` | `string` | `"set"` | `"alter"` |
-| `"base:group_data_set_access"` | `grpacc` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
+| `"base:group_dataset_access"` | `grpacc` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"base:has_passphrase"` | `hasphras` | `boolean` | N/A | `"extract"` |
 | `"base:has_password"` | `haspwd` | `boolean` | N/A | `"extract"` |
 | `"base:last_access_date"` | `lastdate` | `string` | N/A | `"extract"` |
@@ -65,7 +65,7 @@ The following tables describes the user segments and traits that are supported f
 | `"base:mfa_password_fallback"` | `mfaflbk` | `boolean` | N/A | `"extract"` |
 | `"base:mfa_policy"` | `mfapolnm` | `string` | N/A | `"extract"` |
 | `"base:mfa_policies"` | `mfapoln` | `repeat` | N/A | `"extract"` |
-| `"base:model_data_set"` | `model` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
+| `"base:model_dataset"` | `model` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"base:name"` | `name` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"base:require_operator_id_card"` | `oidcard` | `boolean` | `"delete"` | `"add"`<br>`"alter"` |
 | `"base:operations"` | `oper` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
@@ -250,7 +250,7 @@ The following tables describes the user segments and traits that are supported f
 | `"tso:security_label"` | `seclabel` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"tso:default_region_size"` | `size` | `uint` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"tso:sysout_class"` | `sysoutcl` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
-| `"tso:data_set_allocation_unit"` | `unit` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
+| `"tso:dataset_allocation_unit"` | `unit` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"tso:user_data"` | `userdata` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
 ## `workattr`
