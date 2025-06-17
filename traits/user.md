@@ -83,7 +83,7 @@ The following tables describes the user segments and traits that are supported f
 | `"base:resume_date"` | `resume` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:revoke_date"` | `revoke` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:revoked"` | `revokefl` | `boolean` | N/A | `"extract"` |
-| `"base:audit_responsibility"` | `roaudit` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
+| `"base:read_only_auditor"` | `roaudit` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"base:security_label"` | `seclabel` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"base:security_level"` | `seclevel` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"base:special"` | `special` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |

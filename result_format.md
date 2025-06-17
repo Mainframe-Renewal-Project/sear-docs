@@ -192,7 +192,7 @@ The following **SEAR Result JSON** contains the result of an `"extract"` **Opera
   "profile": {
     "base": {
       "base:audit_logging": false,
-      "base:audit_responsibility": false,
+      "base:read_only_auditor": false,
       "base:auditor": false,
       "base:automatic_data_set_protection": false,
       "base:create_date": "09/13/24",
