@@ -106,7 +106,7 @@ flowchart TD
  subgraph s2["HLASM"]
         n4["IRRSEQ00 (31-bit OSLINK EBCDIC)"]
   end
-    A["Python exploiter"] --- n3@{ label: "<span style=\"padding-left:\">JSON (ASCII)</span>" }
+    A["Python interface"] --- n3@{ label: "<span style=\"padding-left:\">JSON (ASCII)</span>" }
     n3 --- n1
     n1 --- n5 & n7 & n12
     n5 --- n2
@@ -125,6 +125,8 @@ flowchart TD
     n18 --- n1
     n11 --- n19["Binary (EBCDIC)"]
     n19 --- n10
+    n20["C/C++ interface"] --- n21@{ label: "<span style=\"padding-left:\">JSON (ASCII)</span>" }
+    n21 --- n1
     n1@{ shape: rounded}
     n2@{ shape: rounded}
     n5@{ shape: rounded}
@@ -145,6 +147,8 @@ flowchart TD
     n17@{ shape: rounded}
     n18@{ shape: text}
     n19@{ shape: text}
+    n20@{ shape: rounded}
+    n21@{ shape: text}
      n1:::Class_08
      n2:::Class_06
      n5:::Class_07
@@ -179,6 +183,12 @@ flowchart TD
      n17:::Class_04
      n18:::Ash
      n19:::Ash
+     n20:::Pine
+     n20:::Class_01
+     n20:::Class_01
+     n20:::Class_01
+     n20:::Class_09
+     n21:::Ash
     classDef Pine stroke-width:1px, stroke-dasharray:none, stroke:#254336, fill:#27654A, color:#FFFFFF
     classDef Class_02 fill:#68d7e2, color:#000000
     classDef Class_03 fill:#ec2025, color:#FFFFFF, stroke:#000000
@@ -189,4 +199,6 @@ flowchart TD
     classDef Class_05 fill:#757575, color:#FFFFFF
     classDef Class_07 fill:#FF6D00, color:#FFFFFF
     classDef Class_08 fill:#FFFFFF, color:#000000, stroke:#000000
+    classDef Class_09 fill:#00559e, stroke:transparent, color:#FFFFFF
+
 </pre>
