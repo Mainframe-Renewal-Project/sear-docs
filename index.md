@@ -94,33 +94,101 @@ python3 -m pip install pysear
 &nbsp;
 
 <pre class="mermaid">
-  flowchart TD
-    c(C/C++ Exploiter)-- JSON (ASCII) ---SEAR
-    style c fill:#01559e,color:#fff,stroke:#01559e
-    python(Python Exploiter)-- JSON (ASCII) ---SEAR
-    style python fill:#ffcb3c,color:#000,stroke:#ffcb3c
-    nodejs(Node.JS Exploiter)-- JSON (ASCII) ---SEAR
-    style nodejs fill:#417e38,color:#fff,stroke:#417e38
-    java(Java Exploiter)-- JSON (ASCII) ---SEAR
-    style java fill:#ec2025,color:#fff,stroke:#ec2025
-    subgraph C/C+
-        SEAR(["SEAR (64-bit XPLINK ASCII)"])
-        style SEAR fill:#0096ff,color:#fff,stroke:#0096ff
-        SEAR --- Extract(Extract)
-        SEAR --- Add(Add)
-        SEAR --- Alter(Alter)
-        SEAR --- Delete(Delete)
-        Add-- XML (EBCDIC) ---IRRSMO00("IRRSMO00 (64-bit OSLINK EBCDIC)")
-        Alter-- XML (EBCDIC) ---IRRSMO00
-        Delete-- XML (EBCDIC) ---IRRSMO00
-        style IRRSMO00 fill:#33a,color:#fff,stroke:#33a
-    end
-    subgraph HLASM
-        Extract-- Binary (EBCDIC) ---IRRSEQ00("IRRSEQ00 (31-bit OSLINK EBCDIC)")
-        IRRSMO00-- Binary (EBCDIC) ---IRRSEQ00
-        style IRRSEQ00 fill:#33a,color:#fff,stroke:#33a
-    end
-    IRRSEQ00 --- SAF(SAF)
-    SAF --- RACF[(RACF)]
+flowchart TD
+ subgraph s1["C/C++"]
+        n1["Security API for RACF (SEAR)"]
+        n2@{ label: "<span style=\"padding-left:\">IRRSMO00 (64-bit OSLINK EBCDIC)</span>" }
+        n5["User, group, dataset, and resource operation (Add, alter, delete)"]
+        n11["IRRSDL64"]
+        n12["Certificate managment operation (Add, extract, delete)"]
+        n7@{ label: "<span style=\"padding-left:\">User, group, dataset, and resource operation</span>(Extract or Search)" }
+  end
+ subgraph s2["HLASM"]
+        n4["IRRSEQ00 (31-bit OSLINK EBCDIC)"]
+  end
+    A["Python exploiter"] --- n3@{ label: "<span style=\"padding-left:\">JSON (ASCII)</span>" }
+    n3 --- n1
+    n1 --- n5 & n7 & n12
+    n5 --- n2
+    n2 --- n6["Binary (EBCDIC)"]
+    n6 --- n4
+    n7 --- n8["Binary (EBCDIC)"]
+    n8 --- n4
+    n10["SAF"] --- n9["RACF"]
+    n4 --- n10
+    n12 --- n11
+    n13["Golang (future interface)"] --- n14@{ label: "<span style=\"padding-left:\">JSON (ASCII)</span>" }
+    n14 --- n1
+    n15["Java (future interface)"] --- n16@{ label: "<span style=\"padding-left:\">JSON (ASCII)</span>" }
+    n16 --- n1
+    n17["Node.js (future interface)"] --- n18@{ label: "<span style=\"padding-left:\">JSON (ASCII)</span>" }
+    n18 --- n1
+    n11 --- n19["Binary (EBCDIC)"]
+    n19 --- n10
+    n1@{ shape: rounded}
+    n2@{ shape: rounded}
+    n5@{ shape: rounded}
+    n11@{ shape: rounded}
+    n12@{ shape: rounded}
+    n7@{ shape: rounded}
+    n4@{ shape: rounded}
+    A@{ shape: rounded}
+    n3@{ shape: text}
+    n6@{ shape: text}
+    n8@{ shape: text}
+    n10@{ shape: rounded}
+    n9@{ shape: cyl}
+    n13@{ shape: rounded}
+    n14@{ shape: text}
+    n15@{ shape: rounded}
+    n16@{ shape: text}
+    n17@{ shape: rounded}
+    n18@{ shape: text}
+    n19@{ shape: text}
+     n1:::Class_08
+     n2:::Class_06
+     n5:::Class_07
+     n11:::Class_06
+     n12:::Class_07
+     n7:::Class_07
+     n4:::Class_06
+     A:::Pine
+     A:::Class_01
+     A:::Class_01
+     A:::Class_01
+     n3:::Ash
+     n6:::Ash
+     n8:::Ash
+     n10:::Class_05
+     n9:::Class_05
+     n13:::Pine
+     n13:::Class_01
+     n13:::Class_02
+     n14:::Ash
+     n15:::Pine
+     n15:::Class_01
+     n15:::Class_02
+     n15:::Class_03
+     n15:::Class_03
+     n16:::Ash
+     n17:::Pine
+     n17:::Class_01
+     n17:::Class_02
+     n17:::Class_03
+     n17:::Class_03
+     n17:::Class_04
+     n18:::Ash
+     n19:::Ash
+    classDef Pine stroke-width:1px, stroke-dasharray:none, stroke:#254336, fill:#27654A, color:#FFFFFF
+    classDef Class_02 fill:#68d7e2, color:#000000
+    classDef Class_03 fill:#ec2025, color:#FFFFFF, stroke:#000000
+    classDef Class_01 fill:#FFD600, color:#000000
+    classDef Class_04 fill:#417e38, color:#FFFFFF, stroke:transparent
+    classDef Ash stroke-width:1px, stroke-dasharray:none, stroke:#999999, fill:#EEEEEE, color:#000000
+    classDef Class_06 stroke:#2962FF, fill:#2962FF, color:#FFFFFF
+    classDef Class_05 fill:#757575, color:#FFFFFF
+    classDef Class_07 fill:#FF6D00, color:#FFFFFF
+    classDef Class_08 fill:#FFFFFF, color:#000000, stroke:#000000
+
 
 </pre>
