@@ -21,9 +21,9 @@ from sear import sear
 
 result = sear(
     {
-    "operation": "extract",
-    "admin_type": "user",
-    "userid": "FDEGILIO",
+        "operation": "extract",
+        "admin_type": "user",
+        "userid": "FDEGILIO",
     },
 )
 
@@ -129,9 +129,9 @@ from sear import sear
 
 result = sear(
     {
-    "operation": "search",
-    "admin_type": "user",
-    "userid_filter": "ZWE",
+        "operation": "search",
+        "admin_type": "user",
+        "userid_filter": "ZWE",
     },
 )
 
@@ -152,14 +152,14 @@ from sear import sear
 
 result = sear(
     {
-    "operation": "add",
-    "admin_type": "user",
-    "userid": "ESWIFT",
-    "traits": {
-        "base:name": "ELIJAH SWIFT",
-        "omvs:uid": 24,
-        "omvs:home_directory": "/home/ESWIFT",
-    },
+        "operation": "add",
+        "admin_type": "user",
+        "userid": "ESWIFT",
+        "traits": {
+            "base:name": "ELIJAH SWIFT",
+            "omvs:uid": 24,
+            "omvs:home_directory": "/home/ESWIFT",
+        },
     }
 )
 
@@ -176,14 +176,14 @@ from sear import sear
 
 result = sear(
     {
-    "operation": "alter",
-    "admin_type": "user",
-    "userid": "LEONARD",
-    "traits": {
-        "base:name": "LEONARD CARCARAMO",
-        "base:special": True,
-        "base:read_only_auditor": True,
-    },
+        "operation": "alter",
+        "admin_type": "user",
+        "userid": "LEONARD",
+        "traits": {
+            "base:name": "LEONARD CARCARAMO",
+            "base:special": True,
+            "base:read_only_auditor": True,
+        },
     }
 )
 
@@ -200,9 +200,9 @@ from sear import sear
 
 result = sear(
     {
-    "operation": "delete",
-    "admin_type": "user",
-    "userid": "LEONARD",
+        "operation": "delete",
+        "admin_type": "user",
+        "userid": "LEONARD",
     },
 )
 

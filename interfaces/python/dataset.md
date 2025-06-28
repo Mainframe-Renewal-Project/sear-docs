@@ -20,12 +20,12 @@ The sample below extracts information about a dataset profile called `"FDEGILIO.
 from sear import sear
 
 result = sear(
-        {
+    {
         "operation": "extract",
         "admin_type": "dataset",
         "dataset": "FDEGILIO.TEST.*",
-        },
-    )
+    },
+)
 
 print(result.result)
 ```
@@ -77,12 +77,12 @@ The sample below gets all dataset profiles that start with `LEONARD`. It will re
 from sear import sear
 
 result = sear(
-        {
+    {
         "operation": "search",
         "admin_type": "dataset",
         "dataset_filter": "LEONARD",
-        },
-    )
+    },
+ )
 
 print(result.result)
 ```
@@ -100,7 +100,7 @@ The sample below creates a dataset profile called `ESWIFT.TEST.**` with a UACC o
 from sear import sear
 
 result = sear(
-        {
+    {
         "operation": "add",
         "admin_type": "dataset",
         "dataset": "ESWIFT.TEST.**",
@@ -109,8 +109,8 @@ result = sear(
             "base:universal_access": "None",
             "base:owner": "eswift",
         },
-        }
-    )
+    },
+)
 
 print(result.result)
 ```
@@ -124,7 +124,7 @@ The sample below sets the RACF user `SECADM` as the owner of the `LEONARD.LIB.HL
 from sear import sear
 
 result = sear(
-        {
+    {
         "operation": "alter",
         "admin_type": "dataset",
         "dataset": "LEONARD.LIB.HLASM",
@@ -132,8 +132,8 @@ result = sear(
             "base:universal_access": "Read",
             "base:owner": "SECADM",
         },
-        }
-    )
+    },
+)
 
 print(result.result)
 ```
@@ -148,11 +148,11 @@ from sear import sear
 
 result = sear(
     {
-    "operation": "delete",
-    "admin_type": "dataset",
-    "dataset": "LEONARD.LIB.HLASM",
+        "operation": "delete",
+        "admin_type": "dataset",
+        "dataset": "LEONARD.LIB.HLASM",
     },
-    )
+)
 
 print(result.result)
 ```

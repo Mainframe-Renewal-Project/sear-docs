@@ -21,8 +21,8 @@ from sear import sear
 
 result = sear(
     {
-    "operation": "extract",
-    "admin_type": "racf-options"
+        "operation": "extract",
+        "admin_type": "racf-options"
     }
 )
 
@@ -874,11 +874,11 @@ from sear import sear
 
 result = sear(
     {
-    "operation": "alter",
-    "admin_type": "racf-options",
-    "traits": {
-        "base:max_incorrect_password_attempts": 5,
-    },
+        "operation": "alter",
+        "admin_type": "racf-options",
+        "traits": {
+            "base:max_incorrect_password_attempts": 5,
+        },
     }
 )
 

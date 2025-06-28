@@ -20,12 +20,12 @@ Below you can find a sample of some code that extracts information about the RAC
 from sear import sear
 
 result = sear(
-        {
+    {
         "operation": "extract",
         "admin_type": "group",
         "group": "DEV",
-        },
-    )
+    },
+)
 
 print(result.result)
 ```
@@ -74,12 +74,12 @@ The sample below gets all groups that start with `SYS`. It will return a list of
 from sear import sear
 
 result = sear(
-        {
+    {
         "operation": "search",
         "admin_type": "group",
         "group_filter": "SYS",
-        },
-    )
+    },
+)
 
 print(result.result)
 ```
@@ -97,15 +97,15 @@ The sample below creates a group called `SYSPROG` with the gid a of 6667.
 from sear import sear
 
 result = sear(
-        {
+    {
         "operation": "add",
         "admin_type": "group",
         "group": "SYSPROG",
         "traits": {
             "omvs:gid": 6667,
         },
-        }
-    )
+    }
+)
 
 print(result.result)
 ```
@@ -119,15 +119,15 @@ The sample below changes the `SYSPROG` RACF group to have a gid of 1234567.
 from sear import sear
 
 result = sear(
-        {
+    {
         "operation": "alter",
         "admin_type": "group",
         "group": "SYSPROG",
         "traits": {
             "omvs:gid": 1234567,
         },
-        }
-    )
+    }
+)
 
 print(result.result)
 ```
@@ -142,11 +142,11 @@ from sear import sear
 
 result = sear(
     {
-    "operation": "delete",
-    "admin_type": "group",
-    "group": "DEVOPS",
+        "operation": "delete",
+        "admin_type": "group",
+        "group": "DEVOPS",
     },
-    )
+)
 
 print(result.result)
 ```

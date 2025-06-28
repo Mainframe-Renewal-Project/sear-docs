@@ -45,8 +45,8 @@ result = sear(
         "operation": "delete",
         "admin_type": "group-connection",
         "userid": "eswift",
-        "group": "TESTGRP0"
-    }
+        "group": "TESTGRP0",
+    },
 )
 
 print(result.result)

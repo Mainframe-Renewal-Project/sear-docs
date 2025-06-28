@@ -20,13 +20,13 @@ The sample below extracts information about a specific resource profile.
 from sear import sear
 
 result = sear(
-        {
+    {
         "operation": "extract",
         "admin_type": "resource",
         "resource": "IRR.RADMIN.**",
         "class": "facility",
-        },
-    )
+    },
+)
 
 print(result.result)
 ```
@@ -75,10 +75,10 @@ from sear import sear
 
 result = sear(
     {
-    "operation": "search",
-    "admin_type": "resource",
-    "class": "facility",
-    "resource_filter": "IRR",
+        "operation": "search",
+        "admin_type": "resource",
+        "class": "facility",
+        "resource_filter": "IRR",
     },
 )
 
@@ -99,14 +99,14 @@ from sear import sear
 
 result = sear(
     {
-    "operation": "add",
-    "admin_type": "resource",
-    "resource": "IRR.RADMIN.**",
-    "class": "facility",
-    "traits": {
-        "base:universal_access": "None",
-        "base:owner": "SECADM",
-    },
+        "operation": "add",
+        "admin_type": "resource",
+        "resource": "IRR.RADMIN.**",
+        "class": "facility",
+        "traits": {
+            "base:universal_access": "None",
+            "base:owner": "SECADM",
+        },
     },
 )
 
@@ -123,15 +123,15 @@ from sear import sear
 
 result = sear(
     {
-    "operation": "alter",
-    "admin_type": "resource",
-    "resource": "IRR.RADMIN.**",
-    "class": "facility",
-    "traits": {
-        "base:universal_access": "Read",
-        "base:owner": "SECADM",
+        "operation": "alter",
+        "admin_type": "resource",
+        "resource": "IRR.RADMIN.**",
+        "class": "facility",
+        "traits": {
+            "base:universal_access": "Read",
+            "base:owner": "SECADM",
+        },
     },
-    }
 )
 
 print(result.result)
@@ -147,10 +147,10 @@ from sear import sear
 
 result = sear(
     {
-    "operation": "delete",
-    "admin_type": "resource",
-    "resource": "IRR.RADMIN.**",
-    "class": "facility",
+        "operation": "delete",
+        "admin_type": "resource",
+        "resource": "IRR.RADMIN.**",
+        "class": "facility",
     },
 )
 
