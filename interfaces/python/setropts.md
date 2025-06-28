@@ -34,7 +34,6 @@ print(result.result)
 ### Return
 
 ```python
-
 {
   "profile": {
     "base": {
