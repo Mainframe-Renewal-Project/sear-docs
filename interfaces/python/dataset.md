@@ -102,7 +102,7 @@ print(result.result)
 
 ### Deleting a dataset profile
 
-The sample below deletes the "LEONARD.LIB.HLASM" dataset profile
+The sample below deletes the "LEONARD.LIB.HLASM" dataset profile.
 
 ```python
 
