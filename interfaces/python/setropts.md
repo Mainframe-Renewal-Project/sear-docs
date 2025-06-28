@@ -29,8 +29,10 @@ result = sear(
 print(result.result)
 ```
 
-<details markdown="block">
-<summary>Returned result</summary>
+#### Returned results
+
+<details  markdown="block">
+<summary>Expand</summary>
 
 ```python
 {
