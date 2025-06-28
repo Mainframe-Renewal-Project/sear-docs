@@ -29,7 +29,7 @@ result = sear(
 print(result.result)
 ```
 
-<return>
+<details>
 
 #### Return
 
@@ -860,7 +860,7 @@ The results returned.
     }
 ```
 
-</return>
+</details>
 
 ## Updating the RACF system options
 
