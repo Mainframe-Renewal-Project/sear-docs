@@ -32,7 +32,7 @@ print(result.result)
 
 ### Searching for RACF users
 
-The sample below gets all users the start with "ZWE". It will return a list of users, to get metadata on them you will have to run the extract operation on every single RACF user in the list.
+The sample below gets all users that start with "ZWE". It will return a list of users, to get metadata on them you will have to run the extract operation on every single RACF user in the list.
 
 ```python
 

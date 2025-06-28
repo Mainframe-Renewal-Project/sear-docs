@@ -32,7 +32,7 @@ print(result.result)
 
 ### Searching for dataset profiles
 
-The sample below gets all dataset profiles the start with "LEONARD". It will return a list of dataset profiles, to get metadata on them you will have to run the extract operation on every single dataset profile in the list.
+The sample below gets all dataset profiles that start with "LEONARD". It will return a list of dataset profiles, to get metadata on them you will have to run the extract operation on every single dataset profile in the list.
 
 ```python
 
