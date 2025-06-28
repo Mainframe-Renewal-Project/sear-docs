@@ -36,7 +36,7 @@ print(result.result)
 
 ### Deleting a connect
 
-The sample below removes `LEONARD`'s connect to the RACF `DEVOPS` group.
+The sample below removes `LEONARD`'s connect from the RACF `DEVOPS` group.
 
 ```python
 
