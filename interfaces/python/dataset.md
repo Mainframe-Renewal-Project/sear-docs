@@ -30,6 +30,44 @@ result = sear(
 print(result.result)
 ```
 
+#### Returned result
+
+<details>
+
+```python
+{
+  "profile": {
+    "base": {
+      "base:alter_access_count": 0,
+      "base:auditing": "FAILURES(READ)",
+      "base:control_access_count": 0,
+      "base:create_date": "03/19/24",
+      "base:creation_group_name": "SYS1",
+      "base:dataset_type": "NON-VSAM",
+      "base:erase_datasets_on_delete": false,
+      "base:global_auditing": "NONE",
+      "base:high_level_qualifier_is_group": false,
+      "base:last_change_date": "03/19/24",
+      "base:last_reference_date": "03/19/24",
+      "base:level": 0,
+      "base:owner": "LEONARD",
+      "base:read_access_count": 0,
+      "base:universal_access": "NONE",
+      "base:update_access_count": 0,
+      "base:warn_on_insufficient_access": false
+    }
+  },
+  "return_codes": {
+    "racf_reason_code": 0,
+    "racf_return_code": 0,
+    "saf_return_code": 0,
+    "sear_return_code": 0
+  }
+}
+```
+
+</details>
+
 ### Searching for dataset profiles
 
 The sample below gets all dataset profiles that start with "LEONARD". It will return a list of dataset profiles, to get metadata on them you will have to run the extract operation on every single dataset profile in the list.
