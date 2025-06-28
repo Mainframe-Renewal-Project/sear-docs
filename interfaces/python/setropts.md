@@ -856,7 +856,6 @@ print(result.result)
     "sear_return_code": 0
   }
 }
-
 ```
 
 </return>
