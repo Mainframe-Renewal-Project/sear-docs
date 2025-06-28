@@ -63,6 +63,8 @@ print(result.result)
 }
 ```
 
+</details>
+
 ### Searching for resource profiles
 
 The sample below gets all general resource profiles that start with "IRR" in the facility class. It will return a list of resource profiles, to get metadata on them you will have to run the extract operation on every single resource profile in the list.
