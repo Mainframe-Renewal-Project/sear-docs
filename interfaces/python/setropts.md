@@ -9,7 +9,7 @@ parent: Python
 
 ## Extracting information
 
-SEAR provides the "extract" and "search" operators to gather information from the RACF database.
+SEAR provides the `extract` operator to gather information from the RACF database.
 
 ### Extracting RACF system options
 

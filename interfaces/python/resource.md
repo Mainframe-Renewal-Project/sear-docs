@@ -9,7 +9,7 @@ parent: Python
 
 ## Extracting information
 
-SEAR provides the "extract" and "search" operators to gather information from the RACF database.
+SEAR provides the `extract` and `search` operators to gather information from the RACF database.
 
 ### Extracting a specific resource profile
 
@@ -87,7 +87,7 @@ print(result.result)
 
 ## Updating resource profiles
 
-SEAR provides 3 main operators for updating the RACF database, "add", "alter", and "delete".
+SEAR provides 3 main operators for updating the RACF database, `add`, `alter`, and `delete`.
 
 ### Creating a new resource profile
 
