@@ -29,13 +29,15 @@ result = sear(
 print(result.result)
 ```
 
-<details><summary>Returned result</summary>
+<details>
+<summary>Returned result</summary>
 
 #### Return
 
 The results returned.
 
 ```python
+
 {
 "profile": {
     "base": {
@@ -859,8 +861,8 @@ The results returned.
 }
 }
 ```
-</details>
 
+</details>
 
 ## Updating the RACF system options
 
