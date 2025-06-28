@@ -20,12 +20,12 @@ Below you can find a sample of some code that extracts information about a speci
 from sear import sear
 
 result = sear(
-        {
-        "operation": "extract",
-        "admin_type": "user",
-        "userid": "FDEGILIO",
-        },
-    )
+    {
+    "operation": "extract",
+    "admin_type": "user",
+    "userid": "FDEGILIO",
+    },
+)
 
 print(result.result)
 ```
@@ -39,12 +39,12 @@ The sample below gets all users that start with "ZWE". It will return a list of 
 from sear import sear
 
 result = sear(
-        {
-        "operation": "search",
-        "admin_type": "user",
-        "userid_filter": "ZWE",
-        },
-    )
+    {
+    "operation": "search",
+    "admin_type": "user",
+    "userid_filter": "ZWE",
+    },
+)
 
 print(result.result)
 ```
@@ -62,17 +62,17 @@ The sample below creates a user called "ESWIFT" with the base name of "ELIJAH SW
 from sear import sear
 
 result = sear(
-        {
-        "operation": "add",
-        "admin_type": "user",
-        "userid": "ESWIFT",
-        "traits": {
-            "base:name": "ELIJAH SWIFT",
-            "omvs:uid": 24,
-            "omvs:home_directory": "/home/ESWIFT",
-        },
-        }
-    )
+    {
+    "operation": "add",
+    "admin_type": "user",
+    "userid": "ESWIFT",
+    "traits": {
+        "base:name": "ELIJAH SWIFT",
+        "omvs:uid": 24,
+        "omvs:home_directory": "/home/ESWIFT",
+    },
+    }
+)
 
 print(result.result)
 ```
@@ -86,17 +86,17 @@ The sample below gives special and read only auditor to the RACF user "LEONARD".
 from sear import sear
 
 result = sear(
-        {
-        "operation": "alter",
-        "admin_type": "user",
-        "userid": "LEONARD",
-        "traits": {
-            "base:name": "LEONARD CARCARAMO",
-            "base:special": True,
-            "base:read_only_auditor": True,
-        },
-        }
-    )
+    {
+    "operation": "alter",
+    "admin_type": "user",
+    "userid": "LEONARD",
+    "traits": {
+        "base:name": "LEONARD CARCARAMO",
+        "base:special": True,
+        "base:read_only_auditor": True,
+    },
+    }
+)
 
 print(result.result)
 ```
@@ -115,7 +115,7 @@ result = sear(
     "admin_type": "user",
     "userid": "LEONARD",
     },
-    )
+)
 
 print(result.result)
 ```
