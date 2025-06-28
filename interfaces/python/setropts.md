@@ -29,9 +29,9 @@ result = sear(
 print(result.result)
 ```
 
-<return>
+#### Return
 
-### Return
+<return>
 
 ```python
 {
