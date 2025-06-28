@@ -31,6 +31,8 @@ print(result.result)
 
 <return>
 
+### Return
+
 ```python
 
 {
