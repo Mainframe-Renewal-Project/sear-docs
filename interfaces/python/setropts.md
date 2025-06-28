@@ -37,7 +37,6 @@ print(result.result)
 The results returned.
 
 ```python
-
 {
 "profile": {
     "base": {
@@ -861,7 +860,6 @@ The results returned.
 }
 }
 ```
-
 </details>
 
 ## Updating the RACF system options
