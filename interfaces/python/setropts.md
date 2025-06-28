@@ -31,8 +31,6 @@ print(result.result)
 
 <details>
 
-<summary>Returned result</summary>
-
 ```python
 {
 "profile": {
