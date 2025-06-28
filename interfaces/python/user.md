@@ -13,7 +13,7 @@ SEAR provides the `extract` and `search` operators to gather information from th
 
 ### Extracting a specific RACF user
 
-Below you can find a sample of some code that extracts information about a specific RACF user.
+Below you can find a sample of some code that extracts information about the RACF user `FDEGILIO`.
 
 ```python
 
@@ -121,7 +121,7 @@ print(result.result)
 
 ### Searching for RACF users
 
-The sample below gets all users that start with "ZWE". It will return a list of users, to get metadata on them you will have to run the extract operation on every single RACF user in the list.
+The sample below gets all users that start with `ZWE`. It will return a list of users, to get metadata on them you will have to run the extract operation on every single RACF user in the list.
 
 ```python
 
@@ -144,7 +144,7 @@ SEAR provides 3 main operators for updating the RACF database, `add`, `alter`, a
 
 ### Creating a new RACF user
 
-The sample below creates a user called "ESWIFT" with the base name of "ELIJAH SWIFT", a UID of 24, and the home directory set to "/home/ESWIFT".
+The sample below creates a user called `ESWIFT` with the base name of `ELIJAH SWIFT`, a UID of 24, and the home directory set to `/home/ESWIFT`.
 
 ```python
 
@@ -168,7 +168,7 @@ print(result.result)
 
 ### Altering a RACF user
 
-The sample below gives special and read only auditor to the RACF user "LEONARD".
+The sample below gives special and read only auditor to the RACF user `LEONARD`.
 
 ```python
 
@@ -192,7 +192,7 @@ print(result.result)
 
 ### Deleting a RACF user
 
-The below sample deletes the RACF user "LEONARD".
+The below sample deletes the RACF user `LEONARD`.
 
 ```python
 

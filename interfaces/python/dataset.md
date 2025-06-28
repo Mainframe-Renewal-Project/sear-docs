@@ -13,7 +13,7 @@ SEAR provides the `extract` and `search` operators to gather information from th
 
 ### Extracting a specific dataset profile
 
-The sample below extracts information about a specific dataset profile.
+The sample below extracts information about a dataset profile called `"FDEGILIO.TEST.*"`.
 
 ```python
 
@@ -70,7 +70,7 @@ print(result.result)
 
 ### Searching for dataset profiles
 
-The sample below gets all dataset profiles that start with "LEONARD". It will return a list of dataset profiles, to get metadata on them you will have to run the extract operation on every single dataset profile in the list.
+The sample below gets all dataset profiles that start with `LEONARD`. It will return a list of dataset profiles, to get metadata on them you will have to run the extract operation on every single dataset profile in the list.
 
 ```python
 
@@ -93,7 +93,7 @@ SEAR provides 3 main operators for updating the RACF database, `add`, `alter`, a
 
 ### Creating a new dataset profile
 
-The sample below creates a dataset profile called "ESWIFT.TEST.**" with a UACC of NONE and the owner set to the "eswift" RACF userid.
+The sample below creates a dataset profile called `ESWIFT.TEST.**` with a UACC of NONE and the owner set to the `eswift` RACF userid.
 
 ```python
 
@@ -117,7 +117,7 @@ print(result.result)
 
 ### Altering a dataset profile
 
-The sample below sets SECADM as the owner of the LEONARD.LIB.HLASM dataset profile and sets UACC to "read".
+The sample below sets the RACF user `SECADM` as the owner of the `LEONARD.LIB.HLASM` dataset profile and sets UACC to "read".
 
 ```python
 
@@ -140,7 +140,7 @@ print(result.result)
 
 ### Deleting a dataset profile
 
-The sample below deletes the "LEONARD.LIB.HLASM" dataset profile.
+The sample below deletes the `LEONARD.LIB.HLASM` dataset profile.
 
 ```python
 

@@ -13,7 +13,7 @@ SEAR provides the `extract` and `search` operators to gather information from th
 
 ### Extracting a specific RACF group
 
-Below you can find a sample of some code that extracts information about the RACF group "DEV".
+Below you can find a sample of some code that extracts information about the RACF group `DEV`.
 
 ```python
 
@@ -67,7 +67,7 @@ print(result.result)
 
 ### Searching for RACF group
 
-The sample below gets all groups that start with "SYS". It will return a list of groups, to get metadata on them you will have to run the extract operation on every single RACF group in the list.
+The sample below gets all groups that start with `SYS`. It will return a list of groups, to get metadata on them you will have to run the extract operation on every single RACF group in the list.
 
 ```python
 
@@ -90,7 +90,7 @@ SEAR provides 3 main operators for updating the RACF database, `add`, `alter`, a
 
 ### Creating a new RACF group
 
-The sample below creates a group called "SYSPROG" with the gid a of 6667.
+The sample below creates a group called `SYSPROG` with the gid a of 6667.
 
 ```python
 
@@ -112,7 +112,7 @@ print(result.result)
 
 ### Altering a RACF group
 
-The sample below changes the "SYSPROG" RACF group to have a gid of 1234567.
+The sample below changes the `SYSPROG` RACF group to have a gid of 1234567.
 
 ```python
 
@@ -134,7 +134,7 @@ print(result.result)
 
 ### Deleting a RACF group
 
-The below sample deletes the RACF group "DEVOPS".
+The below sample deletes the RACF group `DEVOPS`.
 
 ```python
 

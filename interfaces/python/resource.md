@@ -67,7 +67,7 @@ print(result.result)
 
 ### Searching for resource profiles
 
-The sample below gets all general resource profiles that start with "IRR" in the facility class. It will return a list of resource profiles, to get metadata on them you will have to run the extract operation on every single resource profile in the list.
+The sample below gets all general resource profiles that start with `IRR` in the `facility` class. It will return a list of resource profiles, to get metadata on them you will have to run the extract operation on every single resource profile in the list.
 
 ```python
 
@@ -91,7 +91,7 @@ SEAR provides 3 main operators for updating the RACF database, `add`, `alter`, a
 
 ### Creating a new resource profile
 
-The sample below creates a resource profile called "IRR.RADMIN.**" in the facility class with a UACC of NONE and the owner set to the "eswift" RACF userid.
+The sample below creates a resource profile called `IRR.RADMIN.**` in the `facility` class with a UACC of NONE and the owner set to the "eswift" RACF userid.
 
 ```python
 
@@ -115,7 +115,7 @@ print(result.result)
 
 ### Altering a resource profile
 
-The sample below sets SECADM as the owner of the "IRR.RADMIN.**" resource profile in the facility class and sets UACC to "read"
+The sample below sets SECADM as the owner of the `IRR.RADMIN.**` resource profile in the `facility` class and sets UACC to "read"
 
 ```python
 
@@ -139,7 +139,7 @@ print(result.result)
 
 ### Deleting a resource profile
 
-The sample below deletes the "IRR.RADMIN.**" resource profile in the facility class.
+The sample below deletes the `IRR.RADMIN.**` resource profile in the `facility` class.
 
 ```python
 
