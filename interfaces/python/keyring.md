@@ -111,6 +111,8 @@ print(result.result)
 
 ## Updating keyrings
 
+SEAR provides two operators for working with certificates, `add` and `delete`.
+
 ### Creating a new keyring
 
 Below you can find a sample of some code that adds a new keyring called `SEARTESTRING2` with `YBTKS` as the owner.
