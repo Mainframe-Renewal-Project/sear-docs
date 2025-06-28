@@ -160,7 +160,7 @@ result = sear(
             "omvs:uid": 24,
             "omvs:home_directory": "/home/ESWIFT",
         },
-    }
+    },
 )
 
 print(result.result)
@@ -184,7 +184,7 @@ result = sear(
             "base:special": True,
             "base:read_only_auditor": True,
         },
-    }
+    },
 )
 
 print(result.result)
