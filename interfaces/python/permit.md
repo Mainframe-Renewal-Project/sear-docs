@@ -9,6 +9,8 @@ parent: Python
 
 ## Creating permits
 
+Unlike with most of the other `admin_types` you can only use `alter` and `delete` to modify permits in the RACF database, `alter` is not just used to alter permits but also create them.
+
 ### Dataset permits
 
 The sample below gives a permit of READ to the `MATRIX.SECRETS.**` dataset profile for the user `LEONARD`.
