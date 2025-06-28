@@ -30,6 +30,41 @@ result = sear(
 print(result.result)
 ```
 
+#### Returned result
+
+<details>
+
+```python
+{
+  "profile": {
+    "base": {
+      "base:connected_users": [
+        {
+          "base:connected_user_authority": "USE",
+          "base:connected_userid": "ESWIFT"
+        }
+      ],
+      "base:create_date": "10/11/23",
+      "base:owner": "ESWIFT",
+      "base:superior_group": "SYS1",
+      "base:terminal_universal_access": true,
+      "base:universal": false
+    },
+    "omvs": {
+      "omvs:gid": 24
+    }
+  },
+  "return_codes": {
+    "racf_reason_code": 0,
+    "racf_return_code": 0,
+    "saf_return_code": 0,
+    "sear_return_code": 0
+  }
+}
+```
+
+</details>
+
 ### Searching for RACF group
 
 The sample below gets all groups that start with "SYS". It will return a list of groups, to get metadata on them you will have to run the extract operation on every single RACF group in the list.
