@@ -31,6 +31,8 @@ print(result.result)
 
 <details>
 
+<summary>Returned result</summary>
+
 ```python
     {
     "profile": {
@@ -854,7 +856,8 @@ print(result.result)
         "sear_return_code": 0
     }
     }
-    ```
+```
+
 </details>
 
 ## Updating the RACF system options
