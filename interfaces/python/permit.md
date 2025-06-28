@@ -19,16 +19,16 @@ from sear import sear
 
 result = sear(
     {
-    "operation": "alter",
-    "admin_type": "permission",
-    "dataset": "MATRIX.SECRETS.**",
-    "volume": "MYVOL",
-    "generic": True,
-    "userid": "LEONARD",
-    "traits": {
-        "base:access": "READ",
+        "operation": "alter",
+        "admin_type": "permission",
+        "dataset": "MATRIX.SECRETS.**",
+        "volume": "MYVOL",
+        "generic": True,
+        "userid": "LEONARD",
+        "traits": {
+            "base:access": "READ",
+        },
     },
-    }
 )
 
 print(result.result)
@@ -44,15 +44,15 @@ from sear import sear
 
 result = sear(
     {
-    "operation": "alter",
-    "admin_type": "permission",
-    "resource": "IRR.IRRSMO00.PRECHECK",
-    "class": "XFACILIT",
-    "userid": "FDEGILIO",
-    "traits": {
-        "base:access": "READ",
+        "operation": "alter",
+        "admin_type": "permission",
+        "resource": "IRR.IRRSMO00.PRECHECK",
+        "class": "XFACILIT",
+        "userid": "FDEGILIO",
+        "traits": {
+            "base:access": "READ",
+        },
     },
-    }
 )
 
 print(result.result)
@@ -68,12 +68,12 @@ from sear import sear
 
 result = sear(
     {
-    "operation": "delete",
-    "admin_type": "permission",
-    "resource": "IRR.IRRSMO00.PRECHECK",
-    "class": "XFACILIT",
-    "userid": "FDEGILIO",
-    }
+        "operation": "delete",
+        "admin_type": "permission",
+        "resource": "IRR.IRRSMO00.PRECHECK",
+        "class": "XFACILIT",
+        "userid": "FDEGILIO",
+    },
 )
 
 print(result.result)
