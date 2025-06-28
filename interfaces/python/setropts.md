@@ -23,7 +23,7 @@ result = sear(
     {
         "operation": "extract",
         "admin_type": "racf-options"
-    }
+    },
 )
 
 print(result.result)
@@ -879,7 +879,7 @@ result = sear(
         "traits": {
             "base:max_incorrect_password_attempts": 5,
         },
-    }
+    },
 )
 
 print(result.result)
