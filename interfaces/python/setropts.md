@@ -35,7 +35,9 @@ print(result.result)
 
 The results returned.
 
+
 ```python
+
     {
     "profile": {
         "base": {
@@ -858,6 +860,7 @@ The results returned.
         "sear_return_code": 0
     }
     }
+
 ```
 
 </details>
