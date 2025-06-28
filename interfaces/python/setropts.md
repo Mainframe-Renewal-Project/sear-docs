@@ -2,7 +2,6 @@
 layout: default
 has_toc: false
 parent: Python
-markdown: CommonMarkGhPages
 ---
 
 
