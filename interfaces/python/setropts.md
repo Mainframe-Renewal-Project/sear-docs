@@ -30,7 +30,6 @@ print(result.result)
 ```
 
 <details markdown="block">
-
 <summary>Returned result</summary>
 
 ```python
