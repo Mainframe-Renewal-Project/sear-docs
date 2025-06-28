@@ -75,7 +75,7 @@ The following authorizations are required in order exploit all of the functional
 pip install pysear
 ```
 
-## Testing it
+## Testing SEAR
 
 After you have installed it you can test it from a z/OS Unix shell environment
 
