@@ -131,7 +131,7 @@ print("SEAR Result JSON:")
 print(json.dumps(result.result, indent=2))
 ```
 
-###### Console Output
+#### Console Output
 
 ```console
 SEAR Request JSON:
