@@ -117,7 +117,7 @@ print(result.result)
 
 ### Altering a dataset profile
 
-The sample below sets the RACF user `SECADM` as the owner of the `LEONARD.LIB.HLASM` dataset profile and sets UACC to "read".
+The sample below sets the RACF user `SECADM` as the owner of the `LEONARD.LIB.HLASM` dataset profile and sets UACC to `READ`.
 
 ```python
 
