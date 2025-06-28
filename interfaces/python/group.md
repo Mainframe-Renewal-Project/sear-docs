@@ -104,7 +104,7 @@ result = sear(
         "traits": {
             "omvs:gid": 6667,
         },
-    }
+    },
 )
 
 print(result.result)
@@ -126,7 +126,7 @@ result = sear(
         "traits": {
             "omvs:gid": 1234567,
         },
-    }
+    },
 )
 
 print(result.result)
