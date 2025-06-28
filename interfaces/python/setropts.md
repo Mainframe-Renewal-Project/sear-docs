@@ -29,9 +29,8 @@ result = sear(
 print(result.result)
 ```
 
-<details>
-
-<summary>Returned result</summary>
+<button type="button" class="collapsible">Open Collapsible</button>
+<div>
 
 ```python
     {
@@ -858,7 +857,7 @@ print(result.result)
     }
 ```
 
-</details>
+</div>
 
 ## Updating the RACF system options
 
