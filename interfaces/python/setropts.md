@@ -30,14 +30,14 @@ print(result.result)
 ```
 
 <details>
-    <summary>Click me</summary>
+    <summary>Returned result</summary>
 
     #### Return
 
     The results returned.
 
     ```python
-    
+
     {
     "profile": {
         "base": {
