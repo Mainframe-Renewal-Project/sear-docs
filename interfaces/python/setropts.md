@@ -29,11 +29,15 @@ result = sear(
 print(result.result)
 ```
 
-#### Return
+
 
 <return>
+<summary>Click me</summary>
 
-    ```python
+#### Return
+
+```python
+    
     {
     "profile": {
         "base": {
@@ -856,6 +860,7 @@ print(result.result)
         "sear_return_code": 0
     }
     }
+
 ```
 </return>
 
