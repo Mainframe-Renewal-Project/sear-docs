@@ -13,7 +13,7 @@ The following Python interface is provided to facilitate exploitation of SEAR by
 The Python distribution of SEAR may be installed from [PyPi](https://pypi.org/project/pysear/) using `pip`.
 
 ```shell
-python3 -m pip install pysear
+pip install pysear
 ```
 
 The Python distribution of SEAR may also optionally be downloaded and installed from [GitHub](https://github.com/Mainframe-Renewal-Project/sear/discussions).
