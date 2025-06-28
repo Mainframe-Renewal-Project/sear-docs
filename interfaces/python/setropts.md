@@ -30,14 +30,13 @@ print(result.result)
 ```
 
 <details>
+    <summary>Click me</summary>
 
-#### Return
+    #### Return
 
-The results returned.
+    The results returned.
 
-
-```python
-
+    ```python
     {
     "profile": {
         "base": {
@@ -860,9 +859,7 @@ The results returned.
         "sear_return_code": 0
     }
     }
-
-```
-
+    ```
 </details>
 
 ## Updating the RACF system options
