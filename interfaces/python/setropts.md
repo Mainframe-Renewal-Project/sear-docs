@@ -30,6 +30,7 @@ print(result.result)
 ```
 
 <details>
+
 <summary>Returned result</summary>
 
 #### Return
@@ -860,6 +861,7 @@ The results returned.
 }
 }
 ```
+
 </details>
 
 ## Updating the RACF system options
