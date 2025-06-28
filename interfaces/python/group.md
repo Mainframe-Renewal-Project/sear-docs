@@ -5,7 +5,7 @@ parent: Python
 ---
 
 
-# Group requests
+# Groups
 
 ## Extracting information
 

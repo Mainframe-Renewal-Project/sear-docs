@@ -5,7 +5,7 @@ parent: Python
 ---
 
 
-# Dataset requests
+# Datasets
 
 ## Extracting information
 

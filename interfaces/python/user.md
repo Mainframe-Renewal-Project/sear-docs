@@ -5,7 +5,7 @@ parent: Python
 ---
 
 
-# User requests
+# Users
 
 ## Extracting information
 
