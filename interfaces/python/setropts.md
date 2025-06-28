@@ -29,34 +29,7 @@ result = sear(
 print(result.result)
 ```
 
-## Updating the RACF system options
-
-You can update the RACF system options through SEAR, the only valid operator is "alter" in this case.
-
-### Altering the RACF system options
-
-The sample below updates the amount of incorrect password attempts allowed on the system to 5.
-
-```python
-
-from sear import sear
-
-result = sear(
-    {
-    "operation": "alter",
-    "admin_type": "racf-options",
-    "traits": {
-        "base:max_incorrect_password_attempts": 5,
-    },
-    }
-)
-
-print(result.result)
-```
-
-## Extraction results
-
-<details>
+<return>
 
 ```python
 
@@ -884,4 +857,29 @@ print(result.result)
 }
 ```
 
-</details>
+</return>
+
+## Updating the RACF system options
+
+You can update the RACF system options through SEAR, the only valid operator is "alter" in this case.
+
+### Altering the RACF system options
+
+The sample below updates the amount of incorrect password attempts allowed on the system to 5.
+
+```python
+
+from sear import sear
+
+result = sear(
+    {
+    "operation": "alter",
+    "admin_type": "racf-options",
+    "traits": {
+        "base:max_incorrect_password_attempts": 5,
+    },
+    }
+)
+
+print(result.result)
+```
