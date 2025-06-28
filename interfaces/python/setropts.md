@@ -33,10 +33,6 @@ print(result.result)
 
 <summary>Returned result</summary>
 
-#### Return
-
-The results returned.
-
 ```python
 {
 "profile": {
