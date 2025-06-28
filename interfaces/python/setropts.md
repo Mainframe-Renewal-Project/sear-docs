@@ -57,7 +57,9 @@ print(result.result)
 ## Extraction results
 
 <details>
+
 ```python
+
 {
   "profile": {
     "base": {
@@ -881,4 +883,5 @@ print(result.result)
   }
 }
 ```
+
 </details>
