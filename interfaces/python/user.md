@@ -30,7 +30,7 @@ result = sear(
 print(result.result)
 ```
 
-#### Returned results
+#### Returned result
 
 <details>
 
