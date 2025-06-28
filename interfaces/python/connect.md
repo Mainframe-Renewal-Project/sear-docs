@@ -46,7 +46,7 @@ result = sear(
     {
         "operation": "delete",
         "admin_type": "group-connection",
-        "userid": "eswift",
+        "userid": "LEONARD",
         "group": "DEVOPS",
     },
 )
