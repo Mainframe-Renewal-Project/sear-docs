@@ -94,7 +94,7 @@ result = sear(
             "base:name": "LEONARD CARCARAMO",
             "base:special": True,
             "base:read_only_auditor": True,
-        }
+        },
         }
     )
 
