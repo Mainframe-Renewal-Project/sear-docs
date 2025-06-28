@@ -5,7 +5,7 @@ parent: Python
 ---
 
 
-# RACF system options
+# System options
 
 ## Extracting information
 
