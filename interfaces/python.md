@@ -57,7 +57,7 @@ from sear import sear
 request = {
     "operation": "extract",
     "admin_type": "user",
-    "profile_name": "SQUIDWRD"
+    "userid": "SQUIDWRD",
 }
 
 result = sear(request)
@@ -112,7 +112,7 @@ import json
 request = {
     "operation": "extract",
     "admin_type": "user",
-    "profile_name": "SQUIDWRD"
+    "userid": "SQUIDWRD"
 }
 
 # The sear() function always returns a SecurityResult object.
