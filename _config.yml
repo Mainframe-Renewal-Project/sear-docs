@@ -76,7 +76,7 @@ mermaid:
   version: "11.7.0"
 
 # Set the right markdown style
-markdown: CommonMarkGhPages
+markdown: kramdown
 kramdown:
   parse_block_html: true
 
