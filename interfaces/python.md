@@ -12,8 +12,6 @@ The following Python interface is provided to facilitate exploitation of SEAR by
 
 The Python distribution of SEAR may be installed from [PyPi](https://pypi.org/project/pysear/) using `pip`.
 
-&nbsp;
-
 ```shell
 python3 -m pip install pysear
 ```
