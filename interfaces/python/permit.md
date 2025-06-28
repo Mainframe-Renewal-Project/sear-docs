@@ -11,7 +11,7 @@ parent: Python
 
 ### Dataset permits
 
-The sample below gives a permit of READ to the `MATRIX.SECRETS.**` dataset profile for the user `LEONARD`
+The sample below gives a permit of READ to the `MATRIX.SECRETS.**` dataset profile for the user `LEONARD`.
 
 ```python
 
@@ -36,7 +36,7 @@ print(result.result)
 
 ### Resource permits
 
-The sample below gives a permit of READ to the `IRR.IRRSMO00.PRECHECK` in the `XFACILIT` class to the user `FDEGILIO`
+The sample below gives a permit of READ to the `IRR.IRRSMO00.PRECHECK` in the `XFACILIT` class to the user `FDEGILIO`.
 
 ```python
 
@@ -60,7 +60,7 @@ print(result.result)
 
 ## Deleting permits
 
-The sample below removes a permit in the access list of `IRR.IRRSMO00.PRECHECK` in the `XFACILIT` class for the user `FDEGILIO`
+The sample below removes `FDEGILIO`'s permit from the access list of `IRR.IRRSMO00.PRECHECK` in the `XFACILIT` class.
 
 ```python
 
