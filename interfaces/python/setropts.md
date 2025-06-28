@@ -31,8 +31,7 @@ print(result.result)
 
 #### Returned results
 
-<details  markdown="block">
-<summary>Expand</summary>
+<details markdown="block">
 
 ```python
 {
