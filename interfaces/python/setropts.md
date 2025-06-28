@@ -32,7 +32,7 @@ print(result.result)
 <details>
 
 ```python
-{
+    {
     "profile": {
         "base": {
         "base:active_classes": [
