@@ -856,7 +856,6 @@ print(result.result)
   }
 }
 ```
-
 </return>
 
 ## Updating the RACF system options
