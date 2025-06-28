@@ -62,17 +62,17 @@ The following authorizations are required in order exploit all of the functional
 | `READ` | `IRR.IRRSMO00.PRECHECK` | `XFACILIT` | **Alter** and **Add** Profiles |
 | `UPDATE` | `<userid>.IRRSMO00` | `SURROGAT` | Run **Add**, **Alter**, and **Delete** **Commands** as a **Specific Userid** |
 
-## Install
+## Installation
 
 &nbsp;
 
 {: .note }
-> _You may also optionally [Download & Install SEAR From GitHub](https://github.com/Mainframe-Renewal-Project/sear/releases)._
+> _You may also optionally [Download SEAR From GitHub](https://github.com/Mainframe-Renewal-Project/sear/releases)._
 
 &nbsp;
 
 ```shell
-python3 -m pip install pysear
+pip install pysear
 ```
 
 ## Testing it
