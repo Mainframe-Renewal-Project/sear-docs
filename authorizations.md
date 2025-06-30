@@ -10,7 +10,7 @@ This page details the authorization you need to use the SEAR API. You can use th
 
 {: .warning }
 
-> In general access to the profiles listed below should only be given out to security administrators or security automation users. Even read access to the API should be given out cautiously, being able to profile the RACF database is useful for bad actors. Profiles on this page should **always** have a UACC of `NONE`.
+> In general access to the profiles listed below should only be given out to security administrators or security automation users. Even read access to the API should be given out cautiously, being able to "data mine" the RACF database is useful for bad actors. Profiles on this page should **always** have a UACC of `NONE`.
 
 ## Data extraction requests
 
