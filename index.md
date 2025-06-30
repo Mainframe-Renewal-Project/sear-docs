@@ -42,6 +42,7 @@ All versions of **z/OS** and the **IBM Open Enterprise SDK for Python** that are
 
 * **R_SecMgtOper (IRRSMO00)**: Security Management Operations.
 * **R_Admin (IRRSEQ00)**: RACF Administration API.
+* **R_Datalib (IRRSEQ00)**: RACF Certificate data library.
 * **RACF Subsystem Address Space**: This is a dependency for both **IRRSMO00** and **IRRSEQ00**. More information can be found [in the IBM documentation](https://www.ibm.com/docs/en/zos/latest?topic=considerations-racf-subsystem).
 
 ## Authorizations
