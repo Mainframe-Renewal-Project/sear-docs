@@ -36,6 +36,8 @@ result = sear(
 print(result.result)
 ```
 
+You can see the full list of traits in [the traits/permission section](https://mainframe-renewal-project.github.io/sear-docs/traits/permission/)
+
 ### Resource permits
 
 The sample below gives a permit of READ to the `IRR.IRRSMO00.PRECHECK` in the `XFACILIT` class to the user `FDEGILIO`.
@@ -59,6 +61,8 @@ result = sear(
 
 print(result.result)
 ```
+
+You can see the full list of traits in [the traits/permission section](https://mainframe-renewal-project.github.io/sear-docs/traits/permission/)
 
 ## Deleting permits
 

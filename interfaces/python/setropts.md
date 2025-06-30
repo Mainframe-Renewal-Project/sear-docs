@@ -884,3 +884,5 @@ result = sear(
 
 print(result.result)
 ```
+
+You can see the full list of traits in [the traits/racf_options section](https://mainframe-renewal-project.github.io/sear-docs/traits/racf_options/)

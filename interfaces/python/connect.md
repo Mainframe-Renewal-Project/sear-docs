@@ -34,6 +34,8 @@ result = sear(
 print(result.result)
 ```
 
+You can see the full list of traits in [the traits/group_connection section](https://mainframe-renewal-project.github.io/sear-docs/traits/group_connection/)
+
 ### Deleting a connect
 
 The sample below removes `LEONARD`'s connect from the RACF `DEVOPS` group.
