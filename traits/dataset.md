@@ -4,9 +4,9 @@ parent: Traits
 nav_order: 5
 ---
 
-# Data Set Traits
+# Dataset Traits
 
-The following tables describes the data set segments and traits that are supported for add and alter operations, and returned by extract operations.
+The following tables describes the dataset profile segments and traits that are supported for add and alter operations, and returned by extract operations.
 {: .fs-6 .fw-300 }
 
 &nbsp;
