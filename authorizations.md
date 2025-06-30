@@ -30,7 +30,7 @@ If you only give `READ` access to the `IRR.DIGTCERT` profiles `in FACILITY` you 
 These profiles are the ones you need access to in order to modify things in the RACF database, such as create a new user or delete dataset profile.
 
 | **Access** | **General Resource Profile** | **Class** | **Functionality** |
-| `READ` | `IRR.IRRSMO00.PRECHECK` | `XFACILIT` | **Add**, **Alter** and **Delete** Profiles |
+| `READ` | `IRR.IRRSMO00.PRECHECK` | `XFACILIT` | **Add**, **Alter** and **Delete** profiles and modify the RACF database options. Similar access to system special but doesn't allow you to extract information or work with certificates. |
 | `UPDATE` | `<userid>.IRRSMO00` | `SURROGAT` | Run **Add**, **Alter**, and **Delete** **Commands** as a **Specific Userid**. Doesn't affect certificate or keyring related requests. |
 | `UPDATE` | `IRR.DIGTCERT.ADD` | `FACILITY` | Add a new certificate |
 | `UPDATE` | `IRR.DIGTCERT.DELETE` | `FACILITY` | Delete a certificate |
