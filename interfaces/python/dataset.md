@@ -23,7 +23,7 @@ SEAR provides the `extract` and `search` operators to gather information about d
 
 ### Extracting a specific dataset profile
 
-The sample below extracts information about a dataset profile called `"FDEGILIO.TEST.*"`.
+The sample below extracts information about a dataset profile called `FDEGILIO.TEST.*`.
 
 ```python
 
