@@ -102,7 +102,7 @@ flowchart TD
         n1["Security API for RACF (SEAR)"]
         n2@{ label: "<span style=\"padding-left:\">IRRSMO00 (64-bit OSLINK EBCDIC)</span>" }
         n5["User, group, dataset, and resource operation (Add, alter, delete)"]
-        n11["IRRSDL64"]
+        n11["IRRSDL64 (64 bit OSLINK EBCDIC)"]
         n12["Certificate managment operation (Add, extract, delete)"]
         n7@{ label: "<span style=\"padding-left:\">User, group, dataset, and resource operation</span>(Extract or Search)" }
   end
@@ -203,5 +203,6 @@ flowchart TD
     classDef Class_07 fill:#FF6D00, color:#FFFFFF
     classDef Class_08 fill:#FFFFFF, color:#000000, stroke:#000000
     classDef Class_09 fill:#00559e, stroke:transparent, color:#FFFFFF
+
 
 </pre>
