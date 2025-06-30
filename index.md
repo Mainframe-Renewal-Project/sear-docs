@@ -64,11 +64,13 @@ See the full list in the [Required authorizations](./authorizations.md) page, as
 {: .note }
 > _You may also optionally [Download SEAR From GitHub](https://github.com/Mainframe-Renewal-Project/sear/releases)._
 
-&nbsp;
+You can install SEAR with the following command:
 
 ```shell
 pip install pysear
 ```
+
+If the command fails you might need to set up artifactory access to your mainframe or download SEAR from [PyPi](https://pypi.org/project/pysear/) or [GitHub](https://github.com/Mainframe-Renewal-Project/sear/releases).
 
 ## Testing SEAR
 
