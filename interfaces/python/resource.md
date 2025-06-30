@@ -113,6 +113,8 @@ result = sear(
 print(result.result)
 ```
 
+You can see the full list of traits in [the traits/resource section](https://mainframe-renewal-project.github.io/sear-docs/traits/resource/)
+
 ### Altering a resource profile
 
 The sample below sets SECADM as the owner of the `IRR.RADMIN.**` resource profile in the `facility` class and sets UACC to "read"
@@ -136,6 +138,8 @@ result = sear(
 
 print(result.result)
 ```
+
+You can see the full list of traits in [the traits/resource section](https://mainframe-renewal-project.github.io/sear-docs/traits/resource/)
 
 ### Deleting a resource profile
 

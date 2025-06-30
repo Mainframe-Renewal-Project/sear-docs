@@ -115,6 +115,8 @@ result = sear(
 print(result.result)
 ```
 
+You can see the full list of traits in [the traits/dataset section](https://mainframe-renewal-project.github.io/sear-docs/traits/dataset/)
+
 ### Altering a dataset profile
 
 The sample below sets the RACF user `SECADM` as the owner of the `LEONARD.LIB.HLASM` dataset profile and sets UACC to `READ`.
@@ -137,6 +139,8 @@ result = sear(
 
 print(result.result)
 ```
+
+You can see the full list of traits in [the traits/dataset section](https://mainframe-renewal-project.github.io/sear-docs/traits/dataset/)
 
 ### Deleting a dataset profile
 

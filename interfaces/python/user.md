@@ -166,6 +166,8 @@ result = sear(
 print(result.result)
 ```
 
+You can see the full list of traits in [the traits/user section](https://mainframe-renewal-project.github.io/sear-docs/traits/user/)
+
 ### Altering a RACF user
 
 The sample below gives special and read only auditor to the RACF user `LEONARD`.
@@ -189,6 +191,8 @@ result = sear(
 
 print(result.result)
 ```
+
+You can see the full list of traits in [the traits/user section](https://mainframe-renewal-project.github.io/sear-docs/traits/user/)
 
 ### Deleting a RACF user
 

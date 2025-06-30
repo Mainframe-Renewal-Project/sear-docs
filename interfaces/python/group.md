@@ -110,6 +110,8 @@ result = sear(
 print(result.result)
 ```
 
+You can see the full list of traits in [the traits/group section](https://mainframe-renewal-project.github.io/sear-docs/traits/group/)
+
 ### Altering a RACF group
 
 The sample below changes the `SYSPROG` RACF group to have a gid of 1234567.
@@ -131,6 +133,8 @@ result = sear(
 
 print(result.result)
 ```
+
+You can see the full list of traits in [the traits/group section](https://mainframe-renewal-project.github.io/sear-docs/traits/group/)
 
 ### Deleting a RACF group
 
