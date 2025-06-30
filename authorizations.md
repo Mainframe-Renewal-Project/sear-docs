@@ -40,3 +40,11 @@ These profiles are the ones you need access to in order to modify things in the 
 | `UPDATE` | `IRR.DIGTCERT.DELRING` | `FACILITY` | Delete a **Keyring** |
 
 If you only give `READ` access to the `IRR.DIGTCERT` profiles `in FACILITY` you will only be able to modify your own certificates and keyrings.
+
+## More details
+
+If you want more information the permissions you can find links to the IBM documentation on authorizations for each callable service SEAR uses.
+
+* More details about the authorizations required for **IRRSMO00** can be found [in the IBM documentation](https://www.ibm.com/docs/en/zos/latest?topic=operations-racf-authorization).
+* More details about the authorizations required for **IRRSEQ00** can be found [in the IBM documentation](https://www.ibm.com/docs/en/zos/latest?topic=api-racf-authorization).
+* More details about the authorizations required for **IRRSDL64** can be found [in the IBM documentation](https://www.ibm.com/docs/en/zos/3.1.0?topic=library-racf-authorization).

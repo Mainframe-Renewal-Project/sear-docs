@@ -46,10 +46,7 @@ All versions of **z/OS** and the **IBM Open Enterprise SDK for Python** that are
 
 ## Authorizations
 
-The following authorizations are required in order exploit all of the functionality that SEAR provides.
-
-* More details about the authorizations required for **IRRSMO00** can be found [in the IBM documentation](https://www.ibm.com/docs/en/zos/latest?topic=operations-racf-authorization).
-* More details about the authorizations required for **IRRSEQ00** can be found [in the IBM documentation](https://www.ibm.com/docs/en/zos/latest?topic=api-racf-authorization).
+The following authorizations are required in order exploit some of the basic the functionality that SEAR provides.
 
 &nbsp;
 
@@ -62,7 +59,7 @@ The following authorizations are required in order exploit all of the functional
 | `READ` | `IRR.IRRSMO00.PRECHECK` | `XFACILIT` | **Add**, **Alter** and **Delete** Profiles |
 | `UPDATE` | `<userid>.IRRSMO00` | `SURROGAT` | Run **Add**, **Alter**, and **Delete** **Commands** as a **Specific Userid** |
 
-See the full list in the [Required authorizations](./authorizations.md) page, as well as more information on which authorizations are required to use the API.
+See the full list in the [Required authorizations](./authorizations.md) page, as it contains information on permissions required for certificate and keyring requests as well as more information in general.
 
 ## Installation
 
