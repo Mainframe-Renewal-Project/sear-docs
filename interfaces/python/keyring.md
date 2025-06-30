@@ -7,6 +7,16 @@ parent: Python
 
 # Keyrings
 
+Valid operators for this type of request
+
+| Operator | Valid |
+|----------|-------|
+| add      | ✅    |
+| alter    | ❌    |
+| delete   | ✅    |
+| extract  | ✅    |
+| search   | ❌    |
+
 ## Extracting information
 
 SEAR provides the `extract` operators to gather information about certificates.

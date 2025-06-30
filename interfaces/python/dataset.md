@@ -7,6 +7,16 @@ parent: Python
 
 # Datasets
 
+Valid operators for this type of request
+
+| Operator | Valid |
+|----------|-------|
+| add      | ✅    |
+| alter    | ✅    |
+| delete   | ✅    |
+| extract  | ✅    |
+| search   | ✅    |
+
 ## Extracting information
 
 SEAR provides the `extract` and `search` operators to gather information about dataset profiles.

@@ -7,6 +7,16 @@ parent: Python
 
 # Connects
 
+Valid operators for this type of request
+
+| Operator | Valid |
+|----------|-------|
+| add      | ❌    |
+| alter    | ✅    |
+| delete   | ✅    |
+| extract  | ✅    |
+| search   | ❌    |
+
 ## Updating connects
 
 Unlike with most of the other `admin_types` you can only use `alter` and `delete` to modify connections in the RACF database, `alter` is not just used to alter connects but also create them.
