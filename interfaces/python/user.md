@@ -7,6 +7,16 @@ parent: Python
 
 # Users
 
+Valid operators for this type of request
+
+| Operator | Valid |
+|----------|-------|
+| add      | ✅    |
+| alter    | ✅    |
+| delete   | ✅    |
+| extract  | ✅    |
+| search   | ✅    |
+
 ## Extracting information
 
 SEAR provides the `extract` and `search` operators to gather information about users.
@@ -170,7 +180,7 @@ You can see the full list of traits in [the traits/user section](https://mainfra
 
 ### Altering a RACF user
 
-The sample below gives special and read only auditor to the RACF user `LEONARD`.
+The sample below gives special and read only auditor attributes to the RACF user `LEONARD`.
 
 ```python
 
