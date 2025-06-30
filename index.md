@@ -59,7 +59,7 @@ The following authorizations are required in order to exploit some of the basic 
 
 See the full list in the [Required authorizations](./authorizations.md) page, as it contains information on authorizations required for certificate and keyring requests as well as more information in general.
 
-## Installation
+## Installing the Python interface
 
 {: .note }
 > _You may also optionally [Download SEAR From GitHub](https://github.com/Mainframe-Renewal-Project/sear/releases)._
