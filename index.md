@@ -48,8 +48,6 @@ All versions of **z/OS** and the **IBM Open Enterprise SDK for Python** that are
 
 The following authorizations are required in order exploit some of the basic the functionality that SEAR provides.
 
-&nbsp;
-
 | **Access** | **General Resource Profile** | **Class** | **Functionality** |
 | `READ` | `IRR.RADMIN.LISTUSER` | `FACILITY` | Extract **User Profiles** |
 | `READ` | `IRR.RADMIN.LISTGRP` | `FACILITY` | Extract **Group Profiles** |
@@ -62,8 +60,6 @@ The following authorizations are required in order exploit some of the basic the
 See the full list in the [Required authorizations](./authorizations.md) page, as it contains information on permissions required for certificate and keyring requests as well as more information in general.
 
 ## Installation
-
-&nbsp;
 
 {: .note }
 > _You may also optionally [Download SEAR From GitHub](https://github.com/Mainframe-Renewal-Project/sear/releases)._
