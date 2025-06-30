@@ -32,9 +32,9 @@ These profiles are the ones you need access to in order to modify things in the 
 | **Access** | **General Resource Profile** | **Class** | **Functionality** |
 | `READ` | `IRR.IRRSMO00.PRECHECK` | `XFACILIT` | **Add**, **Alter** and **Delete** profiles and modify the RACF database options. Similar access to system special but doesn't allow you to extract information or work with certificates. |
 | `UPDATE` | `<userid>.IRRSMO00` | `SURROGAT` | Run **Add**, **Alter**, and **Delete** **Commands** as a **Specific Userid**. Doesn't affect certificate or keyring related requests. |
-| `UPDATE` | `IRR.DIGTCERT.ADD` | `FACILITY` | Add a new certificate |
-| `UPDATE` | `IRR.DIGTCERT.DELETE` | `FACILITY` | Delete a certificate |
-| `UPDATE` | `IRR.DIGTCERT.ADDRING` | `FACILITY` | Add a new keyring |
-| `UPDATE` | `IRR.DIGTCERT.DELRING` | `FACILITY` | Delete a keyring |
+| `UPDATE` | `IRR.DIGTCERT.ADD` | `FACILITY` | Add a new **Certificate** |
+| `UPDATE` | `IRR.DIGTCERT.DELETE` | `FACILITY` | Delete a **Certificate** |
+| `UPDATE` | `IRR.DIGTCERT.ADDRING` | `FACILITY` | Add a new **Keyring** |
+| `UPDATE` | `IRR.DIGTCERT.DELRING` | `FACILITY` | Delete a **Keyring** |
 
 If you only give `READ` access to the `IRR.DIGTCERT` profiles `in FACILITY` you will only be able to modify your own certificates and keyrings.
