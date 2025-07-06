@@ -9,6 +9,8 @@ parent: Python
 
 Valid operators for this type of request
 
+<div class="table-wrapper" markdown="block">
+
 | Operator | Valid |
 |----------|-------|
 | add      | ❌    |
@@ -16,6 +18,8 @@ Valid operators for this type of request
 | delete   | ✅    |
 | extract  | ✅    |
 | search   | ❌    |
+
+</div>
 
 ## Updating connects
 
