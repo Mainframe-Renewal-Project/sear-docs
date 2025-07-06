@@ -9,7 +9,7 @@ parent: Python
 
 Valid operators for this type of request
 
-<div class="table-wrapper" markdown="block">
+<div class="valid-operation-table" markdown="block">
 
 | Operator | Valid |
 |----------|-------|
