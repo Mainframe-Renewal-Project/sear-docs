@@ -7,7 +7,7 @@ layout: default
 SEAR provides the following standardized JSON schema for issuing security requests to RACF.
 {: .fs-6 .fw-300 }
 
-## 📥 Parameters *(JSON Keys)*
+## Parameters *(JSON Keys)*
 
 &nbsp;
 
