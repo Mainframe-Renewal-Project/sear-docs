@@ -17,12 +17,12 @@ SEAR provides the following standardized JSON schema for issuing security reques
   &nbsp;
 
   {: .note }
-  > _Only the `"alter"` and `"extract"` **Operations** are allowed for the `"racf-options"` **Admin Type**.
+  > Only the `"alter"` and `"extract"` **Operations** are allowed for the `"racf-options"` **Admin Type**.
 
   &nbsp;
 
   {: .note }
-  > _Only the `"alter"`, `"extract"`, and `"delete"` **Operations** are allowed for the `"permission"` **Admin Type**.
+  > Only the `"alter"`, `"extract"`, and `"delete"` **Operations** are allowed for the `"permission"` **Admin Type**.
 
   &nbsp;
 
@@ -57,7 +57,7 @@ SEAR provides the following standardized JSON schema for issuing security reques
   &nbsp;
 
   {: .note }
-  > _`"profile_name"` is **NOT** allowed to be used with the `"racf-options"` **Admin Type** due to **RACF Options** being a **Singleton** for which there is **NO** concept of multiple discrete "profiles" that can be created, deleted, and managed._
+  > `"profile_name"` is **NOT** allowed to be used with the `"racf-options"` **Admin Type** due to **RACF Options** being a **Singleton** for which there is **NO** concept of multiple discrete "profiles" that can be created, deleted, and managed._
 
   &nbsp;
 
