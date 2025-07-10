@@ -59,25 +59,25 @@ Let's go over what the different parts of this Python means.
 
 The first bit tells SEAR you want to add something to RACF.
 
-```json
+```python
 "operation": "add",
 ```
 
 This bit tells SEAR that the previously mentioned operation is meant to affect RACF users, in this case add a user.
 
-```json
+```python
 "admin_type": "user",
 ```
 
 Now you will have to tell SEAR the username for the new user.
 
-```json
+```python
 "userid": "AMURPHY",
 ```
 
 The last section allows you to set "traits", this is how you define the information that is to be added to the segments (in this case user segments).
 
-```json
+```python
 "traits": {
     "base:name": "Alexis Murphy",
     "omvs:uid": 24,
@@ -91,7 +91,7 @@ Below is an example of what the result of the previous request might look like.
 
 <details open>
 
-```json
+```python
 "profile": {
     "base": {
       "base:audit_logging": false,
