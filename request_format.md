@@ -143,11 +143,11 @@ SEAR provides the following standardized JSON schema for issuing security reques
 
 &nbsp;
 
-The following **SEAR Request JSON** creates new new **z/OS Userid** called `SQUIDWRD` with the following **Traits**:
+The following **SEAR Request JSON** creates new new **z/OS Userid** called `ERIPLEY` with the following **Traits**:
 
-* A **Name** of `"Squidward"`.
+* A **Name** of `"Ellen Ripley"`.
 * An **OMVS UID** of `24`.
-* An **OMVS Home Directory** of `"/u/squidwrd"`.
+* An **OMVS Home Directory** of `"/u/ERIPLEY"`.
 
 ### JSON
 
@@ -155,16 +155,16 @@ The following **SEAR Request JSON** creates new new **z/OS Userid** called `SQUI
 {
   "operation": "add",
   "admin_type": "user",
-  "profile_name": "SQUIDWRD",
+  "profile_name": "ERIPLEY",
   "traits": {
-    "base:name": "Squidward",
+    "base:name": "Ellen Ripley",
     "omvs:uid": 24,
-    "omvs:home_directory": "/u/squidwrd"
+    "omvs:home_directory": "/u/ERIPLEY"
   }
 }
 ```
 
-The following **SEAR Request JSON** alters an exsting **z/OS Userid** called `SQUIDWRD` by **Changing/Setting** the **Name Trait** to `"Squilliam"`.
+The following **SEAR Request JSON** alters an exsting **z/OS Userid** called `ESATTLER` by **Changing/Setting** the **Name Trait** to `"Ellie Sattler"`.
 
 ### JSON
 
@@ -172,14 +172,14 @@ The following **SEAR Request JSON** alters an exsting **z/OS Userid** called `SQ
 {
   "operation": "alter",
   "admin_type": "user",
-  "profile_name": "SQUIDWRD",
+  "profile_name": "ESATTLER",
   "traits": {
-    "base:name": "Squilliam"
+    "base:name": "Ellie Sattler"
   }
 }
 ```
 
-The following **SEAR Request JSON** deletes an exsting **z/OS Userid** called `SQUIDWRD`.
+The following **SEAR Request JSON** deletes an exsting **z/OS Userid** called `MRAINES`.
 
 ### JSON
 
@@ -187,11 +187,11 @@ The following **SEAR Request JSON** deletes an exsting **z/OS Userid** called `S
 {
   "operation": "delete",
   "admin_type": "user",
-  "profile_name": "SQUIDWRD"
+  "profile_name": "MRAINES"
 }
 ```
 
-The following **SEAR Request JSON** extracts the **Profile Data** for a **z/OS Userid** called `SQUIDWRD`.
+The following **SEAR Request JSON** extracts the **Profile Data** for a **z/OS Userid** called `CDEARING`.
 
 ###### JSON
 
@@ -199,6 +199,6 @@ The following **SEAR Request JSON** extracts the **Profile Data** for a **z/OS U
 {
   "operation": "extract",
   "admin_type": "user",
-  "profile_name": "SQUIDWRD"
+  "profile_name": "CDEARING"
 }
 ```
