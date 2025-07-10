@@ -9,7 +9,7 @@ pySEAR is the Python language interface for SEAR, it calls the same core API as 
 
 ## Installing pySEAR
 
-The Python distribution of SEAR may be installed from [PyPi](https://pypi.org/project/pysear/) using `pip`.
+The Python interface of SEAR may be installed from [PyPi](https://pypi.org/project/pysear/) using `pip`.
 
 ```shell
 pip install pysear
@@ -23,7 +23,7 @@ pip install pysear-0.2.1-py3-none-any.whl
 
 A third option is setting up Artifactory access, or an equivalent solution, to your mainframe system and pointing pip to your company's artifactory index. Setting up something like Artifactory would allow you to use the first option to install SEAR, assuming it is set up correctly. This is probably the best option, especially if you plan to use Python more in general.
 
-Before you can use pySEAR you will need some RACF authorizations and possibly even define some RACF profiles, see [authorizations](./authorizations.md).
+Before you can use pySEAR you will need some RACF authorizations and possibly even need to define some RACF profiles, see [authorizations](./authorizations.md).
 
 ## Using pySEAR
 
