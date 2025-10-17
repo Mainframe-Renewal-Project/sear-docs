@@ -119,7 +119,7 @@ The following tables describes the resource segments and traits that are support
 ## `csdata`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
-| `"csdata:*"` | `*` | `string` | N/A | `"set"`<br>`"delete"` |
+| `"csdata:*"` | `*` | `string` | `"set"`<br>`"delete"` | ? |
 
 ## `dlfdata`
 

@@ -83,7 +83,7 @@ The following tables describes the dataset profile segments and traits that are 
 ## `csdata`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
-| `"csdata:*"` | `*` | `string` | N/A | `"set"`<br>`"delete"` |
+| `"csdata:*"` | `*` | `string` | `"set"`<br>`"delete"` | ? |
 
 ## `dfp`
 

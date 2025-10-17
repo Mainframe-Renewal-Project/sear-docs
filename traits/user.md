@@ -96,7 +96,7 @@ The following tables describes the user segments and traits that are supported f
 ## `csdata`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
-| `"csdata:*"` | `*` | `string` | N/A | `"set"`<br>`"delete"` |
+| `"csdata:*"` | `*` | `string` | `"set"`<br>`"delete"` | ? |
 
 ## `cics`
 
