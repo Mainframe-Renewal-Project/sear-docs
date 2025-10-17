@@ -80,6 +80,11 @@ The following tables describes the dataset profile segments and traits that are 
 | `"base:resident_volumes"` | `volcnt` | `repeat` | N/A | `"extract"` |
 | `"base:warn_on_insufficient_access"` | `warning` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"` |
 
+## `csdata`
+
+| **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
+| `"csdata:*"` | `*` | `string` | N/A | `"set"`<br>`"delete"` |
+
 ## `dfp`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |

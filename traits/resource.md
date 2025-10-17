@@ -116,6 +116,11 @@ The following tables describes the resource segments and traits that are support
 | `"cfdef:valid_other_characters"` | `cfother` | `string` | `"set"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"cfdef:validation_rexx_exec"` | `cfvalrx` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
+## `csdata`
+
+| **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
+| `"csdata:*"` | `*` | `string` | N/A | `"set"`<br>`"delete"` |
+
 ## `dlfdata`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |

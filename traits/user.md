@@ -93,6 +93,11 @@ The following tables describes the user segments and traits that are supported f
 | `"base:logon_allowed_days"` | `whendyct` | `repeat` | N/A | `"extract"` |
 | `"base:logon_allowed_time"` | `whentime` | `string` | `"set"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
+## `csdata`
+
+| **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
+| `"csdata:*"` | `*` | `string` | N/A | `"set"`<br>`"delete"` |
+
 ## `cics`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
