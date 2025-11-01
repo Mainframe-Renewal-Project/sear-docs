@@ -4,7 +4,7 @@ has_toc: false
 parent: Python
 ---
 
-# Racf Remote Sharing Facility (RRSF)
+# RACF Remote Sharing Facility (RRSF)
 
 Valid operators for this type of request
 
