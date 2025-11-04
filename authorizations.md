@@ -30,6 +30,8 @@ These profiles are the ones you need access to in order to extract information o
 
 If you only give `READ` access to the `IRR.DIGTCERT` profiles `in FACILITY` you will only be able to extract information on your own certificates and keyrings.
 
+If you only grant access to `IRR.RADMIN.EXTRACT.RRSF` you will only be able to extract a small amount of RRSF data, such as the RACF subsystem userid, for full RRSF data extracts the two classes in opercmds are needed.
+
 ## Modifying the RACF database
 
 These profiles are the ones you need access to in order to modify things in the RACF database, such as create a new user or delete dataset profile.
