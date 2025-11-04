@@ -6,7 +6,7 @@ has_toc: false
 
 # Required authorizations
 
-This page details the authorization you need to use the SEAR API. You can use the API without having access to all of these profiles at the same time, do keep in mind it might restrict which parts you can use. It's for example possible to use this granularity to give a system user only the ability to extract information with this API and deliver the RACF data as a report, since there is no need to give more permission than is necessary. Inversely it is also possible to only give a system user the ability to change things in RACF, though that is not as useful for security since being able to able change things in RACF also means the user can escalate their privileges with the API.
+This page details the authorization you need to use the SEAR API. You can use the API without having access to all of these profiles at the same time, do keep in mind it might restrict which parts you can use. It's for example possible to use this granularity to give a system user only the ability to extract information with this API and deliver the RACF data as a report, since there is no need to give more permission than is necessary. Inversely it is also possible to only give a system user the ability to change things in RACF, though that is not as useful for security since being able to change things in RACF also means the user can escalate their privileges with the API.
 
 {: .warning }
 
