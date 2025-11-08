@@ -47,4 +47,4 @@ If you want more information on the required authorizations you can find links t
 
 * More details about the authorizations required for **IRRSMO00** can be found [in the IBM documentation](https://www.ibm.com/docs/en/zos/latest?topic=operations-racf-authorization).
 * More details about the authorizations required for **IRRSEQ00** can be found [in the IBM documentation](https://www.ibm.com/docs/en/zos/latest?topic=api-racf-authorization).
-* More details about the authorizations required for **IRRSDL64** can be found [in the IBM documentation](https://www.ibm.com/docs/en/zos/3.1.0?topic=library-racf-authorization).
+* More details about the authorizations required for **IRRSDL64** can be found [in the IBM documentation](https://www.ibm.com/docs/en/zos/latest?topic=library-racf-authorization).
