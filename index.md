@@ -19,7 +19,7 @@ Security API for RACF (SEAR) - A standardized JSON interface for RACF that enabl
 
 {: .warning }
 
-> * SEAR encodes the data it passes to RACF in Code Page `IBM-1047`._
+> * SEAR encodes the data it passes to RACF in Code Page `IBM-1047`.
 > * _If you are entering information with special or national characters, users viewing or altering this information from terminals using different or international codepages may see unexpected data._
 > * _Please consult a list of invariant characters to use for such information if this applies to you._
 
