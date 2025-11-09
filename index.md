@@ -105,7 +105,7 @@ flowchart TD
  subgraph s2["HLASM"]
         n4["IRRSEQ00 (31-bit OSLINK EBCDIC)"]
   end
-    A["Python interface"] --- n3@{ label: "<span style=\"padding-left:\">JSON (UTF8)</span>" }
+    A["Python interface"] --- n3@{ label: "<span style=\"padding-left:\">JSON (UTF-8)</span>" }
     n3 --- n1
     n1 --- n5 & n7 & n12
     n5 --- n2
@@ -116,15 +116,15 @@ flowchart TD
     n10["SAF"] --- n9["RACF"]
     n4 --- n10
     n12 --- n11
-    n13["Golang (future interface)"] --- n14@{ label: "<span style=\"padding-left:\">JSON (UTF8)</span>" }
+    n13["Golang (future interface)"] --- n14@{ label: "<span style=\"padding-left:\">JSON (UTF-8)</span>" }
     n14 --- n1
-    n15["Java (future interface)"] --- n16@{ label: "<span style=\"padding-left:\">JSON (UTF8)</span>" }
+    n15["Java (future interface)"] --- n16@{ label: "<span style=\"padding-left:\">JSON (UTF-8)</span>" }
     n16 --- n1
-    n17["Node.js (future interface)"] --- n18@{ label: "<span style=\"padding-left:\">JSON (UTF8)</span>" }
+    n17["Node.js (future interface)"] --- n18@{ label: "<span style=\"padding-left:\">JSON (UTF-8)</span>" }
     n18 --- n1
     n11 --- n19["Binary (EBCDIC)"]
     n19 --- n10
-    n20["C/C++ interface"] --- n21@{ label: "<span style=\"padding-left:\">JSON (UTF8)</span>" }
+    n20["C/C++ interface"] --- n21@{ label: "<span style=\"padding-left:\">JSON (UTF-8)</span>" }
     n21 --- n1
     n1@{ shape: rounded}
     n2@{ shape: rounded}
