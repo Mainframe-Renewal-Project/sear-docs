@@ -57,7 +57,7 @@ SEAR provides the following standardized JSON schema for issuing security reques
   &nbsp;
 
   {: .note }
-  > `"profile_name"` is **NOT** allowed to be used with the `"racf-options"` **Admin Type** due to **RACF Options** being a **Singleton** for which there is **NO** concept of multiple discrete "profiles" that can be created, deleted, and managed._
+  > `"profile_name"` is **NOT** allowed to be used with the `"racf-options"` **Admin Type** due to **RACF Options** being a **Singleton** for which there is **NO** concept of multiple discrete "profiles" that can be created, deleted, and managed.
 
   &nbsp;
 
@@ -127,7 +127,7 @@ SEAR provides the following standardized JSON schema for issuing security reques
   &nbsp;
 
   {: .note }
-  > _In order to use `"run_as_userid"`, the caller must have at least `UPDATE` access to the `<userid>.IRRSMO00` **General Resource Profile** in the `SURROGAT` **Class**, where `<userid>` represents the **z/OS Userid** to perform **Security Operations** as. More information about **IRRSMO00 Authorizations** can be found [here](https://www.ibm.com/docs/en/zos/latest?topic=operations-racf-authorization)._
+  > _In order to use `"run_as_userid"`, the caller must have at least `UPDATE` access to the `<userid>.IRRSMO00` **General Resource Profile** in the `SURROGAT` **Class**, where `<userid>` represents the **z/OS Userid** to perform **Security Operations** as. More information about **IRRSMO00 Authorizations** can be found [in the IBM docs](https://www.ibm.com/docs/en/zos/latest?topic=operations-racf-authorization)._
 
   &nbsp;
 
