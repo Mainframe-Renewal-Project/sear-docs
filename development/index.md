@@ -9,3 +9,4 @@ has_toc: false
 The following pages contain information useful for contributing to the project or modifying the code:
 
 * [Building from source](./build.md)
+* [Building the Python wheel](./build.md)
