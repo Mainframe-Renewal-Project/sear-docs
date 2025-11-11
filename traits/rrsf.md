@@ -14,5 +14,5 @@ The following tables describes the RRSF options traits that are returned by extr
 | `"base:subsystem_name"` | `N/A` | `string` | N/A | `"extract"` |
 | `"base:subsystem_userid"` | `N/A` | `string` | N/A | `"extract"` |
 | `"base:subsystem_operator_prefix"` | `N/A` | `string` | N/A | `"extract"` |
-| `"base:total_defined_nodes"` | `N/A` | `uint` | N/A | `"extract"` |
+| `"base:defined_nodes_total"` | `N/A` | `uint` | N/A | `"extract"` |
 | `"base:node_definitions"` | `N/A` | `repeat` | N/A | `"extract"` |
