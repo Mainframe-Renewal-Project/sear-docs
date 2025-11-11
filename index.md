@@ -97,7 +97,7 @@ flowchart TD
  subgraph s1["C/C++"]
         n1["Security API for RACF (SEAR)"]
         n2@{ label: "<span style=\"padding-left:\">IRRSMO00 (64-bit OSLINK EBCDIC)</span>" }
-        n5["Setropts, user, group, dataset, and resource operation (Add, alter, delete)"]
+        n5["RRSF, setropts, user, group, dataset, and resource operation (Add, alter, delete)"]
         n11["IRRSDL64 (64 bit OSLINK EBCDIC)"]
         n12["Certificate managment operation (Add, extract, delete)"]
         n7@{ label: "<span style=\"padding-left:\">Setropts, user, group, dataset, and resource operation</span>(Extract or Search)" }
