@@ -8,7 +8,7 @@ parent: Python
 
 > Please note RRSF support is exclusive to SEAR 0.4.0 and later, earlier versions do not support it.
 
-# RACF Remote Sharing Facility (RRSF)
+# RRSF
 
 Valid operators for this type of request
 
