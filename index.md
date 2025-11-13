@@ -92,6 +92,7 @@ python
 
 &nbsp;
 
+<pre class="mermaid">
 flowchart TB
  subgraph s1["C/C++"]
         n1["Security API for RACF (SEAR)"]
@@ -227,5 +228,6 @@ flowchart TB
     style n17 stroke-width:2px,stroke-dasharray: 2
     style n23 fill:#FFD600,stroke-width:2px,stroke-dasharray: 2,color:#000000
     style n24 fill:#AA00FF,color:#FFFFFF,stroke-width:2px,stroke-dasharray: 2
+
 
 </pre>
