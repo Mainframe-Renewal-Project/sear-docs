@@ -227,7 +227,7 @@ flowchart TB
     style n13 stroke-width:2px,stroke-dasharray: 2,stroke:#FFFFFF
     style n15 stroke-width:2px,stroke-dasharray: 2,stroke:#FFFFFF
     style n17 stroke-width:2px,stroke-dasharray: 2,stroke:#FFFFFF
-    style n20 stroke:#FFFFFF
+    style n20 stroke:none
     style n23 fill:#FFD600,stroke-width:2px,stroke-dasharray: 2,color:#000000,stroke:#FFFFFF
     style n24 fill:#AA00FF,color:#FFFFFF,stroke-width:2px,stroke-dasharray: 2,stroke:#FFFFFF
 
