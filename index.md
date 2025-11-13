@@ -223,7 +223,7 @@ flowchart TB
     classDef Class_07 fill:#FF6D00, color:#FFFFFF
     classDef Class_08 fill:#FFFFFF, color:#000000, stroke:#000000
     classDef Class_09 fill:#00559e, stroke:transparent, color:#FFFFFF
-    style A stroke:#FFFFFF
+    style A stroke:none
     style n13 stroke-width:2px,stroke-dasharray: 2,stroke:#FFFFFF
     style n15 stroke-width:2px,stroke-dasharray: 2,stroke:#FFFFFF
     style n17 stroke-width:2px,stroke-dasharray: 2,stroke:#FFFFFF
