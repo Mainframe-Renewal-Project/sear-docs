@@ -93,7 +93,7 @@ python
 &nbsp;
 
 <pre class="mermaid">
-flowchart TD
+flowchart TB
  subgraph s1["C/C++"]
         n1["Security API for RACF (SEAR)"]
         n2@{ label: "<span style=\"padding-left:\">IRRSMO00 (64-bit OSLINK EBCDIC)</span>" }
@@ -105,27 +105,49 @@ flowchart TD
  subgraph s2["HLASM"]
         n4["IRRSEQ00 (31-bit OSLINK EBCDIC)"]
   end
-    A["Python interface"] --- n3@{ label: "<span style=\"padding-left:\">JSON (UTF-8)</span>" }
+ subgraph s3["SEAR project"]
+        s1
+        s2
+        n3@{ label: "<span style=\"padding-left:\">JSON (UTF-8)</span>" }
+        A["SEAR Python JSON interface"]
+        n6["Binary (EBCDIC)"]
+        n8["Binary (EBCDIC)"]
+        n9["RACF"]
+        n10["SAF"]
+        n14@{ label: "<span style=\"padding-left:\">JSON (UTF-8)</span>" }
+        n13@{ label: "<span style=\"padding-left:\">SEAR Golang JSON interface (future interface)</span>" }
+        n16@{ label: "<span style=\"padding-left:\">JSON (UTF-8)</span>" }
+        n15["SEAR Java JSON interface (future interface)"]
+        n18@{ label: "<span style=\"padding-left:\">JSON (UTF-8)</span>" }
+        n17["SEAR Node.js JSON interface (future interface)"]
+        n19["Binary (EBCDIC)"]
+        n21@{ label: "<span style=\"padding-left:\">JSON (UTF-8)</span>" }
+        n20["SEAR C/C++ JSON interface"]
+  end
+    n23["Abstracted Python API (future inteface)"] --> A
+    n24["Ansible inteface (future inteface)"] --> n23
+    A --- n3
     n3 --- n1
     n1 --- n5 & n7 & n12
     n5 --- n2
-    n2 --- n6["Binary (EBCDIC)"]
+    n2 --- n6
     n6 --- n4
-    n7 --- n8["Binary (EBCDIC)"]
+    n7 --- n8
     n8 --- n4
-    n10["SAF"] --- n9["RACF"]
+    n10 --- n9
     n4 --- n10
     n12 --- n11
-    n13["Golang (future interface)"] --- n14@{ label: "<span style=\"padding-left:\">JSON (UTF-8)</span>" }
+    n13 --- n14
     n14 --- n1
-    n15["Java (future interface)"] --- n16@{ label: "<span style=\"padding-left:\">JSON (UTF-8)</span>" }
+    n15 --- n16
     n16 --- n1
-    n17["Node.js (future interface)"] --- n18@{ label: "<span style=\"padding-left:\">JSON (UTF-8)</span>" }
+    n17 --- n18
     n18 --- n1
-    n11 --- n19["Binary (EBCDIC)"]
+    n11 --- n19
     n19 --- n10
-    n20["C/C++ interface"] --- n21@{ label: "<span style=\"padding-left:\">JSON (UTF-8)</span>" }
+    n20 --- n21
     n21 --- n1
+
     n1@{ shape: rounded}
     n2@{ shape: rounded}
     n5@{ shape: rounded}
@@ -133,21 +155,23 @@ flowchart TD
     n12@{ shape: rounded}
     n7@{ shape: rounded}
     n4@{ shape: rounded}
-    A@{ shape: rounded}
     n3@{ shape: text}
+    A@{ shape: rounded}
     n6@{ shape: text}
     n8@{ shape: text}
-    n10@{ shape: rounded}
     n9@{ shape: cyl}
-    n13@{ shape: rounded}
+    n10@{ shape: rounded}
     n14@{ shape: text}
-    n15@{ shape: rounded}
+    n13@{ shape: rounded}
     n16@{ shape: text}
-    n17@{ shape: rounded}
+    n15@{ shape: rounded}
     n18@{ shape: text}
+    n17@{ shape: rounded}
     n19@{ shape: text}
-    n20@{ shape: rounded}
     n21@{ shape: text}
+    n20@{ shape: rounded}
+    n23@{ shape: rounded}
+    n24@{ shape: rounded}
      n1:::Class_08
      n2:::Class_06
      n5:::Class_07
@@ -155,39 +179,39 @@ flowchart TD
      n12:::Class_07
      n7:::Class_07
      n4:::Class_06
+     n3:::Ash
      A:::Pine
      A:::Class_01
      A:::Class_01
      A:::Class_01
-     n3:::Ash
      n6:::Ash
      n8:::Ash
-     n10:::Class_05
      n9:::Class_05
+     n10:::Class_05
+     n14:::Ash
      n13:::Pine
      n13:::Class_01
      n13:::Class_02
-     n14:::Ash
+     n16:::Ash
      n15:::Pine
      n15:::Class_01
      n15:::Class_02
      n15:::Class_03
      n15:::Class_03
-     n16:::Ash
+     n18:::Ash
      n17:::Pine
      n17:::Class_01
      n17:::Class_02
      n17:::Class_03
      n17:::Class_03
      n17:::Class_04
-     n18:::Ash
      n19:::Ash
+     n21:::Ash
      n20:::Pine
      n20:::Class_01
      n20:::Class_01
      n20:::Class_01
      n20:::Class_09
-     n21:::Ash
     classDef Pine stroke-width:1px, stroke-dasharray:none, stroke:#254336, fill:#27654A, color:#FFFFFF
     classDef Class_02 fill:#68d7e2, color:#000000
     classDef Class_03 fill:#ec2025, color:#FFFFFF, stroke:#000000
@@ -199,6 +223,10 @@ flowchart TD
     classDef Class_07 fill:#FF6D00, color:#FFFFFF
     classDef Class_08 fill:#FFFFFF, color:#000000, stroke:#000000
     classDef Class_09 fill:#00559e, stroke:transparent, color:#FFFFFF
-
+    style n13 stroke-width:2px,stroke-dasharray: 2
+    style n15 stroke-width:2px,stroke-dasharray: 2
+    style n17 stroke-width:2px,stroke-dasharray: 2
+    style n23 fill:#FFD600,stroke-width:2px,stroke-dasharray: 2
+    style n24 fill:#AA00FF,color:#FFFFFF,stroke-width:2px,stroke-dasharray: 2
 
 </pre>
