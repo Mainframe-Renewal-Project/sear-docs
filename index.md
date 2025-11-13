@@ -124,8 +124,8 @@ flowchart TB
         n21@{ label: "<span style=\"padding-left:\">JSON (UTF-8)</span>" }
         n20["SEAR C/C++ JSON interface"]
   end
-    n23["Abstracted Python API (future inteface)"] --> A
-    n24["Ansible inteface (future inteface)"] --> n23
+    n23["Abstracted Python API (future inteface)"] --- A
+    n24["Ansible inteface (future inteface)"] --- n23
     A --- n3
     n3 --- n1
     n1 --- n5 & n7 & n12
@@ -228,6 +228,5 @@ flowchart TB
     style n17 stroke-width:2px,stroke-dasharray: 2
     style n23 fill:#FFD600,stroke-width:2px,stroke-dasharray: 2,color:#000000
     style n24 fill:#AA00FF,color:#FFFFFF,stroke-width:2px,stroke-dasharray: 2
-
 
 </pre>
