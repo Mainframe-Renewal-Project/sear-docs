@@ -100,7 +100,7 @@ flowchart TB
         n5["Setropts, user, group, dataset, and resource operation (Add, alter, delete)"]
         n11["IRRSDL64 (64 bit OSLINK EBCDIC)"]
         n12["Certificate managment operation (Add, extract, delete)"]
-        n7@{ label: "<span style=\"padding-left:\">Setropts, user, group, dataset, and resource operation</span>(Extract or Search)" }
+        n7@{ label: "<span style=\"padding-left:\">Setropts, user, group, dataset, and resource operation (Extract or Search)</span>" }
   end
  subgraph s2["HLASM"]
         n4["IRRSEQ00 (31-bit OSLINK EBCDIC)"]
