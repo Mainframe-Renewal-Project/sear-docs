@@ -88,7 +88,7 @@ python
 ## Architecture
 
 {: .warning }
-> _Just because a **Programming Language Exploiter** is shown on this architecture diagram does not mean that there is or will be an interface created, maintained, and distributed by the SEAR team for that programming language. The interfaces currently maintained and distributed by the SEAR team can be found [in the interfaces page](./interfaces/)._
+> _Just because a **Programming Language Exploiter** is shown on this architecture diagram does not mean that there is or will be an interface created, maintained, and distributed by the Mainframe Renewal Project for that programming language. The interfaces currently maintained and distributed by the MRP can be found [in the interfaces page](./interfaces/)._
 
 &nbsp;
 
