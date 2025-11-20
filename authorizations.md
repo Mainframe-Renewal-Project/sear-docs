@@ -49,6 +49,6 @@ If you only give `READ` access to the `IRR.DIGTCERT` profiles `in FACILITY` that
 
 If you want more information on the required authorizations you can find links to the IBM documentation on authorizations for each callable service SEAR uses below:
 
-* More details about the authorizations required for **IRRSMO00** can be found [in the IBM documentation](https://www.ibm.com/docs/en/zos/latest?topic=operations-racf-authorization).
-* More details about the authorizations required for **IRRSEQ00** can be found [in the IBM documentation](https://www.ibm.com/docs/en/zos/latest?topic=api-racf-authorization).
-* More details about the authorizations required for **IRRSDL64** can be found [in the IBM documentation](https://www.ibm.com/docs/en/zos/latest?topic=library-racf-authorization).
+* More details about the authorizations required for **IRRSMO00** can be found [in the RACF callable services documentation](https://www.ibm.com/docs/en/zos/latest?topic=operations-racf-authorization).
+* More details about the authorizations required for **IRRSEQ00** can be found [in the RACF callable services documentation](https://www.ibm.com/docs/en/zos/latest?topic=api-racf-authorization).
+* More details about the authorizations required for **IRRSDL64** can be found [in the RACF callable services documentation](https://www.ibm.com/docs/en/zos/latest?topic=library-racf-authorization).
