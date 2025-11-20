@@ -10,7 +10,7 @@ This page details the authorization you need to use the SEAR API. You can use th
 
 {: .warning }
 
-> Make sure `IRR.IRRSMO00.DISABLE.XML` is not defined in the `XFACILIT`, as it will prevent you from using non-extract/search functionality in SEAR.
+> Make sure `IRR.IRRSMO00.DISABLE.XML` is **not** defined in the `XFACILIT`, as it will prevent you from using non-extract/search functionality in SEAR.
 
 {: .warning }
 
