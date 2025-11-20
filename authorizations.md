@@ -43,7 +43,7 @@ These profiles are the ones you need access to in order to modify things in the 
 | `UPDATE` | `IRR.DIGTCERT.ADDRING` | `FACILITY` | Add a new **Keyring** |
 | `UPDATE` | `IRR.DIGTCERT.DELRING` | `FACILITY` | Delete a **Keyring** |
 
-If you only give `READ` access to the `IRR.DIGTCERT` profiles `in FACILITY` you will only be able to modify your own certificates and keyrings.
+If you only give `READ` access to the `IRR.DIGTCERT` profiles `in FACILITY` that user/group will only be able to modify their own certificates and keyrings, this can either be a problem or an advantage depending on your goals.
 
 ## More details
 
