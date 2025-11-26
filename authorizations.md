@@ -26,6 +26,9 @@ These profiles are the ones you need access to in order to extract information o
 | `READ` | `IRR.RADMIN.RLIST` | `FACILITY` | Extract **General Resource Profiles** |
 | `READ` | `IRR.RADMIN.LISTDSD` | `FACILITY` | Extract **Data Set Profiles** |
 | `READ` | `IRR.RADMIN.SETROPTS.LIST` | `FACILITY` | List **RACF Options** |
+| `READ` | `<replace with subsystem-name>.SET.LIST` | `OPERCMDS` | List **RRSF Options** |
+| `READ` | `<replace with subsystem-name>.TARGET.LIST` | `OPERCMDS` | List **RRSF Options** |
+| `READ` | `IRR.RADMIN.EXTRACT.RRSF` | `FACILITY` | List **RRSF Options** |
 | `CONTROL` | `IRR.DIGTCERT.LIST` | `FACILITY` | List **Certificates** |
 | `UPDATE` | `IRR.DIGTCERT.LISTRING` | `FACILITY` | List **Keyrings** |
 
