@@ -4,11 +4,11 @@ parent: Traits
 nav_order: 8
 ---
 
+# RRSF Options Traits
+
 {: .warning }
 
-> Please note RRSF support is exclusive to SEAR 0.4.0 and later, earlier versions do not support it.
-
-# RRSF Options Traits
+> Please note RRSF support is exclusive to SEAR 0.4.0 and later, earlier versions do not support it.s
 
 The following tables describes the RRSF options traits that are returned by extract operations.
 
