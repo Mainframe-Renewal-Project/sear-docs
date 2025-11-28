@@ -4,11 +4,11 @@ has_toc: false
 parent: Examples
 ---
 
+# RRSF
+
 {: .warning }
 
 > Please note RRSF support is exclusive to SEAR 0.4.0 and later, earlier versions do not support it.
-
-# RRSF
 
 Valid operators for this type of request
 
