@@ -17,3 +17,4 @@ Sub-pages contains contains examples of how to use SEAR in the real world.
 * [Resource profiles](./resource.md)
 * [RACF options](./setropts.md)
 * [Users](./user.md)
+* [RRSF](./rrsf.md)
