@@ -124,7 +124,7 @@ flowchart TB
         n21@{ label: "<span style=\"padding-left:\">JSON (UTF-8)</span>" }
         n20["SEAR C/C++ JSON interface"]
   end
-    n23["Abstracted Python API (future interface)"] --- A
+    n23["pyRACF (successor to IBM's pyRACF)"] --- A
     n24["Ansible interface (future interface)"] --- n23
     A --- n3
     n3 --- n1
