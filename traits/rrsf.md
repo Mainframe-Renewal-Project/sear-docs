@@ -32,7 +32,7 @@ The following tables describes the RRSF options traits that are returned by extr
 
 ## `base:nodes`
 
-This structure repeats for every RRSF node defined in base
+This structure repeats for every RRSF node defined on the system.
 
 | `"base:node_name"` | N/A | `string` | N/A | `"extract"` |
 | `"base:multisystem_node_name"` | N/A | `string` | N/A | `"extract"` |
