@@ -18,4 +18,4 @@ The following pages describe all of the valid traits for each admin type.
 * [General Resource Traits](./resource.md)
 * [Permission Traits](./permission.md)
 * [RACF Options](./racf_options.md)
-* [RRSF Options](./rrsf.md)
+* [RRSF Traits](./rrsf.md)

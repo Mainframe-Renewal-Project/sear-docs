@@ -4,7 +4,7 @@ parent: Traits
 nav_order: 8
 ---
 
-# RRSF Options Traits
+# RRSF Traits
 
 {: .warning }
 
