@@ -124,7 +124,7 @@ flowchart TB
         n21@{ label: "<span style=\"padding-left:\">JSON (UTF-8)</span>" }
         n20["SEAR C/C++ JSON interface"]
   end
-    n23["pyRACF (successor to IBM's pyRACF)"] --- A
+    n23@{ label: "pyRACF (successor to IBM's pyRACF)" } --- A
     n24["Ansible interface (future interface)"] --- n23
     A --- n3
     n3 --- n1
@@ -147,6 +147,7 @@ flowchart TB
     n19 --- n10
     n20 --- n21
     n21 --- n1
+    n25["RACSHELL (z/OS Unix RACF shell interface)"] --- n20
 
     n1@{ shape: rounded}
     n2@{ shape: rounded}
@@ -172,6 +173,7 @@ flowchart TB
     n20@{ shape: rounded}
     n23@{ shape: rounded}
     n24@{ shape: rounded}
+    n25@{ shape: rounded}
      n1:::Class_08
      n2:::Class_06
      n5:::Class_07
@@ -212,6 +214,11 @@ flowchart TB
      n20:::Class_01
      n20:::Class_01
      n20:::Class_09
+     n25:::Pine
+     n25:::Class_01
+     n25:::Class_01
+     n25:::Class_01
+     n25:::Class_09
     classDef Pine stroke-width:1px, stroke-dasharray:none, stroke:#254336, fill:#27654A, color:#FFFFFF
     classDef Class_02 fill:#68d7e2, color:#000000
     classDef Class_03 fill:#ec2025, color:#FFFFFF, stroke:#000000
@@ -230,5 +237,6 @@ flowchart TB
     style n20 stroke:none
     style n23 fill:#FFD600,stroke-width:2px,stroke-dasharray: 2,color:#000000,stroke:#FFFFFF
     style n24 fill:#AA00FF,color:#FFFFFF,stroke-width:2px,stroke-dasharray: 2,stroke:#FFFFFF
+    style n25 stroke:none
 
 </pre>
