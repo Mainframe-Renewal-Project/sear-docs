@@ -10,6 +10,10 @@ parent: Examples
 
 > Please note RRSF support is exclusive to SEAR 0.4.0 and later, earlier versions do not support this feature.
 
+{: .warning }
+
+> Be mindful of what you do with the RRSF extracted data, it contains many pieces of sensitive information about system layout and network configuration.
+
 Valid operators for this type of request
 
 <div class="valid-operation-table" markdown="block">
