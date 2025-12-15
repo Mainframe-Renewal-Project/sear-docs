@@ -50,7 +50,7 @@ If you only give `READ` access to the `IRR.DIGTCERT` profiles in `FACILITY` that
 
 ## Currently unused authorizations
 
-These authorizations aren't required or used right now but might be used in a future update.
+These authorizations aren't required or used right now but might be required for select functionality in a future update.
 
 | **Access** | **General Resource Profile** | **Class** | **Functionality** |
 | `READ` | `IRR.RUSERMAP` | `FACILITY` | List **RACMAP relationships** |
