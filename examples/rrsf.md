@@ -12,7 +12,7 @@ parent: Examples
 
 {: .warning }
 
-> Be mindful of what you do with the RRSF extracted data, it contains many pieces of sensitive information about system layout and network configuration.
+> Be mindful of what you do with the RRSF extracted data, it contains many pieces of sensitive information about system layout and network configuration that can be abused by bad actors.
 
 Valid operators for this type of request
 
