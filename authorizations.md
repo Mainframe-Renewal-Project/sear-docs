@@ -54,6 +54,7 @@ These authorizations aren't required or used right now but might be required for
 
 | **Access** | **General Resource Profile** | **Class** | **Functionality** |
 | `READ` | `IRR.RUSERMAP` | `FACILITY` | List **RACMAP relationships** |
+| `READ` | `IRR.IDIDMAP.QUERY` | `FACILITY` | List **RACMAP relationships** |
 
 ## More details
 
