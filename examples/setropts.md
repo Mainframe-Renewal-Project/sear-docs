@@ -9,7 +9,7 @@ parent: Examples
 
 {: .warning }
 
-> Remember that these settings impact the whole system before using SEAR to make any kind of changes, also keep in mind that information extracted about system settings are highly sensitive and should be stored securely.
+> Remember that these settings impact the whole system, make sure any planned changes are sound before using SEAR to make any kind of changes. It is also keep in mind that information extracted about system settings are highly sensitive and should be stored securely.
 
 Valid operators for this type of request
 
