@@ -48,6 +48,13 @@ These profiles are the ones you need access to in order to modify things in the 
 
 If you only give `READ` access to the `IRR.DIGTCERT` profiles in `FACILITY` that user/group will only be able to modify their own certificates and keyrings, this can either be a problem or an advantage depending on your goals.
 
+## Currently unused authorizations
+
+These authorizations aren't required or used right now but might be used in a future update.
+
+| **Access** | **General Resource Profile** | **Class** | **Functionality** |
+| `READ` | `IRR.RUSERMAP` | `FACILITY` | List **RACMAP relationships** |
+
 ## More details
 
 If you want more information on the required authorizations you can find links to the IBM documentation on authorizations for each callable service SEAR uses below:
