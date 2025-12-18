@@ -10,7 +10,7 @@ has_toc: false
 
 > Just because a new version of z/OS or Python is not mentioned does not mean it won't be supported in future versions
 
-This page documents all dependencies required to use SEAR, not what is required to build SEAR. If you're looking for required authorizations to use SEAR [see the authorizations page](./authorizations.md).
+This page documents all dependencies required to use SEAR, not what is required to build SEAR. If you're looking for the required authorizations to use SEAR [see the authorizations page](./authorizations.md).
 
 ## Supported z/OS versions
 
