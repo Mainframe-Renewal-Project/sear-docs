@@ -6,7 +6,7 @@ has_toc: false
 
 # Required authorizations
 
-This page details the authorization you need to use the SEAR API. You can use the API without having access to all of these profiles at the same time, do keep in mind it might restrict which parts you can use. It's for example possible to use this granularity to give a system user only the ability to extract information with this API and deliver the RACF data as a report, since there is no need to give more permission than is necessary. Inversely it is also possible to only give a system user the ability to change things in RACF, though that is not as useful for security since being able to change things in RACF also means the user can escalate their privileges with the API. Another useful ability is to give access to certificate administration, but not other updates to RACF such as modifying access to resource profiles, this can greatly increase security for automation related to certificates or keyrings.
+This page details the authorization you need to use the SEAR API. You can use the API without having access to all of these RACF callable services at the same time, do keep in mind it might restrict which parts you can use. It's for example possible to use this granularity to give a system user only the ability to extract information with this API and deliver the RACF data as a report, since there is no need to give more permission than is necessary. Inversely it is also possible to only give a system user the ability to change things in RACF, though that is not as useful for security since being able to change things in RACF also means the user can escalate their privileges with the API. Another useful ability is to give access to certificate administration, but not other updates to RACF such as modifying access to resource profiles, this can greatly increase security for automation related to certificates or keyrings.
 
 {: .warning }
 
@@ -16,7 +16,11 @@ This page details the authorization you need to use the SEAR API. You can use th
 
 > In general access to the profiles listed below should only be given out to security administrators or security automation users. Even extract/search access to the API should be given out cautiously, being able to "data mine" the RACF database is useful for bad actors. Profiles on this page should **always** have a UACC of `NONE` and `id(*)` shouldn't be on the access lists either.
 
-## Data extraction requests
+## RACF callable services
+
+This section goes into the RACF callable services SEAR uses and which you need access to in order to do specific things with SEAR.
+
+### Data extraction requests
 
 These profiles are the ones you need access to in order to extract information out of the RACF database
 
@@ -34,7 +38,7 @@ These profiles are the ones you need access to in order to extract information o
 
 If you only give `READ` access to the `IRR.DIGTCERT` profiles `in FACILITY` you will only be able to extract information on your own certificates and keyrings.
 
-## Modifying the RACF database
+### Modifying the RACF database
 
 These profiles are the ones you need access to in order to modify things in the RACF database, such as create a new user or delete dataset profile.
 
@@ -48,7 +52,7 @@ These profiles are the ones you need access to in order to modify things in the 
 
 If you only give `READ` access to the `IRR.DIGTCERT` profiles in `FACILITY` that user/group will only be able to modify their own certificates and keyrings, this can either be a problem or an advantage depending on your goals.
 
-## Currently unused authorizations
+### Currently unused authorizations
 
 These authorizations aren't required or used right now but might be required for select functionality in a future update.
 
@@ -56,10 +60,14 @@ These authorizations aren't required or used right now but might be required for
 | `READ` | `IRR.RUSERMAP` | `FACILITY` | List **RACMAP relationships** |
 | `READ` | `IRR.IDIDMAP.QUERY` | `FACILITY` | List **RACMAP relationships** |
 
-## More details
+### More details
 
 If you want more information on the required authorizations you can find links to the IBM documentation on authorizations for each callable service SEAR uses below:
 
 * More details about the authorizations required for **IRRSMO00** can be found [in the RACF callable services documentation](https://www.ibm.com/docs/en/zos/latest?topic=operations-racf-authorization).
 * More details about the authorizations required for **IRRSEQ00** can be found [in the RACF callable services documentation](https://www.ibm.com/docs/en/zos/latest?topic=api-racf-authorization).
 * More details about the authorizations required for **IRRSDL64** can be found [in the RACF callable services documentation](https://www.ibm.com/docs/en/zos/latest?topic=library-racf-authorization).
+
+## User setup
+
+Any user that is meant to use the SEAR API, whether they are personal users or system users will need a OMVS segment with a UID as well as a valid home directory path. A TSO segment is not needed.
