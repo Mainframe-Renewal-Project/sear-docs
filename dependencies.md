@@ -38,6 +38,12 @@ SEAR uses C++17 and requires fairly modern LE runtimes, this is why these PTFs a
 - PH60056(UI95833)
 - PH53938(UI94523)
 
+## RACF sub-system address space
+
+The RACF sub-system user needs a valid OMVS segment with a UID. The default group of the RACF sub-system user also needs an OMVS segment with a GID.
+
+If your RACF sub-system does not have a user assigned to it then it must be created, [review the IBM documentation for more details](https://www.ibm.com/docs/en/zos/latest?topic=subsystem-activating-racf).
+
 ## Supported Python versions
 
 You can acquire Python from your z/OS install as bypassable requisite or grab it from the IBM website. Python versions not mentioned in the table below are not officially supported.
