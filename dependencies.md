@@ -28,16 +28,12 @@ SEAR uses C++17 and requires fairly modern LE runtimes, this is why these PTFs a
 
 ### PTFs required for z/OS 2.5
 
-PTFs required for z/OS 2.5:
-
 - PH45536, PH45538, PH45672 (UI80156)
 - PH60053 (UI95832)
 - PH41221 (UI78912)
 - PH53938 (UI94524)
 
 ### PTFs required for z/OS 3.1
-
-PTFs required for z/OS 2.5:
 
 - PH60056(UI95833)
 - PH53938(UI94523)
