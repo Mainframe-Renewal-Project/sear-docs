@@ -18,8 +18,6 @@ This page documents all dependencies required to use SEAR, not what is required 
 - z/OS 3.1
 - z/OS 3.2
 
-### PTFs for older z/OS versions
-
 Some extra PTFs are required for z/OS 2.5 and 3.1, otherwise you will get errors like this:
 
 ```sh
@@ -28,7 +26,7 @@ CEE3501S The module CRTEQCXH was not found
 
 SEAR uses C++17 and requires fairly modern LE runtimes, this is why these PTFs are required on older z/OS versions.
 
-#### PTFs required for z/OS 2.5
+### PTFs required for z/OS 2.5
 
 PTFs required for z/OS 2.5:
 
@@ -37,7 +35,7 @@ PTFs required for z/OS 2.5:
 - PH41221 (UI78912)
 - PH53938 (UI94524)
 
-#### PTFs required for z/OS 3.1
+### PTFs required for z/OS 3.1
 
 PTFs required for z/OS 2.5:
 
