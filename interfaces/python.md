@@ -42,11 +42,11 @@ result = sear(
     {
         "operation": "add",
         "admin_type": "user",
-        "userid": "AMURPHY",
+        "userid": "LMURPHY",
         "traits": {
-            "base:name": "Alexis Murphy",
+            "base:name": "Lex Murphy",
             "omvs:uid": 24,
-            "omvs:home_directory": "/home/AMURPHY",
+            "omvs:home_directory": "/home/LMURPHY",
         },
     },
 )
@@ -72,16 +72,16 @@ This bit tells SEAR that the previously mentioned operation is meant to affect R
 Now you will have to tell SEAR the username for the new user.
 
 ```python
-"userid": "AMURPHY",
+"userid": "LMURPHY",
 ```
 
 The last section allows you to set "traits", this is how you define the information that is to be added to the segments (in this case user segments).
 
 ```python
 "traits": {
-    "base:name": "Alexis Murphy",
+    "base:name": "Lex Murphy",
     "omvs:uid": 24,
-    "omvs:home_directory": "/home/AMURPHY",
+    "omvs:home_directory": "/home/LMURPHY",
 },
 ```
 
@@ -147,9 +147,9 @@ Below is an example of what the result of the previous request might look like.
       ],
       "base:logon_allowed_time": "ANYTIME",
       "base:mfa_password_fallback": false,
-      "base:name": "Alexis Murphy",
+      "base:name": "Lex Murphy",
       "base:operations": false,
-      "base:owner": "LEONARD",
+      "base:owner": "SYS1",
       "base:passphrase_change_interval": 0,
       "base:passphrase_enveloped": false,
       "base:password_change_interval": 186,
@@ -160,7 +160,7 @@ Below is an example of what the result of the previous request might look like.
       "base:special": false
     },
     "omvs": {
-      "omvs:home_directory": "/u/AMURPHY",
+      "omvs:home_directory": "/u/LMURPHY",
       "omvs:uid": 24
     }
   },
