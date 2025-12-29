@@ -34,6 +34,7 @@ The following tables describes the RRSF options traits that are returned by extr
 
 This structure repeats for every RRSF node defined on the system.
 
+| **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"base:node_name"` | N/A | `string` | N/A | `"extract"` |
 | `"base:node_description"` | N/A | `string` | N/A | `"extract"` |
 | `"base:node_protocol"` | N/A | `string` | N/A | `"extract"` |
