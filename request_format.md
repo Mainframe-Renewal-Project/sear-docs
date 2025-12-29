@@ -38,7 +38,7 @@ SEAR provides the following standardized JSON schema for issuing security reques
   &nbsp;
 
   {: .note }
-  > _The `"permission"` **Admin Type** is **NOT** allowed for `"extract"` **Operations**._
+  > The `"permission"` **Admin Type** is **NOT** allowed for `"extract"` **Operations**.
 
   &nbsp;
 
