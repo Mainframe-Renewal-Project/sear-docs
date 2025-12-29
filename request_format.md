@@ -62,7 +62,7 @@ SEAR provides the following standardized JSON schema for issuing security reques
   &nbsp;
 
   {: .note }
-  > _`"class_name"` **MUST** be used to indicate which **Class Name** the specified **Security Profile** is associated with for the `"resource"` and `"permission"` **Admin Types**.
+  > `"class_name"` **MUST** be used to indicate which **Class Name** the specified **Security Profile** is associated with for the `"resource"` and `"permission"` **Admin Types**.
 
   &nbsp;
 
@@ -72,7 +72,7 @@ SEAR provides the following standardized JSON schema for issuing security reques
   &nbsp;
 
   {: .note }
-  > _`"traits"` is **NOT** allowed to be used with `"extract"` and `"delete"` **Operations**.
+  > `"traits"` is **NOT** allowed to be used with `"extract"` and `"delete"` **Operations**.
 
   &nbsp;
 
@@ -82,7 +82,7 @@ SEAR provides the following standardized JSON schema for issuing security reques
   &nbsp;
 
   {: .note }
-  > _`"class_name"` is **required** for and **only** allowed for the `"resource"` and `"permission"` **Admin Types**.
+  > `"class_name"` is **required** for and **only** allowed for the `"resource"` and `"permission"` **Admin Types**.
 
   &nbsp;
 
@@ -92,7 +92,7 @@ SEAR provides the following standardized JSON schema for issuing security reques
   &nbsp;
 
   {: .note }
-  > _Only the `"dataset"` and `"permission"` **Admin Types** can be used with `"volume"`, and **only** for `"add"`, `"alter"`, and `"delete"` **Operations**.
+  > Only the `"dataset"` and `"permission"` **Admin Types** can be used with `"volume"`, and **only** for `"add"`, `"alter"`, and `"delete"` **Operations**.
 
   &nbsp;
 
@@ -107,17 +107,17 @@ SEAR provides the following standardized JSON schema for issuing security reques
   &nbsp;
 
   {: .note }
-  > _Only the `"dataset"` and `"permission"` **Admin Types** can be used with `"generic"`, and **only** for `"add"`, `"alter"`, and `"delete"` **Operations**.
+  > Only the `"dataset"` and `"permission"` **Admin Types** can be used with `"generic"`, and **only** for `"add"`, `"alter"`, and `"delete"` **Operations**.
 
   &nbsp;
 
   {: .note }
-  > _Note that for the `"permission"` **Admin Type**, this parameter will only take effect if the `"class_name"` parameter is set to `"DATASET"`.
+  > Note that for the `"permission"` **Admin Type**, this parameter will only take effect if the `"class_name"` parameter is set to `"DATASET"`.
 
   &nbsp;
 
   {: .note }
-  > _`"generic"` may **only** be set to `"yes"` or `"no"`._
+  > `"generic"` may **only** be set to `"yes"` or `"no"`.
 
   &nbsp;
 
@@ -127,19 +127,19 @@ SEAR provides the following standardized JSON schema for issuing security reques
   &nbsp;
 
   {: .note }
-  > _In order to use `"run_as_userid"`, the caller must have at least `UPDATE` access to the `<userid>.IRRSMO00` **General Resource Profile** in the `SURROGAT` **Class**, where `<userid>` represents the **z/OS Userid** to perform **Security Operations** as. More information about **IRRSMO00 Authorizations** can be found [in the IBM docs](https://www.ibm.com/docs/en/zos/latest?topic=operations-racf-authorization)._
+  > In order to use `"run_as_userid"`, the caller must have at least `UPDATE` access to the `<userid>.IRRSMO00` **General Resource Profile** in the `SURROGAT` **Class**, where `<userid>` represents the **z/OS Userid** to perform **Security Operations** as. More information about **IRRSMO00 Authorizations** can be found [in the IBM docs](https://www.ibm.com/docs/en/zos/latest?topic=operations-racf-authorization).
 
   &nbsp;
 
   {: .note }
-  > _`"run_as_userid"` is **NOT** allowed for `"extract"` **Operations**._
+  > `"run_as_userid"` is **NOT** allowed for `"extract"` **Operations**.
 
 ## 💻 Request Examples
 
 &nbsp;
 
 {: .note }
-> _These examples are **NOT** comprehensive and are primarily meant to show users the general structure of `"add"`, `"alter"`, `"extract"` and `"delete"` requests.
+> These examples are **NOT** comprehensive and are primarily meant to show users the general structure of `"add"`, `"alter"`, `"extract"` and `"delete"` requests.
 
 &nbsp;
 
