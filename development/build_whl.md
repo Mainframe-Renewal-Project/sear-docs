@@ -16,6 +16,7 @@ The following software is needed to build:
 - Python 3.12 or 3.13
   - setuptools and build packages
 - OpenSSL from zOpen
+- zoslib from zOpen
 - git (to clone the repository)
 
 ## Initiating the build process
