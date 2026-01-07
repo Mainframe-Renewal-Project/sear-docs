@@ -18,33 +18,35 @@ The following table provides some notes about how the standard JSON data types a
 
 ## Examples
 
-The following shows an example of a `string` **Trait**.
+Let's see these data types in the real world
 
-### JSON
+### string in JSON
+
+The following shows an example of a `string` **Trait**.
 
 ```json
 "base:name": "SQUIDWARD"
 ```
 
-The following shows an example of a `number` **Trait**.
+### uint in JSON
 
-### JSON
+The following shows an example of a `number` **Trait**.
 
 ```json
 "omvs:uid": 24
 ```
 
-The following shows an example of a `string` `array` **Trait** as it would be specified for an `"Add"` or `"alter"` **Operation**.
+### array in JSON
 
-### JSON
+The following shows an example of a `string` `array` **Trait** as it would be specified for an `"Add"` or `"alter"` **Operation**.
 
 ```json
 "add:base:class_authorization": ["FACILITY", "XFACILIT"]
 ```
 
-The following shows an example of an `object` `array` **Trait** as it would be returned as a result of an `"extract"` **Operation**.
+### Objects in JSON
 
-### JSON
+The following shows an example of an `object` `array` **Trait** as it would be returned as a result of an `"extract"` **Operation**.
 
 ```json
 "base:logon_allowed_days": [
@@ -72,25 +74,25 @@ The following shows an example of an `object` `array` **Trait** as it would be r
 ]
 ```
 
-The following shows an example of a `boolean` **Trait**.
+### boolean in JSON
 
-### JSON
+The following shows an example of a `boolean` **Trait**.
 
 ```json
 "base:special": true
 ```
 
-The following shows an example of a **Trait** that is being unset on an `"add"` or `"alter"` request by setting the value to `null`.
+### null in JSON
 
-### JSON
+The following shows an example of a **Trait** that is being unset on an `"add"` or `"alter"` request by setting the value to `null`.
 
 ```json
 "base:installation_data": null
 ```
 
-The following shows an example of a **Trait** that was returned as a result of an `"extract"` **Operation** that is **Unset** and therefore set to `null`.
+### null in JSON extract
 
-### JSON
+The following shows an example of a **Trait** that was returned as a result of an `"extract"` **Operation** that is **Unset** and therefore set to `null`.
 
 ```json
 "base:group_connection_last_connect_date": null
