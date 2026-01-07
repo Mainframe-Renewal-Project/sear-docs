@@ -103,8 +103,6 @@ SEAR provides the following standardized JSON schema for issuing security reques
   {: .note }
   > Only the `"dataset"` and `"permission"` **Admin Types** can be used with `"generic"`, and **only** for `"add"`, `"alter"`, and `"delete"` **Operations**.
 
-  &nbsp;
-
   {: .note }
   > Note that for the `"permission"` **Admin Type**, this parameter will only take effect if the `"class_name"` parameter is set to `"DATASET"`.
 
