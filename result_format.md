@@ -9,8 +9,6 @@ SEAR provides the following standardized JSON schema for security results return
 
 ## Result Fields *(JSON Keys)*
 
-&nbsp;
-
 * `"commands"`<br>
   An `object` `array` describing one or more **RACF Commands** that were executed and the corresponding **Messages** produced after processing **Add**, **Alter**, and **Delete** requests if there were any.
 
