@@ -91,8 +91,6 @@ SEAR provides the following standardized JSON schema for security results return
   {: .note }
   > _Detailed explanations for the **SAF Return Codes**, **RACF Return Codes**, and **RACF Reason Codes** returned by **Add**, **Alter**, and **Delete** **Operations** can be found [here](https://www.ibm.com/docs/en/zos/latest?topic=operations-return-reason-codes)._
 
-  &nbsp;
-
   {: .note }
   > _Detailed explanations for the **SAF Return Codes**, **RACF Return Codes**, and **RACF Reason Codes** returned by **Extract** **Operations** can be found [here](https://www.ibm.com/docs/en/zos/latest?topic=rairaa-return-reason-codes)._
 
