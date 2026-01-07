@@ -20,8 +20,6 @@ The following table provides some notes about how the standard JSON data types a
 
 ## Examples
 
-&nbsp;
-
 The following shows an example of a `string` **Trait**.
 
 ### JSON
