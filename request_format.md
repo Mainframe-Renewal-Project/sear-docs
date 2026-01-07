@@ -124,10 +124,7 @@ SEAR provides the following standardized JSON schema for issuing security reques
 
 ## Request Examples
 
-{: .note }
-> These examples are **NOT** comprehensive and are primarily meant to show users the general structure of `"add"`, `"alter"`, `"extract"` and `"delete"` requests.
-
-&nbsp;
+Below you can see a few examples, they are **NOT** comprehensive and are primarily meant to show users the general structure of `"add"`, `"alter"`, `"extract"` and `"delete"` requests.
 
 ### Creating a new userid
 
