@@ -29,8 +29,6 @@ Operators are specified using the format `<operator>:<segment>:<trait>`, where t
 
 ## Examples
 
-&nbsp;
-
 The following **SEAR Trait JSON** describes modifications to the following **User Traits**:
 
 * **Set** the **OMVS UID** to `24`.
