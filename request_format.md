@@ -9,8 +9,6 @@ SEAR provides the following standardized JSON schema for issuing security reques
 
 ## Parameters *(JSON Keys)*
 
-&nbsp;
-
 * `"operation"`<br>
   A `string` value describing the **Security Management Function** to perform. The following table describes all of the valid values for `"operation"`.
 
