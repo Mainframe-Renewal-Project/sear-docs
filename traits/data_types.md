@@ -18,7 +18,7 @@ The following table provides some notes about how the standard JSON data types a
 | `boolean` | This can only ever be used with a value of `true` or `false` when using the `"set"` **Operator** **Implicitly** or **Explicitly**, and `null` **Only** when using the `"delete"` **Operator** **Explicitly**. |
 | `null` | For `"add"` and `"alter"` **Operations**, `null` is used to **Unset** a **Trait** for which the `"delete"` **Operator** is **Allowed**. For `"extract"` **Operations**, some **Traits** may be returned with a `null` value if they are able to be **Unset** and do not currently have a value. The only exception is for `boolean` **Traits**, which requires the `"delete"` **Operator** to be specified **Explicitly** when providing a `null` value. |
 
-## 💻 Examples
+## Examples
 
 &nbsp;
 
