@@ -9,8 +9,6 @@ nav_order: y
 The following table provides some notes about how the standard JSON data types are used with traits.
 {: .fs-6 .fw-300 }
 
-&nbsp;
-
 | **Data Type** | **Notes** |
 | `string` |  |
 | `number` | This can only ever be a **Positive Unsigned Integer** for all supported **Traits**. |
