@@ -129,13 +129,13 @@ SEAR provides the following standardized JSON schema for issuing security reques
 
 &nbsp;
 
-The following **SEAR Request JSON** creates new new **z/OS Userid** called `ERIPLEY` with the following **Traits**:
+### Creating a new userid
+
+The following **SEAR Request JSON** creates new new **RACF Userid** called `ERIPLEY` with the following **Traits**:
 
 * A **Name** of `"Ellen Ripley"`.
 * An **OMVS UID** of `24`.
 * An **OMVS Home Directory** of `"/u/ERIPLEY"`.
-
-### JSON
 
 ```json
 {
@@ -150,9 +150,9 @@ The following **SEAR Request JSON** creates new new **z/OS Userid** called `ERIP
 }
 ```
 
-The following **SEAR Request JSON** alters an exsting **z/OS Userid** called `ESATTLER` by **Changing/Setting** the **Name Trait** to `"Ellie Sattler"`.
+### Altering a user
 
-### JSON
+The following **SEAR Request JSON** alters an existing **RACF Userid** called `ESATTLER` by **Changing/Setting** the **Name Trait** to `"Ellie Sattler"`.
 
 ```json
 {
@@ -165,9 +165,9 @@ The following **SEAR Request JSON** alters an exsting **z/OS Userid** called `ES
 }
 ```
 
-The following **SEAR Request JSON** deletes an exsting **z/OS Userid** called `MRAINES`.
+### Deleting a user
 
-### JSON
+The following **SEAR Request JSON** deletes an existing **RACF Userid** called `MRAINES`.
 
 ```json
 {
@@ -177,9 +177,9 @@ The following **SEAR Request JSON** deletes an exsting **z/OS Userid** called `M
 }
 ```
 
-The following **SEAR Request JSON** extracts the **Profile Data** for a **z/OS Userid** called `CDEARING`.
+### Extracting user information
 
-###### JSON
+The following **SEAR Request JSON** extracts the **Profile Data** for a **RACF Userid** called `CDEARING`.
 
 ```json
 {
