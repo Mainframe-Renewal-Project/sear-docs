@@ -15,8 +15,6 @@ Security API for RACF (SEAR) - A standardized JSON interface for RACF that enabl
 {: .development_status }
 > _**SEAR** is currently in **Alpha**, meaning that some core functionality may still be missing, unstable, and or may still need more thorough testing._
 
-&nbsp;
-
 {: .warning }
 
 > * SEAR encodes the data it passes to RACF in Code Page `IBM-1047`.
