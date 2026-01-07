@@ -10,6 +10,9 @@ nav_order: 8
 
 > Please note RRSF support is exclusive to SEAR 0.4.0 and later, earlier versions do not support this feature.
 
+{: .note }
+> _See [Data Types](../data_types) for more information about **Data Types**._
+
 The following tables describes the RRSF options traits that are returned by extract operations.
 
 ## `base`
