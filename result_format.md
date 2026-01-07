@@ -7,7 +7,7 @@ layout: default
 SEAR provides the following standardized JSON schema for security results returned by RACF.
 {: .fs-6 .fw-300 }
 
-## 📤 Result Fields *(JSON Keys)*
+## Result Fields *(JSON Keys)*
 
 &nbsp;
 
@@ -106,7 +106,7 @@ SEAR provides the following standardized JSON schema for security results return
   | `"racf_reason_code"` | A `number` describing the **RACF Reason Code**. `"racf_reason_code"` will be set to `null` when `"sear_return_code"` is `8`. |
   | `"sear_return_code"` | A `number` describing the **SEAR Return Code**. `"sear_return_code"` will be set to `0` when there are no errors, `4` when an error occurred within the call to the corresponding **RACF Callable Service**, and `8` when **SEAR** encounters an error that prevented the request from being **Processed** by the corresponding **RACF Callable Service** or prevented the result from the corresponding **RACF Callable Service** from being **Post-Processed**. |
 
-## 💻 Result Examples
+## Result Examples
 
 &nbsp;
 

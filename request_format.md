@@ -134,7 +134,7 @@ SEAR provides the following standardized JSON schema for issuing security reques
   {: .note }
   > `"run_as_userid"` is **NOT** allowed for `"extract"` **Operations**.
 
-## 💻 Request Examples
+## Request Examples
 
 &nbsp;
 
