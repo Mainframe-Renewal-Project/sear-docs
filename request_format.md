@@ -19,8 +19,6 @@ SEAR provides the following standardized JSON schema for issuing security reques
   {: .note }
   > Only the `"alter"` and `"extract"` **Operations** are allowed for the `"racf-options"` **Admin Type**.
 
-  &nbsp;
-
   {: .note }
   > Only the `"alter"`, `"extract"`, and `"delete"` **Operations** are allowed for the `"permission"` **Admin Type**.
 
