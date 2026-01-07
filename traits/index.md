@@ -9,8 +9,6 @@ has_toc: false
 The following pages describe all of the valid traits for each admin type.
 {: .fs-6 .fw-300 }
 
-&nbsp;
-
 * [User Traits](./user.md)
 * [Group Traits](./group.md)
 * [Group Connection](./group_connection.md)
