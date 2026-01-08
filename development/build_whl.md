@@ -30,11 +30,7 @@ git clone https://github.com/Mainframe-Renewal-Project/sear.git
 Then you will want to create a Python virtual environment and install the `build` and `setuptools` packages in it.
 
 ```sh
-pip install build
-```
-
-```sh
-pip install setuptools
+pip install build && pip install setuptools
 ```
 
 Once you have all the necessary tools do a git clone
@@ -42,3 +38,5 @@ Once you have all the necessary tools do a git clone
 ```sh
 python -m build
 ```
+
+After the build process is done a wheel will appear in `./dist/`
