@@ -13,7 +13,7 @@ The following software is needed to build:
 
 - z/OS 2.5 or later
 - OpenXL C/C++ 2.1 (needed to get clang on z/OS)
-- Python 3.12 or 3.13
+- Python 3.12, 3.13, or 3.14
   - setuptools and build packages
 - OpenSSL from zOpen
 - zoslib from zOpen
