@@ -30,7 +30,7 @@ Valid operators for this type of request
 
 ## Extracting information
 
-SEAR provides the `extract` operator to gather information about the RACF database.
+SEAR provides the `extract` operator to gather information about the RRSF configuration.
 
 ### Extracting RACF RRSF options
 
