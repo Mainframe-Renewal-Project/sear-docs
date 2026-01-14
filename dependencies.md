@@ -50,6 +50,7 @@ You can acquire Python from your z/OS install as bypassable requisite or grab it
 
 | SEAR version | Py 3.12     | Py 3.13     | Py 3.14     |
 |--------------|-------------|-------------|-------------|
+| 0.5.0        |   ✅        |    ✅       |    ✅       |
 | 0.4.0        |   ✅        |    ✅       |    ❌       |
 | 0.3.1        |   ✅        |    ✅       |    ❌       |
 | 0.3.0        |   ✅        |    ✅       |    ❌       |
