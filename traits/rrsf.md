@@ -44,7 +44,7 @@ This structure repeats for every RRSF node defined on the system. Please note th
 | `"base:date_of_last_sent_work"` | N/A | `string` | N/A | `"extract"` |
 | `"base:time_of_last_sent_work"` | N/A | `string` | N/A | `"extract"` |
 | `"base:node_state"` | N/A | `uint` | N/A | `"extract"` |
-| `"base:partner_node_dynamic_parse_level"` | N/A | `uint` | N/A | `"extract"` |
+| `"base:partner_node_dynamic_parse_level"` | N/A | `string` | N/A | `"extract"` |
 | `"base:partner_node_operating_system_version"` | N/A | `uint` | N/A | `"extract"` |
 | `"base:partner_node_template_release_level"` | N/A | `uint` | N/A | `"extract"` |
 | `"base:partner_node_template_service_level"` | N/A | `uint` | N/A | `"extract"` |
