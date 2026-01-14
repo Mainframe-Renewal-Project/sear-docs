@@ -58,7 +58,9 @@ This structure repeats for every RRSF node defined on the system. Please note th
 | `"base:workspace_dataset_sms_data_class"` | N/A | `string` | N/A | `"extract"` |
 | `"base:workspace_dataset_volume"` | N/A | `string` | N/A | `"extract"` |
 | `"base:in_message_dataset_name"` | N/A | `string` | N/A | `"extract"` |
+| `"base:in_message_records"` | N/A | `uint` | N/A | `"extract"` |
 | `"base:out_message_dataset_name"` | N/A | `string` | N/A | `"extract"` |
+| `"base:out_message_records"` | N/A | `uint` | N/A | `"extract"` |
 | `"base:temporary_in_message_dataset_name"` | N/A | `string` | N/A | `"extract"` |
 | `"base:temporary_out_message_dataset_name"` | N/A | `string` | N/A | `"extract"` |
 | `"base:appc_modename"` | N/A | `string` | N/A | `"extract"` |
