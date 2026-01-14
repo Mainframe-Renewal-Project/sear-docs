@@ -32,7 +32,7 @@ The following tables describes the RRSF options traits that are returned by extr
 
 ## `base:nodes`
 
-This structure repeats for every RRSF node defined on the system.
+This structure repeats for every RRSF node defined on the system. Please note that TCP/IP and APPC traits won't appear at the same time, if the node is in APPC mode then the APPC traits will appear but not TCP/IP traits and vice versa.
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
 | `"base:node_name"` | N/A | `string` | N/A | `"extract"` |
