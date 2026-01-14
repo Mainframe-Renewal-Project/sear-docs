@@ -64,7 +64,9 @@ This structure repeats for every RRSF node defined on the system. Please note th
 | `"base:out_message_extents"` | N/A | `uint` | N/A | `"extract"` |
 | `"base:out_message_records"` | N/A | `uint` | N/A | `"extract"` |
 | `"base:temporary_in_message_dataset_name"` | N/A | `string` | N/A | `"extract"` |
+| `"base:temporary_in_message_records"` | N/A | `uint` | N/A | `"extract"` |
 | `"base:temporary_out_message_dataset_name"` | N/A | `string` | N/A | `"extract"` |
+| `"base:temporary_out_message_records"` | N/A | `uint` | N/A | `"extract"` |
 | `"base:appc_modename"` | N/A | `string` | N/A | `"extract"` |
 | `"base:appc_lu_name"` | N/A | `string` | N/A | `"extract"` |
 | `"base:appc_tp_name"` | N/A | `string` | N/A | `"extract"` |
