@@ -8,7 +8,7 @@ nav_order: 8
 
 {: .warning }
 
-> Please note RRSF support is exclusive to SEAR 0.4.0 and later, earlier versions do not support this feature.
+> Please note RRSF support is exclusive to SEAR 0.4.0 and later, earlier versions do not support this feature. Some traits on this page weren't added to the API until 0.5.0, upgrade if information is missing.
 
 The following tables describes the RRSF options traits that are returned by extract operations.
 
