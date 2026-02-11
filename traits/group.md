@@ -39,7 +39,7 @@ The following tables describes the group segments and traits that are supported 
 ## `csdata`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
-| `"csdata:*"` | `*` | `string` | `"set"` | ? |
+| `"csdata:*"` | `*` | `string` | `"set"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
 ## `dfp`
 
