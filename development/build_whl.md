@@ -12,12 +12,16 @@ This page covers how to build the Python wheel yourself, rather than getting it 
 The following software is needed to build:
 
 - z/OS 2.5 or later
-- OpenXL C/C++ 2.1 (needed to get clang on z/OS)
-- Python 3.12, 3.13, or 3.14
+- [IBM OpenXL C/C++ 2.1](https://www.ibm.com/products/xl-cpp-compiler-zos) or later (1.1 won't work)
+- [Python](https://www.ibm.com/products/open-enterprise-python-zos) 3.12, 3.13, or 3.14
   - setuptools and build packages
-- OpenSSL from zOpen
-- zoslib from zOpen
+- [OpenSSL from zOpen](https://github.com/zopencommunity/opensslport)
+- [zoslib from zOpen](https://github.com/zopencommunity/zoslibport)
 - git (to clone the repository)
+
+### Environment variables
+
+There are 2 different ways of informing the build process where zoslib and openssl are located. The first is if you have done a full zOpen install, then you can use the ZOPEN_ROOTFS environment variable. If you have installed openssl and zoslib individually, i.e. in your home directory, then you can specify OPENSSL_ROOT and ZOSLIB_ROOT. If ZOPEN_ROOTFS is not specified then both OPENSSL_ROOT and ZOSLIB_ROOT must be set.
 
 ## Initiating the build process
 

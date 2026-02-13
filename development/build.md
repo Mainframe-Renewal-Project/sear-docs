@@ -15,8 +15,8 @@ SEAR requires several things included with [zOpen](https://zopen.community/#/):
 
 - make (the one IBM provides will cause the process to fail)
 - cmake
-- OpenSSL from zOpen (necessary because of the certificate support)
-- zoslib from zOpen
+- [OpenSSL from zOpen](https://github.com/zopencommunity/opensslport)
+- [zoslib from zOpen](https://github.com/zopencommunity/zoslibport)
 
 This list will expand in the future as more language interfaces get added.
 
