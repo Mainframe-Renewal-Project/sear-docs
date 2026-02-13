@@ -15,7 +15,7 @@ The Python interface of SEAR may be installed from [PyPi](https://pypi.org/proje
 pip install pysear
 ```
 
-You can also pull down pySEAR from GitHub or PyPi and point it to a whl file, if your system is air-gapped.
+You can also pull down pySEAR from GitHub or PyPi and point pip to a whl file, if your system is air-gapped.
 
 ```shell
 pip install pysear-0.4.0-py313-none-any.whl
