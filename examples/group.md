@@ -81,6 +81,26 @@ print(result.result)
 
 ### Searching for RACF group
 
+#### Getting a list of all groups
+
+The sample below returns a list of all RACF groups on the system.
+
+```python
+
+from sear import sear
+
+result = sear(
+    {
+        "operation": "search",
+        "admin_type": "group",
+    },
+)
+
+print(result.result)
+```
+
+#### Filtering group results
+
 The sample below gets all groups that start with `SYS`. It will return a list of groups, to get metadata on them you will have to run the extract operation on every single RACF group in the list.
 
 ```python

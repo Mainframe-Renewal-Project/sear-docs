@@ -135,6 +135,26 @@ print(result.result)
 
 ### Searching for RACF users
 
+#### Getting a list of all users on the system
+
+The sample below gets a list of all users on the system.
+
+```python
+
+from sear import sear
+
+result = sear(
+    {
+        "operation": "search",
+        "admin_type": "user",
+    },
+)
+
+print(result.result)
+```
+
+#### Filtering search results for a specific user
+
 The sample below gets all users that start with `ZWE`. It will return a list of users, to get metadata on them you will have to run the extract operation on every single RACF user in the list.
 
 ```python

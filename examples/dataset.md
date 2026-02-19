@@ -84,6 +84,27 @@ print(result.result)
 
 ### Searching for dataset profiles
 
+#### Getting a list of all dataset profiles
+
+The sample below gets a list of all dataset profiles on the system.
+
+```python
+
+from sear import sear
+
+result = sear(
+    {
+        "operation": "search",
+        "admin_type": "dataset",
+        "dataset_filter": "LEONARD",
+    },
+ )
+
+print(result.result)
+```
+
+#### Filtering search results for a specific dataset profile
+
 The sample below gets all dataset profiles that start with `LEONARD`. It will return a list of dataset profiles, to get metadata on them you will have to run the extract operation on every single dataset profile in the list.
 
 ```python

@@ -81,6 +81,27 @@ print(result.result)
 
 ### Searching for resource profiles
 
+#### Getting a list of all resource profiles in a class
+
+The sample below gets all general resource profiles in the facility class.
+
+```python
+
+from sear import sear
+
+result = sear(
+    {
+        "operation": "search",
+        "admin_type": "resource",
+        "class": "facility",
+    },
+)
+
+print(result.result)
+```
+
+#### Filtering results
+
 The sample below gets all general resource profiles that start with `IRR` in the `facility` class. It will return a list of resource profiles, to get metadata on them you will have to run the extract operation on every single resource profile in the list.
 
 ```python
