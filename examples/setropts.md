@@ -904,3 +904,30 @@ print(result.result)
 ```
 
 You can see the full list of traits in [the traits/racf_options section](https://mainframe-renewal-project.github.io/sear-docs/traits/racf_options/)
+
+## Refreshing in-storage profiles via RACF system options
+
+For resource classes where `SETROPTS RACLIST` or `GENERIC` processing is active, changes made to profiles do not take effect until the **in-storage** copies are refreshed. Using SEAR with the `base:refresh` parameter allows these **in-storage** profiles to be updated dynamically, ensuring that the latest database changes are applied across the system immediately.
+
+### Refreshing the GENERIC DATASET Class
+
+The sample below demonstrates how to refresh **GENERIC DATASET** using SEAR.
+
+```python
+from sear import sear
+
+result = sear(
+    {
+        "operation": "alter",
+        "admin_type": "racf-options",
+        "traits": {
+            "base:generic_profile_checking_classes": "DATASET",
+            "base:refresh": True,
+        },
+    },
+)
+
+print(result.result)
+```
+
+You can see the full list of traits in [the traits/racf_options section](https://mainframe-renewal-project.github.io/sear-docs/traits/racf_options/)
