@@ -46,14 +46,24 @@ SEAR provides the following standardized JSON schema for issuing security reques
   | `"dataset"` | Used for **Data Set** administration. |
   | `"racf-options"` | Used for **RACF Options** administration. |
   | `"permission"` | Used for **Permission** administration. |
+  | `"keyring"` | Used for **Keyring** administration. |
 
-* `"profile_name"`<br>
+* Identifying parameter: `"userid"`, `"group"`, `"dataset"`, `"resource"` or `"keyring"` <br>
   A `string` value identifying a **Security Profile** to **Add**, **Alter**, **Extract**, or **Delete**.
+  
+  The specific parameter used depends on the **Admin Type**:
 
+  | **Identifying parameter** | **Admin Type** |
+  | `"userid"` | `"user"` |
+  | `"group"` | `"group"` |
+  | `"dataset"` | `"dataset"` |
+  | `"resource"` | `"resource"` |
+  | `"keyring"` | `"keyring"` |
+  
   &nbsp;
 
   {: .note }
-  > `"profile_name"` is **NOT** allowed to be used with the `"racf-options"` **Admin Type** due to **RACF Options** being a **Singleton** for which there is **NO** concept of multiple discrete "profiles" that can be created, deleted, and managed.
+  > A **profile-identifying parameter** is **NOT** allowed for the `"racf-options"` **Admin Type** because **RACF Options** represent a **singleton** configuration with **NO** concept of multiple discrete *"profiles"* that can be created, deleted, or managed.
 
   {: .note }
   > `"class_name"` **MUST** be used to indicate which **Class Name** the specified **Security Profile** is associated with for the `"resource"` and `"permission"` **Admin Types**.
@@ -136,7 +146,7 @@ The following **SEAR Request JSON** creates new new **RACF Userid** called `ERIP
 {
   "operation": "add",
   "admin_type": "user",
-  "profile_name": "ERIPLEY",
+  "userid": "ERIPLEY",
   "traits": {
     "base:name": "Ellen Ripley",
     "omvs:uid": 24,
@@ -153,7 +163,7 @@ The following **SEAR Request JSON** alters an existing **RACF Userid** called `E
 {
   "operation": "alter",
   "admin_type": "user",
-  "profile_name": "ESATTLER",
+  "userid": "ESATTLER",
   "traits": {
     "base:name": "Ellie Sattler"
   }
@@ -168,7 +178,7 @@ The following **SEAR Request JSON** deletes an existing **RACF Userid** called `
 {
   "operation": "delete",
   "admin_type": "user",
-  "profile_name": "MRAINES"
+  "userid": "MRAINES"
 }
 ```
 
@@ -180,6 +190,6 @@ The following **SEAR Request JSON** extracts the **Profile Data** for a **RACF U
 {
   "operation": "extract",
   "admin_type": "user",
-  "profile_name": "CDEARING"
+  "userid": "CDEARING"
 }
 ```
