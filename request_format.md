@@ -66,7 +66,7 @@ SEAR provides the following standardized JSON schema for issuing security reques
   > A **profile-identifying parameter** is **NOT** allowed for the `"racf-options"` **Admin Type** because **RACF Options** represent a **singleton** configuration with **NO** concept of multiple discrete *"profiles"* that can be created, deleted, or managed.
 
   {: .note }
-  > `"class_name"` **MUST** be used to indicate which **Class Name** the specified **Security Profile** is associated with for the `"resource"` and `"permission"` **Admin Types**.
+  > `"class"` **MUST** be used to indicate which **Class Name** the specified **Security Profile** is associated with for the `"resource"` and `"permission"` **Admin Types**.
 
   &nbsp;
 
@@ -80,13 +80,13 @@ SEAR provides the following standardized JSON schema for issuing security reques
 
   &nbsp;
 
-* `"class_name"`<br>
+* `"class"`<br>
   A `string` value identifying a **Class Name** that the specified **Security Profile** is associated with.
 
   &nbsp;
 
   {: .note }
-  > `"class_name"` is **required** for and **only** allowed for the `"resource"` and `"permission"` **Admin Types**.
+  > `"class"` is **required** for and **only** allowed for the `"resource"` and `"permission"` **Admin Types**.
 
   &nbsp;
 
@@ -99,7 +99,7 @@ SEAR provides the following standardized JSON schema for issuing security reques
   > Only the `"dataset"` and `"permission"` **Admin Types** can be used with `"volume"`, and **only** for `"add"`, `"alter"`, and `"delete"` **Operations**.
 
   {: .note }
-  > _Note that for the `"permission"` **Admin Type**, this parameter will only take effect if the `"class_name"` parameter is set to `"DATASET"`.
+  > _Note that for the `"permission"` **Admin Type**, this parameter will only take effect if it has the parameter `"dataset"`.
 
   &nbsp;
 
@@ -112,7 +112,7 @@ SEAR provides the following standardized JSON schema for issuing security reques
   > Only the `"dataset"` and `"permission"` **Admin Types** can be used with `"generic"`, and **only** for `"add"`, `"alter"`, and `"delete"` **Operations**.
 
   {: .note }
-  > Note that for the `"permission"` **Admin Type**, this parameter will only take effect if the `"class_name"` parameter is set to `"DATASET"`.
+  > Note that for the `"permission"` **Admin Type**, this parameter will only take effect if it has the parameter `"dataset"`.
 
   {: .note }
   > `"generic"` may **only** be set to `"yes"` or `"no"`.
