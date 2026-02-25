@@ -48,12 +48,12 @@ SEAR provides the following standardized JSON schema for issuing security reques
   | `"permission"` | Used for **Permission** administration. |
   | `"keyring"` | Used for **Keyring** administration. |
 
-* Identifying parameter: `"userid"`, `"group"`, `"dataset"`, `"resource"` or `"keyring"` <br>
+* `"userid"`, `"group"`, `"dataset"`, `"resource"` or `"keyring"` <br>
   A `string` value identifying a **Security Profile** to **Add**, **Alter**, **Extract**, or **Delete**.
   
   The specific parameter used depends on the **Admin Type**:
 
-  | **Identifying parameter** | **Admin Type** |
+  | **Identifier** | **Admin Type** |
   | `"userid"` | `"user"` |
   | `"group"` | `"group"` |
   | `"dataset"` | `"dataset"` |
