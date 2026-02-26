@@ -39,7 +39,11 @@ SEAR provides the following standardized JSON schema for security results return
 &nbsp;
 
 * `"profile"`<br>
-  An `object` describing **Profile Data** extracted as a result of an `"extract"` **Operation**. This structure contains all of the **Profile Data** that corresponds to the profile specified using the `"profile_name"` **Parameter** *(and the `"class_name"` **Parameter** for **Admin Types** that require it)* of the corresponding request. The only exception is the `"racf-options"` **Admin Type**, where `"profile_name"` is **NOT** allowed in **RACF Options Administration** requests due to **RACF Options** being a **Singleton** for which there is **NO** concept of multiple discrete *"profiles"* that can be created, deleted, and managed.
+  An `object` describing **Profile Data** extracted as a result of an `"extract"` **Operation**. This structure contains all of the **Profile Data** that corresponds to the profile specified using the appropriate identifying **Parameter** of the corresponding request — `"userid"` for **User** type, `"group"` for **Group** type, `"dataset"` for **Dataset** type, `"resource"` for **Resource** type, and `"keyring"` for **Keyring** type (and the `"class"` **Parameter** for **Admin Types** that require it).
+
+  The `"racf-options"` **Admin Type** does **not** use a profile-identifying parameter because **RACF Options** represent a **singleton configuration** with no concept of multiple discrete *"profiles"* that can be created, deleted, or managed.
+
+  The `"racf-rrsf"` **Admin Type** also does **not** use a profile-identifying parameter and supports only extraction of **all RRSF options**. The **RACF Remote Sharing Facility (RRSF)** represents a network of *"RRSF nodes"*, where a node may consist of **either** a single z/OS system with its own RACF database **or** multiple z/OS systems sharing a RACF database.
 
   * `"<segment>"`<br>
     An `object` describing a **RACF Segment**. At least one **Segment** will be returned, and each **Segment** returned will contain one or more **Traits**.

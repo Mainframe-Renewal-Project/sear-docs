@@ -46,17 +46,27 @@ SEAR provides the following standardized JSON schema for issuing security reques
   | `"dataset"` | Used for **Data Set** administration. |
   | `"racf-options"` | Used for **RACF Options** administration. |
   | `"permission"` | Used for **Permission** administration. |
+  | `"keyring"` | Used for **Keyring** administration. |
 
-* `"profile_name"`<br>
+* `"userid"`, `"group"`, `"dataset"`, `"resource"` or `"keyring"` <br>
   A `string` value identifying a **Security Profile** to **Add**, **Alter**, **Extract**, or **Delete**.
+  
+  The specific parameter used depends on the **Admin Type**:
 
+  | **Identifier** | **Admin Type** |
+  | `"userid"` | `"user"` |
+  | `"group"` | `"group"` |
+  | `"dataset"` | `"dataset"` |
+  | `"resource"` | `"resource"` |
+  | `"keyring"` | `"keyring"` |
+  
   &nbsp;
 
   {: .note }
-  > `"profile_name"` is **NOT** allowed to be used with the `"racf-options"` **Admin Type** due to **RACF Options** being a **Singleton** for which there is **NO** concept of multiple discrete "profiles" that can be created, deleted, and managed.
+  > A **profile-identifying parameter** is **NOT** allowed for the `"racf-options"` **Admin Type** because **RACF Options** represent a **singleton** configuration with **NO** concept of multiple discrete *"profiles"* that can be created, deleted, or managed.
 
   {: .note }
-  > `"class_name"` **MUST** be used to indicate which **Class Name** the specified **Security Profile** is associated with for the `"resource"` and `"permission"` **Admin Types**.
+  > `"class"` **MUST** be used to indicate which **Class Name** the specified **Security Profile** is associated with for the `"resource"` and `"permission"` **Admin Types**.
 
   &nbsp;
 
@@ -70,13 +80,13 @@ SEAR provides the following standardized JSON schema for issuing security reques
 
   &nbsp;
 
-* `"class_name"`<br>
+* `"class"`<br>
   A `string` value identifying a **Class Name** that the specified **Security Profile** is associated with.
 
   &nbsp;
 
   {: .note }
-  > `"class_name"` is **required** for and **only** allowed for the `"resource"` and `"permission"` **Admin Types**.
+  > `"class"` is **required** for and **only** allowed for the `"resource"` and `"permission"` **Admin Types**.
 
   &nbsp;
 
@@ -89,7 +99,7 @@ SEAR provides the following standardized JSON schema for issuing security reques
   > Only the `"dataset"` and `"permission"` **Admin Types** can be used with `"volume"`, and **only** for `"add"`, `"alter"`, and `"delete"` **Operations**.
 
   {: .note }
-  > _Note that for the `"permission"` **Admin Type**, this parameter will only take effect if the `"class_name"` parameter is set to `"DATASET"`.
+  > _Note that for the `"permission"` **Admin Type**, this parameter will only take effect if it has the parameter `"dataset"`.
 
   &nbsp;
 
@@ -102,7 +112,7 @@ SEAR provides the following standardized JSON schema for issuing security reques
   > Only the `"dataset"` and `"permission"` **Admin Types** can be used with `"generic"`, and **only** for `"add"`, `"alter"`, and `"delete"` **Operations**.
 
   {: .note }
-  > Note that for the `"permission"` **Admin Type**, this parameter will only take effect if the `"class_name"` parameter is set to `"DATASET"`.
+  > Note that for the `"permission"` **Admin Type**, this parameter will only take effect if it has the parameter `"dataset"`.
 
   {: .note }
   > `"generic"` may **only** be set to `"yes"` or `"no"`.
@@ -136,7 +146,7 @@ The following **SEAR Request JSON** creates new new **RACF Userid** called `ERIP
 {
   "operation": "add",
   "admin_type": "user",
-  "profile_name": "ERIPLEY",
+  "userid": "ERIPLEY",
   "traits": {
     "base:name": "Ellen Ripley",
     "omvs:uid": 24,
@@ -153,7 +163,7 @@ The following **SEAR Request JSON** alters an existing **RACF Userid** called `E
 {
   "operation": "alter",
   "admin_type": "user",
-  "profile_name": "ESATTLER",
+  "userid": "ESATTLER",
   "traits": {
     "base:name": "Ellie Sattler"
   }
@@ -168,7 +178,7 @@ The following **SEAR Request JSON** deletes an existing **RACF Userid** called `
 {
   "operation": "delete",
   "admin_type": "user",
-  "profile_name": "MRAINES"
+  "userid": "MRAINES"
 }
 ```
 
@@ -180,6 +190,6 @@ The following **SEAR Request JSON** extracts the **Profile Data** for a **RACF U
 {
   "operation": "extract",
   "admin_type": "user",
-  "profile_name": "CDEARING"
+  "userid": "CDEARING"
 }
 ```
