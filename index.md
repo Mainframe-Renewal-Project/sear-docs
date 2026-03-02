@@ -237,6 +237,6 @@ flowchart TB
     style n20 stroke:none
     style n23 fill:#FFD600,stroke-width:2px,stroke-dasharray: 2,color:#000000,stroke:#FFFFFF
     style n24 fill:#AA00FF,color:#FFFFFF,stroke-width:2px,stroke-dasharray: 2,stroke:#FFFFFF
-    style n25 stroke:none
+    style n25 stroke-dasharray: 2,stroke:none
 
 </pre>
