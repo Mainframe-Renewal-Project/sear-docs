@@ -21,7 +21,7 @@ The following software is needed to build:
 
 ### Environment variables
 
-There are 2 different ways of informing the build process where zoslib and openssl are located. The first is if you have done a full zOpen install, then you can use the ZOPEN_ROOTFS environment variable. If you have installed openssl and zoslib individually, i.e. in your home directory, then you can specify OPENSSL_ROOT and ZOSLIB_ROOT. If ZOPEN_ROOTFS is not specified then both OPENSSL_ROOT and ZOSLIB_ROOT must be set.
+There are 2 different ways of informing the build process where zoslib and OpenSSL are located. The first is if you have done a full zOpen install, then you can use the ZOPEN_ROOTFS environment variable. If you have installed OpenSSL and zoslib individually, i.e. in your home directory, then you can specify OPENSSL_ROOT and ZOSLIB_ROOT. If ZOPEN_ROOTFS is not specified then both OPENSSL_ROOT and ZOSLIB_ROOT must be set.
 
 ## Initiating the build process
 
