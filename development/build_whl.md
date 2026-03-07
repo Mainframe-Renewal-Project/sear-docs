@@ -17,7 +17,7 @@ The following software is needed to build:
   - setuptools and build packages
 - [OpenSSL from zOpen](https://github.com/zopencommunity/opensslport)
 - [zoslib from zOpen](https://github.com/zopencommunity/zoslibport)
-- git (to clone the repository)
+- [git](https://www.ibm.com/products/open-enterprise-foundation-zos) (to clone the repository)
 
 ### Environment variables
 
