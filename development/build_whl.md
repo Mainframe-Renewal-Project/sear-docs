@@ -23,6 +23,14 @@ The following software is needed to build:
 
 There are 2 different ways of informing the build process where zoslib and OpenSSL are located. The first is if you have done a full zOpen install, then you can use the ZOPEN_ROOTFS environment variable. If you have installed OpenSSL and zoslib individually, i.e. in your home directory, then you can specify OPENSSL_ROOT and ZOSLIB_ROOT. If ZOPEN_ROOTFS is not specified then both OPENSSL_ROOT and ZOSLIB_ROOT must be set.
 
+If using the user installation method you can put zoslib and OpenSSL in a folder in your z/OS Unix home directory. Then in your .zprofile or .profile point the to the relevant folders:
+
+```sh
+# SEAR dependencies
+OPENSSL_ROOT = /home/<your RACF id>/software/openssl
+ZOSLIB_ROOT = /home/<your RACF id>/software/zoslib
+```
+
 ## Initiating the build process
 
 First you will need to clone down the source code with git
