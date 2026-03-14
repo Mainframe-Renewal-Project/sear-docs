@@ -62,7 +62,7 @@ callouts:
     color: yellow
   note:
     title: 💡 Note
-    color: cyan
+    color: blue
   experimental:
     title: 🚧 Experimental
     color: red
