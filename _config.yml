@@ -62,10 +62,10 @@ callouts:
     color: yellow
   note:
     title: 💡 Note
-    color: blue
+    color: cyan
   experimental:
     title: 🚧 Experimental
-    color: "#EA0762"
+    color: red
   development_status:
     title: 🚧 Development Status
     color: red
