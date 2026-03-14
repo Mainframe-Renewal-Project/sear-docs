@@ -65,7 +65,7 @@ callouts:
     color: blue
   experimental:
     title: 🚧 Experimental
-    color: red
+    color: "#EA0762"
   development_status:
     title: 🚧 Development Status
     color: red
