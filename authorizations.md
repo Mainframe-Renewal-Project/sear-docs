@@ -18,7 +18,7 @@ This page details the authorization you need to use the SEAR API. You can use th
 
 ## RACF callable services
 
-This section goes into the RACF callable services SEAR uses and which you need access to in order to do specific things with SEAR.
+This section covers the RACF callable services SEAR uses and which accesses you need in order to do specific things with SEAR.
 
 ### Data extraction requests
 
