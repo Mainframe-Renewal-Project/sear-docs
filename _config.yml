@@ -23,7 +23,7 @@ permalink: /:title/
 favicon_ico: /assets/images/favicon.png
 
 # Build settings
-remote_theme: just-the-docs/just-the-docs@v0.10.1
+remote_theme: just-the-docs/just-the-docs@v0.12.0
 include:
   - contribute.markdown
 color_scheme: sear
@@ -73,7 +73,7 @@ callouts:
 mermaid:
   # Version of mermaid library
   # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
-  version: "11.13.0
+  version: "11.12.3
 
 # Set the right markdown style
 markdown: kramdown
