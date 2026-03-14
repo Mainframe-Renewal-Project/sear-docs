@@ -1,3 +1,10 @@
+---
+layout: default
+has_toc: false
+parent: Examples
+---
+
+
 # Certificates
 
 Valid operators for this type of request
