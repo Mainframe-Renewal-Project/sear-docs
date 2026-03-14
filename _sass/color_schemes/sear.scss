@@ -5,6 +5,7 @@ $sear-secondary: #FF206E;
 $sear-tertiary: #85B7F4;
 $sear-background: #383838;
 $sear-foreground: #F7F7F9;
+$sear-code: #000000;
 
 $color-scheme: dark;
 $body-background-color: $sear-background;
@@ -15,7 +16,7 @@ $nav-child-link-color: $grey-dk-000;
 $sidebar-color: lighten($sear-background, 5%);
 $base-button-color: $grey-dk-250;
 $btn-primary-color: $blue-200;
-$code-background-color: lighten($sear-background, 5%);
+$code-background-color: lighten($sear-code, 5%);
 $code-linenumber-color: $sear-foreground;
 $feedback-color: darken($sidebar-color, 3%);
 $table-background-color: lighten($sear-background, 15%);
