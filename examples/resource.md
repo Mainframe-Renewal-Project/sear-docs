@@ -5,7 +5,7 @@ parent: Examples
 ---
 
 
-# Resources
+# Resource profiles
 
 Valid operators for this type of request
 
