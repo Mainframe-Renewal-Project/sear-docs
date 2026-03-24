@@ -50,7 +50,7 @@ The following tables describes the resource segments and traits that are support
 | `"base:global_audit_none"` | `gaudnone` | `string` | `"set"` | `"alter"` |
 | `"base:global_audit_read"` | `gaudread` | `string` | `"set"` | `"alter"` |
 | `"base:global_audit_update"` | `gaudupdt` | `string` | `"set"` | `"alter"` |
-| `"base:is_generic"` | `generic` | `boolean` | N/A | `"extract"` |
+| `"base:is_generic"` | N/A | `boolean` | N/A | `"extract"` |
 | `"base:last_change_date"` | `lchgdat` | `string` | N/A | `"extract"` |
 | `"base:level"` | `level` | `string` | `"set"` | `"add"`<br>`"alter"` |
 | `"base:last_reference_date"` | `lrefdat` | `string` | N/A | `"extract"` |

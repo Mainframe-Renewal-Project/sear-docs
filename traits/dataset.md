@@ -41,7 +41,7 @@ The following tables describes the dataset profile segments and traits that are 
 | `"base:security_categories"` | `numctgy` | `repeat` | N/A | `"extract"` |
 | `"base:create_date"` | `creatdat` | `string` | N/A | `"extract"` |
 | `"base:installation_data"` | `data` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"` |
-| `"base:is_generic"` | `data` | `boolean` | N/A | `"extract"` |
+| `"base:is_generic"` | N/A | `boolean` | N/A | `"extract"` |
 | `"base:dataset_type"` | `dstype` | `string` | N/A | `"extract"` |
 | `"base:erase_datasets_on_delete"` | `erase` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"` |
 | `"base:model_profile_class"` | `fclass` | `string` | `"set"` | `"add"` |
