@@ -16,6 +16,7 @@ The following software is needed to build:
 - [Python](https://www.ibm.com/products/open-enterprise-python-zos) 3.12, 3.13, or 3.14
   - setuptools and build packages
 - [OpenSSL from zOpen](https://github.com/zopencommunity/opensslport)
+  - SEAR 0.6.x and below are only compatible with OpenSSL 3.x.x, not 4.x.x
 - [zoslib from zOpen](https://github.com/zopencommunity/zoslibport)
 - [git](https://www.ibm.com/products/open-enterprise-foundation-zos) (to clone the repository)
 
