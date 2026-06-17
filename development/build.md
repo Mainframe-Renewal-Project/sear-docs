@@ -16,6 +16,7 @@ SEAR requires several things included with [zOpen](https://zopen.community/#/):
 - make (the one IBM provides will cause the process to fail)
 - [cmake](https://github.com/zopencommunity/cmakeport)
 - [OpenSSL from zOpen](https://github.com/zopencommunity/opensslport)
+  - SEAR 0.6.x and below are only compatible with OpenSSL 3.x.x, not 4.x.x
 - [zoslib from zOpen](https://github.com/zopencommunity/zoslibport)
 
 This list will expand in the future as more language interfaces get added.
@@ -61,3 +62,24 @@ Build artifacts are located within the build directory.
 The CMake build process builds static libraries by default. If you instead wish to build shared libraries, append `-DBUILD_SHARED_LIBS=on` to the CMake configure step command (the first of the two) shown above.
 
 Build artifacts are located within the build directory.
+
+<ul id="profileTabs" class="nav nav-tabs">
+    <li class="active"><a href="#profile" data-toggle="tab">Profile</a></li>
+    <li><a href="#about" data-toggle="tab">About</a></li>
+    <li><a href="#match" data-toggle="tab">Match</a></li>
+</ul>
+  <div class="tab-content">
+<div role="tabpanel" class="tab-pane active" id="profile">
+    <h2>Profile</h2>
+<p>Praesent sit amet fermentum leo....</p>
+</div>
+
+<div role="tabpanel" class="tab-pane" id="about">
+    <h2>About</h2>
+    <p>Lorem ipsum ...</p></div>
+
+<div role="tabpanel" class="tab-pane" id="match">
+    <h2>Match</h2>
+    <p>Vel vehicula ....</p>
+</div>
+</div>
