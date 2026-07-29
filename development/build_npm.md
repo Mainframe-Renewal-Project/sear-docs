@@ -5,7 +5,7 @@ parent: SEAR development
 
 # Building the JavaScript package
 
-TBD
+This page covers how to build the JavaScript package for SEAR from source.
 
 ## Pre-requisites
 
