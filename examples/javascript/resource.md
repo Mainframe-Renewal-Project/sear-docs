@@ -42,7 +42,7 @@ const request = {
     "operation": "extract",
     "admin_type": "resource",
     "resource": "IRR.RADMIN.**",
-    "class": "facility",
+    "class_name": "facility",
 };
 
 const response = sear(request, true);
@@ -98,7 +98,7 @@ import { sear } from '@mainframe-renewal-project/searjs';
 const request = {
     "operation": "search",
     "admin_type": "resource",
-    "class": "facility",
+    "class_name": "facility",
 };
 
 const response = sear(request, true);
@@ -118,7 +118,7 @@ import { sear } from '@mainframe-renewal-project/searjs';
 const request = {
     "operation": "search",
     "admin_type": "resource",
-    "class": "facility",
+    "class_name": "facility",
     "resource_filter": "IRR",
 };
 
@@ -144,7 +144,7 @@ const request = {
     "operation": "add",
     "admin_type": "resource",
     "resource": "IRR.RADMIN.**",
-    "class": "facility",
+    "class_name": "facility",
     "traits": {
         "base:universal_access": "None",
         "base:owner": "SECADM",
@@ -171,7 +171,7 @@ const request = {
     "operation": "alter",
     "admin_type": "resource",
     "resource": "IRR.RADMIN.**",
-    "class": "facility",
+    "class_name": "facility",
     "traits": {
         "base:universal_access": "Read",
         "base:owner": "SECADM",
@@ -198,7 +198,7 @@ const request = {
     "operation": "delete",
     "admin_type": "resource",
     "resource": "IRR.RADMIN.**",
-    "class": "facility",
+    "class_name": "facility",
 };
 
 const response = sear(request, true);
