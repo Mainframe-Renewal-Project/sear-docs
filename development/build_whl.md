@@ -12,13 +12,13 @@ This page covers how to build the Python wheel yourself, rather than getting it 
 The following software is needed to build:
 
 - z/OS 2.5 or later
-- [IBM OpenXL C/C++ 2.1](https://www.ibm.com/products/xl-cpp-compiler-zos) or later (1.1 won't work)
-- [Python](https://www.ibm.com/products/open-enterprise-python-zos) 3.12, 3.13, or 3.14
-  - setuptools and build packages
-- [OpenSSL from zOpen](https://github.com/zopencommunity/opensslport)
+- [IBM OpenXL C/C++ 2.1](https://www.ibm.com/products/xl-cpp-compiler-zos) or later (1.1 won't work).
+- [Python](https://www.ibm.com/products/open-enterprise-python-zos) 3.13 or 3.14.
+  - setuptools and build packages.
+- [OpenSSL from zOpen](https://github.com/zopencommunity/opensslport).
   - SEAR 0.6.x and below are only compatible with OpenSSL 3.x.x, not 4.x.x. SEAR 0.7.0 and above requires OpenSSL 4.x.x.
 - [zoslib from zOpen](https://github.com/zopencommunity/zoslibport)
-- [git](https://www.ibm.com/products/open-enterprise-foundation-zos) (to clone the repository)
+- [git](https://www.ibm.com/products/open-enterprise-foundation-zos) (to clone the repository).
 
 ### Environment variables
 
