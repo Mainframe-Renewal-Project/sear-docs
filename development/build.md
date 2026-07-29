@@ -16,7 +16,7 @@ SEAR requires several things included with [zOpen](https://zopen.community/#/):
 - make (the one IBM provides will cause the process to fail)
 - [cmake](https://github.com/zopencommunity/cmakeport)
 - [OpenSSL from zOpen](https://github.com/zopencommunity/opensslport)
-  - SEAR 0.6.x and below are only compatible with OpenSSL 3.x.x, not 4.x.x
+  - SEAR 0.6.x and below are only compatible with OpenSSL 3.x.x, not 4.x.x. SEAR 0.7.0 and above requires OpenSSL 4.x.x.
 - [zoslib from zOpen](https://github.com/zopencommunity/zoslibport)
 
 This list will expand in the future as more language interfaces get added.
