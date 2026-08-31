@@ -2,7 +2,7 @@
 layout: default
 has_children: true
 has_toc: false
-parent: JavaScript
+parent: examples
 ---
 
 # Examples
