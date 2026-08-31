@@ -2,7 +2,6 @@
 layout: default
 has_children: true
 has_toc: false
-parent: examples
 ---
 
 # Examples
