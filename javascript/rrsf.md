@@ -1,7 +1,7 @@
 ---
 layout: default
 has_toc: false
-parent: javascript
+parent: JavaScript Examples
 ---
 
 # RRSF
