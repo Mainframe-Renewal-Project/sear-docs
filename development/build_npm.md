@@ -3,9 +3,9 @@ layout: default
 parent: SEAR development
 ---
 
-# Building the Python wheel
+# Building the JavaScript package
 
-This page covers how to build the Python wheel yourself, rather than getting it from PyPi or GitHub. Building yourself can reduce risk of supply attacks and might be necessary depending on your organizational rules.
+This page covers how to build the JavaScript package for SEAR from source.
 
 ## Pre-requisites
 
@@ -13,8 +13,7 @@ The following software is needed to build:
 
 - z/OS 2.5 or later
 - [IBM OpenXL C/C++ 2.1](https://www.ibm.com/products/xl-cpp-compiler-zos) or later (1.1 won't work).
-- [Python](https://www.ibm.com/products/open-enterprise-python-zos) 3.13 or 3.14.
-  - setuptools and build packages.
+- [Node.js](https://www.ibm.com/products/sdk-nodejs-compiler-zos) 20 or later.
 - [OpenSSL from zOpen](https://github.com/zopencommunity/opensslport).
   - SEAR 0.6.x and below are only compatible with OpenSSL 3.x.x, not 4.x.x. SEAR 0.7.0 and above requires OpenSSL 4.x.x.
 - [zoslib from zOpen](https://github.com/zopencommunity/zoslibport)
@@ -32,6 +31,8 @@ OPENSSL_ROOT = /home/<your RACF id>/software/openssl
 ZOSLIB_ROOT = /home/<your RACF id>/software/zoslib
 ```
 
+Make sure Node.js is installed and available in your path. You can check this by running `node -v` in a shell, which should return the version of Node.js installed.
+
 ## Initiating the build process
 
 First you will need to clone down the source code with git
@@ -40,16 +41,6 @@ First you will need to clone down the source code with git
 git clone https://github.com/Mainframe-Renewal-Project/sear.git
 ```
 
-Then you will want to create a Python virtual environment and install the `build` and `setuptools` packages in it.
-
 ```sh
-pip install build && pip install setuptools
+npm run build
 ```
-
-Once you have all the necessary tools do a git clone
-
-```sh
-python -m build
-```
-
-After the build process is done a wheel will appear in `./dist/`

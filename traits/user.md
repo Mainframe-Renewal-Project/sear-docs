@@ -23,8 +23,10 @@ The following tables describes the user segments and traits that are supported f
 ## `base`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
+| `"base:allow_contain"` | `allowcon` | `boolean` | `"set"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"base:automatic_dataset_protection"` | `adsp` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"base:auditor"` | `auditor` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
+| `"base:contain"` | `contain` | `boolean` | `"set"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"base:default_group_authority"` | `auth` | `string` | `"set"` | `"add"`<br>`"alter"` |
 | `"base:security_category"` | `category` | `string` | `"add"`<br>`"remove"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"base:security_categories"` | `numctgy` | `repeat` | N/A | `"extract"` |
@@ -63,6 +65,8 @@ The following tables describes the user segments and traits that are supported f
 | `"base:mfa_policies"` | `mfapoln` | `repeat` | N/A | `"extract"` |
 | `"base:model_dataset"` | `model` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"base:name"` | `name` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
+| `"base:never_contain"` | `nevercon` | `boolean` | `"set"` | `"add"`<br>`"alter"`<br>`"extract"` |
+| `"base:no_contain"` | `nocontai` | `boolean` | `"set"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"base:require_operator_id_card"` | `oidcard` | `boolean` | `"delete"` | `"add"`<br>`"alter"` |
 | `"base:operations"` | `oper` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"base:owner"` | `owner` | `string` | `"set"` | `"add"`<br>`"alter"`<br>`"extract"` |

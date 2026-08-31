@@ -16,7 +16,7 @@ SEAR requires several things included with [zOpen](https://zopen.community/#/):
 - make (the one IBM provides will cause the process to fail)
 - [cmake](https://github.com/zopencommunity/cmakeport)
 - [OpenSSL from zOpen](https://github.com/zopencommunity/opensslport)
-  - SEAR 0.6.x and below are only compatible with OpenSSL 3.x.x, not 4.x.x
+  - SEAR 0.6.x and below are only compatible with OpenSSL 3.x.x, not 4.x.x. SEAR 0.7.0 and above requires OpenSSL 4.x.x.
 - [zoslib from zOpen](https://github.com/zopencommunity/zoslibport)
 
 This list will expand in the future as more language interfaces get added.
@@ -25,10 +25,11 @@ This list will expand in the future as more language interfaces get added.
 
 SEAR requires the following products from IBM:
 
-- RACF
-- z/OS 2.5 or later
-- [IBM OpenXL C/C++ 2.1](https://www.ibm.com/products/xl-cpp-compiler-zos) or later (1.1 won't work)
-- [Python](https://www.ibm.com/products/open-enterprise-python-zos) (3.12 or later)
+- RACF.
+- z/OS 2.5 or later.
+- [IBM OpenXL C/C++ 2.1](https://www.ibm.com/products/xl-cpp-compiler-zos) or later (1.1 won't work).
+- [Python](https://www.ibm.com/products/open-enterprise-python-zos) (3.13 or later).
+- [Node.js](https://www.ibm.com/products/sdk-nodejs-compiler-zos) 20 or later.
 
 This list will expand in the future as more language interfaces get added.
 

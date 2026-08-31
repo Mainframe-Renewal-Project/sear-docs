@@ -1,11 +1,15 @@
 ---
 layout: default
 has_toc: false
-parent: Examples
+parent: JavaScript
 ---
 
 
 # System options
+
+{: .warning }
+
+> Please note JavaScript support is exclusive to SEAR 0.7.0 and later.
 
 {: .warning }
 
@@ -33,25 +37,26 @@ SEAR provides the `extract` operator to gather information about the RACF databa
 
 The sample below returns all of the RACF system options.
 
-```python
+```javascript
+'use strict';
 
-from sear import sear
+import { sear } from '@mainframe-renewal-project/searjs';
 
-result = sear(
-    {
-        "operation": "extract",
-        "admin_type": "racf-options"
-    },
-)
+const request = {
+    "operation": "extract",
+    "admin_type": "racf-options",
+};
 
-print(result.result)
+const response = sear(request, true);
+
+console.log(JSON.stringify(response.result, null, 2));
 ```
 
 #### Returned result
 
 <details>
 
-```python
+```javascript
 {
 "profile": {
     "base": {
@@ -886,21 +891,22 @@ You can update the RACF system options through SEAR, the only valid operator is 
 
 The sample below updates the amount of incorrect password attempts allowed on the system to 5.
 
-```python
+```javascript
+'use strict';
 
-from sear import sear
+import { sear } from '@mainframe-renewal-project/searjs';
 
-result = sear(
-    {
-        "operation": "alter",
-        "admin_type": "racf-options",
-        "traits": {
-            "base:max_incorrect_password_attempts": 5,
-        },
+const request = {
+    "operation": "alter",
+    "admin_type": "racf-options",
+    "traits": {
+        "base:max_incorrect_password_attempts": 5,
     },
-)
+};
 
-print(result.result)
+const response = sear(request, true);
+
+console.log(JSON.stringify(response.result, null, 2));
 ```
 
 You can see the full list of traits in [the traits/racf_options section](https://mainframe-renewal-project.github.io/sear-docs/traits/racf_options/)
@@ -915,21 +921,23 @@ Using SEAR with the `base:refresh` parameter allows these in-storage profiles to
 
 The sample below demonstrates how to refresh `GENERIC DATASET` using SEAR.
 
-```python
-from sear import sear
+```javascript
+'use strict';
 
-result = sear(
-    {
-        "operation": "alter",
-        "admin_type": "racf-options",
-        "traits": {
-            "base:generic_profile_checking_classes": "DATASET",
-            "base:refresh": True,
-        },
+import { sear } from '@mainframe-renewal-project/searjs';
+
+const request = {
+    "operation": "alter",
+    "admin_type": "racf-options",
+    "traits": {
+        "base:generic_profile_checking_classes": "DATASET",
+        "base:refresh": true,
     },
-)
+};
 
-print(result.result)
+const response = sear(request, true);
+
+console.log(JSON.stringify(response.result, null, 2));
 ```
 
 You can see the full list of traits in [the traits/racf_options section](https://mainframe-renewal-project.github.io/sear-docs/traits/racf_options/)

@@ -10,6 +10,7 @@ The following programming language interfaces are currently available for SEAR.
 {: .fs-6 .fw-300 }
 
 * [Python](./python.md)
+* [JavaScript](./javascript.md)
 
 ## Future interfaces
 

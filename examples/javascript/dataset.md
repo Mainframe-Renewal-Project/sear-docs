@@ -1,11 +1,15 @@
 ---
 layout: default
 has_toc: false
-parent: Examples
+parent: JavaScript
 ---
 
 
 # Datasets
+
+{: .warning }
+
+> Please note JavaScript support is exclusive to SEAR 0.7.0 and later.
 
 Valid operators for this type of request
 
@@ -29,26 +33,27 @@ SEAR provides the `extract` and `search` operators to gather information about d
 
 The sample below extracts information about a dataset profile called `FDEGILIO.TEST.*`.
 
-```python
+```javascript
+'use strict';
 
-from sear import sear
+import { sear } from '@mainframe-renewal-project/searjs';
 
-result = sear(
-    {
-        "operation": "extract",
-        "admin_type": "dataset",
-        "dataset": "FDEGILIO.TEST.*",
-    },
-)
+const request = {
+    "operation": "extract",
+    "admin_type": "dataset",
+    "dataset": "FDEGILIO.TEST.*",
+};
 
-print(result.result)
+const response = sear(request, true);
+
+console.log(JSON.stringify(response.result, null, 2));
 ```
 
 #### Returned result
 
 <details>
 
-```python
+```javascript
 {
   "profile": {
     "base": {
@@ -88,38 +93,40 @@ print(result.result)
 
 The sample below gets a list of all dataset profiles on the system.
 
-```python
+```javascript
+'use strict';
 
-from sear import sear
+import { sear } from '@mainframe-renewal-project/searjs';
 
-result = sear(
-    {
-        "operation": "search",
-        "admin_type": "dataset",
-        "dataset_filter": "LEONARD",
-    },
- )
+const request = {
+    "operation": "search",
+    "admin_type": "dataset",
+    "dataset_filter": "LEONARD",
+};
 
-print(result.result)
+const response = sear(request, true);
+
+console.log(JSON.stringify(response.result, null, 2));
 ```
 
 #### Filtering search results for a specific dataset profile
 
 The sample below gets all dataset profiles that start with `LEONARD`. It will return a list of dataset profiles, to get metadata on them you will have to run the extract operation on every single dataset profile in the list.
 
-```python
+```javascript
+'use strict';
 
-from sear import sear
+import { sear } from '@mainframe-renewal-project/searjs';
 
-result = sear(
-    {
-        "operation": "search",
-        "admin_type": "dataset",
-        "dataset_filter": "LEONARD",
-    },
- )
+const request = {
+    "operation": "search",
+    "admin_type": "dataset",
+    "dataset_filter": "LEONARD",
+};
 
-print(result.result)
+const response = sear(request, true);
+
+console.log(JSON.stringify(response.result, null, 2));
 ```
 
 ## Updating dataset profiles
@@ -130,24 +137,25 @@ SEAR provides 3 main operators for updating the RACF database, `add`, `alter`, a
 
 The sample below creates a dataset profile called `ESWIFT.TEST.**` with a UACC of NONE and the owner set to the `eswift` RACF userid.
 
-```python
+```javascript
+'use strict';
 
-from sear import sear
+import { sear } from '@mainframe-renewal-project/searjs';
 
-result = sear(
-    {
-        "operation": "add",
-        "admin_type": "dataset",
-        "dataset": "ESWIFT.TEST.**",
-        "generic": True,
-        "traits": {
-            "base:universal_access": "None",
-            "base:owner": "eswift",
-        },
+const request = {
+    "operation": "add",
+    "admin_type": "dataset",
+    "dataset": "ESWIFT.TEST.**",
+    "generic": true,
+    "traits": {
+        "base:universal_access": "None",
+        "base:owner": "eswift",
     },
-)
+};
 
-print(result.result)
+const response = sear(request, true);
+
+console.log(JSON.stringify(response.result, null, 2));
 ```
 
 You can see the full list of traits in [the traits/dataset section](https://mainframe-renewal-project.github.io/sear-docs/traits/dataset/)
@@ -156,23 +164,24 @@ You can see the full list of traits in [the traits/dataset section](https://main
 
 The sample below sets the RACF user `SECADM` as the owner of the `LEONARD.LIB.HLASM` dataset profile and sets UACC to `READ`.
 
-```python
+```javascript
+'use strict';
 
-from sear import sear
+import { sear } from '@mainframe-renewal-project/searjs';
 
-result = sear(
-    {
-        "operation": "alter",
-        "admin_type": "dataset",
-        "dataset": "LEONARD.LIB.HLASM",
-        "traits": {
-            "base:universal_access": "Read",
-            "base:owner": "SECADM",
-        },
+const request = {
+    "operation": "alter",
+    "admin_type": "dataset",
+    "dataset": "LEONARD.LIB.HLASM",
+    "traits": {
+        "base:universal_access": "Read",
+        "base:owner": "SECADM",
     },
-)
+};
 
-print(result.result)
+const response = sear(request, true);
+
+console.log(JSON.stringify(response.result, null, 2));
 ```
 
 You can see the full list of traits in [the traits/dataset section](https://mainframe-renewal-project.github.io/sear-docs/traits/dataset/)
@@ -181,17 +190,18 @@ You can see the full list of traits in [the traits/dataset section](https://main
 
 The sample below deletes the `LEONARD.LIB.HLASM` dataset profile.
 
-```python
+```javascript
+'use strict';
 
-from sear import sear
+import { sear } from '@mainframe-renewal-project/searjs';
 
-result = sear(
-    {
-        "operation": "delete",
-        "admin_type": "dataset",
-        "dataset": "LEONARD.LIB.HLASM",
-    },
-)
+const request = {
+    "operation": "delete",
+    "admin_type": "dataset",
+    "dataset": "LEONARD.LIB.HLASM",
+};
 
-print(result.result)
+const response = sear(request, true);
+
+console.log(JSON.stringify(response.result, null, 2));
 ```

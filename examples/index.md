@@ -2,6 +2,7 @@
 layout: default
 has_children: true
 has_toc: false
+parent: Examples
 ---
 
 # Examples
@@ -9,13 +10,6 @@ has_toc: false
 Sub-pages contains contains examples of how to use SEAR in the real world.
 {: .fs-6 .fw-300 }
 
-* [Certificates](./certificates.md)
-* [Connects](./connect.md)
-* [Datasets](./dataset.md)
-* [Groups](./group.md)
-* [Keyrings](./keyring.md)
-* [Permits](./keyring.md)
-* [RRSF](./rrsf.md)
-* [Resource profiles](./resource.md)
-* [RACF options](./setropts.md)
-* [Users](./user.md)
+* [JavaScript](./javascript/index.md)
+* [Python](./python/index.md)
+* [TypeScript](./typescript/index.md)

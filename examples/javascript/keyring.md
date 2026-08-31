@@ -1,11 +1,15 @@
 ---
 layout: default
 has_toc: false
-parent: Examples
+parent: JavaScript
 ---
 
 
 # Keyrings
+
+{: .warning }
+
+> Please note JavaScript support is exclusive to SEAR 0.7.0 and later.
 
 Valid operators for this type of request
 
@@ -29,27 +33,28 @@ SEAR provides the `extract` operators to gather information about certificates.
 
 Below you can find a sample of some code that extracts information about the `SEARTESTRING` owned by `YBTKS`.
 
-```python
+```javascript
+'use strict';
 
-from sear import sear
+import { sear } from '@mainframe-renewal-project/searjs';
 
-result = sear(
-    {
-        "operation": "extract",
-        "admin_type": "keyring",
-        "keyring": "SEARTESTRING",
-        "owner": "YBTKS",
-    },
-)
+const request = {
+  "operation": "extract",
+  "admin_type": "keyring",
+  "keyring": "SEARTESTRING",
+  "owner": "YBTKS",
+};
 
-print(result.result)
+const response = sear(request, true);
+
+console.log(JSON.stringify(response.result, null, 2));
 ```
 
 #### Returned result
 
 <details>
 
-```python
+```javascript
 {
   "keyring": {
     "certificates": [
@@ -131,38 +136,40 @@ SEAR provides two operators for working with certificates, `add` and `delete`.
 
 Below you can find a sample of some code that adds a new keyring called `SEARTESTRING2` with `YBTKS` as the owner.
 
-```python
+```javascript
+'use strict';
 
-from sear import sear
+import { sear } from '@mainframe-renewal-project/searjs';
 
-result = sear(
-    {
-        "operation": "add",
-        "admin_type": "keyring",
-        "keyring": "SEARTESTRING2",
-        "owner": "YBTKS",
-    },
-)
+const request = {
+  "operation": "add",
+  "admin_type": "keyring",
+  "keyring": "SEARTESTRING2",
+  "owner": "YBTKS",
+};
 
-print(result.result)
+const response = sear(request, true);
+
+console.log(JSON.stringify(response.result, null, 2));
 ```
 
 ### Deleting a keyring
 
 Below you can find a sample of some code that deletes the `SEARTESTRING2` keyring owned by `YBTKS`.
 
-```python
+```javascript
+'use strict';
 
-from sear import sear
+import { sear } from '@mainframe-renewal-project/searjs';
 
-result = sear(
-    {
-        "operation": "delete",
-        "admin_type": "keyring",
-        "keyring": "SEARTESTRING2",
-        "owner": "YBTKS",
-    },
-)
+const request = {
+  "operation": "delete",
+  "admin_type": "keyring",
+  "keyring": "SEARTESTRING2",
+  "owner": "YBTKS",
+};
 
-print(result.result)
+const response = sear(request, true);
+
+console.log(JSON.stringify(response.result, null, 2));
 ```

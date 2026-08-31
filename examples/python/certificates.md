@@ -1,7 +1,7 @@
 ---
 layout: default
 has_toc: false
-parent: Examples
+parent: Python
 ---
 
 
@@ -25,7 +25,7 @@ Valid operators for this type of request
 
 ### Adding a certificate to a keyring
 
-Below you can find a sample of some code that adds a certficate to the `SEARTESTRING` keyring owned by `YBTKS`.
+Below you can find a sample of some code that adds a certificate to the `SEARTESTRING` keyring owned by `YBTKS`.
 
 ```python
 
@@ -50,7 +50,7 @@ print(result.result)
 
 ### Deleting a certificate from a keyring
 
-Below you can find a sample of some code that deletes a certficate from the `SEARTESTRING` keyring owned by `YBTKS`.
+Below you can find a sample of some code that deletes a certificate from the `SEARTESTRING` keyring owned by `YBTKS`.
 
 ```python
 

@@ -1,11 +1,15 @@
 ---
 layout: default
 has_toc: false
-parent: Examples
+parent: JavaScript
 ---
 
 
 # Groups
+
+{: .warning }
+
+> Please note JavaScript support is exclusive to SEAR 0.7.0 and later.
 
 Valid operators for this type of request
 
@@ -29,26 +33,27 @@ SEAR provides the `extract` and `search` operators to gather information about g
 
 Below you can find a sample of some code that extracts information about the RACF group `DEV`.
 
-```python
+```javascript
+'use strict';
 
-from sear import sear
+import { sear } from '@mainframe-renewal-project/searjs';
 
-result = sear(
-    {
-        "operation": "extract",
-        "admin_type": "group",
-        "group": "DEV",
-    },
-)
+const request = {
+  "operation": "extract",
+  "admin_type": "group",
+  "group": "DEV",
+};
 
-print(result.result)
+const response = sear(request, true);
+
+console.log(JSON.stringify(response.result, null, 2));
 ```
 
 #### Returned result
 
 <details>
 
-```python
+```javascript
 {
   "profile": {
     "base": {
@@ -85,37 +90,39 @@ print(result.result)
 
 The sample below returns a list of all RACF groups on the system.
 
-```python
+```javascript
+'use strict';
 
-from sear import sear
+import { sear } from '@mainframe-renewal-project/searjs';
 
-result = sear(
-    {
-        "operation": "search",
-        "admin_type": "group",
-    },
-)
+const request = {
+  "operation": "search",
+  "admin_type": "group",
+};
 
-print(result.result)
+const response = sear(request, true);
+
+console.log(JSON.stringify(response.result, null, 2));
 ```
 
 #### Filtering group results
 
 The sample below gets all groups that start with `SYS`. It will return a list of groups, to get metadata on them you will have to run the extract operation on every single RACF group in the list.
 
-```python
+```javascript
+'use strict';
 
-from sear import sear
+import { sear } from '@mainframe-renewal-project/searjs';
 
-result = sear(
-    {
-        "operation": "search",
-        "admin_type": "group",
-        "group_filter": "SYS",
-    },
-)
+const request = {
+  "operation": "search",
+  "admin_type": "group",
+  "group_filter": "SYS",
+};
 
-print(result.result)
+const response = sear(request, true);
+
+console.log(JSON.stringify(response.result, null, 2));
 ```
 
 ## Updating RACF groups
@@ -126,22 +133,23 @@ SEAR provides 3 main operators for updating the RACF database, `add`, `alter`, a
 
 The sample below creates a group called `SYSPROG` with the gid a of 6667.
 
-```python
+```javascript
+'use strict';
 
-from sear import sear
+import { sear } from '@mainframe-renewal-project/searjs';
 
-result = sear(
-    {
-        "operation": "add",
-        "admin_type": "group",
-        "group": "SYSPROG",
-        "traits": {
-            "omvs:gid": 6667,
-        },
-    },
-)
+const request = {
+  "operation": "add",
+  "admin_type": "group",
+  "group": "SYSPROG",
+  "traits": {
+    "omvs:gid": 6667,
+  },
+};
 
-print(result.result)
+const response = sear(request, true);
+
+console.log(JSON.stringify(response.result, null, 2));
 ```
 
 You can see the full list of traits in [the traits/group section](https://mainframe-renewal-project.github.io/sear-docs/traits/group/)
@@ -150,22 +158,23 @@ You can see the full list of traits in [the traits/group section](https://mainfr
 
 The sample below changes the `SYSPROG` RACF group to have a gid of 1234567.
 
-```python
+```javascript
+'use strict';
 
-from sear import sear
+import { sear } from '@mainframe-renewal-project/searjs';
 
-result = sear(
-    {
-        "operation": "alter",
-        "admin_type": "group",
-        "group": "SYSPROG",
-        "traits": {
-            "omvs:gid": 1234567,
-        },
-    },
-)
+const request = {
+  "operation": "alter",
+  "admin_type": "group",
+  "group": "SYSPROG",
+  "traits": {
+    "omvs:gid": 1234567,
+  },
+};
 
-print(result.result)
+const response = sear(request, true);
+
+console.log(JSON.stringify(response.result, null, 2));
 ```
 
 You can see the full list of traits in [the traits/group section](https://mainframe-renewal-project.github.io/sear-docs/traits/group/)
@@ -174,17 +183,18 @@ You can see the full list of traits in [the traits/group section](https://mainfr
 
 The below sample deletes the RACF group `DEVOPS`.
 
-```python
+```javascript
+'use strict';
 
-from sear import sear
+import { sear } from '@mainframe-renewal-project/searjs';
 
-result = sear(
-    {
-        "operation": "delete",
-        "admin_type": "group",
-        "group": "DEVOPS",
-    },
-)
+const request = {
+  "operation": "delete",
+  "admin_type": "group",
+  "group": "DEVOPS",
+};
 
-print(result.result)
+const response = sear(request, true);
+
+console.log(JSON.stringify(response.result, null, 2));
 ```

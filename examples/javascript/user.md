@@ -1,11 +1,15 @@
 ---
 layout: default
 has_toc: false
-parent: Examples
+parent: JavaScript
 ---
 
 
 # Users
+
+{: .warning }
+
+> Please note JavaScript support is exclusive to SEAR 0.7.0 and later.
 
 Valid operators for this type of request
 
@@ -29,26 +33,27 @@ SEAR provides the `extract` and `search` operators to gather information about u
 
 Below you can find a sample of some code that extracts information about the RACF user `FDEGILIO`.
 
-```python
+```javascript
+'use strict';
 
-from sear import sear
+import { sear } from '@mainframe-renewal-project/searjs';
 
-result = sear(
-    {
-        "operation": "extract",
-        "admin_type": "user",
-        "userid": "FDEGILIO",
-    },
-)
+const request = {
+  "operation": "extract",
+  "admin_type": "user",
+  "userid": "FDEGILIO",
+};
 
-print(result.result)
+const response = sear(request, true);
+
+console.log(JSON.stringify(response.result, null, 2));
 ```
 
 #### Returned result
 
 <details>
 
-```python
+```javascript
 {
   "profile": {
     "base": {
@@ -139,37 +144,39 @@ print(result.result)
 
 The sample below gets a list of all users on the system.
 
-```python
+```javascript
+'use strict';
 
-from sear import sear
+import { sear } from '@mainframe-renewal-project/searjs';
 
-result = sear(
-    {
-        "operation": "search",
-        "admin_type": "user",
-    },
-)
+const request = {
+  "operation": "search",
+  "admin_type": "user",
+};
 
-print(result.result)
+const response = sear(request, true);
+
+console.log(JSON.stringify(response.result, null, 2));
 ```
 
 #### Filtering search results for a specific user
 
 The sample below gets all users that start with `ZWE`. It will return a list of users, to get metadata on them you will have to run the extract operation on every single RACF user in the list.
 
-```python
+```javascript
+'use strict';
 
-from sear import sear
+import { sear } from '@mainframe-renewal-project/searjs';
 
-result = sear(
-    {
-        "operation": "search",
-        "admin_type": "user",
-        "userid_filter": "ZWE",
-    },
-)
+const request = {
+  "operation": "search",
+  "admin_type": "user",
+  "userid_filter": "ZWE",
+};
 
-print(result.result)
+const response = sear(request, true);
+
+console.log(JSON.stringify(response.result, null, 2));
 ```
 
 ## Updating RACF users
@@ -180,24 +187,25 @@ SEAR provides 3 main operators for updating the RACF database, `add`, `alter`, a
 
 The sample below creates a user called `ESWIFT` with the base name of `ELIJAH SWIFT`, a UID of 24, and the home directory set to `/home/ESWIFT`.
 
-```python
+```javascript
+'use strict';
 
-from sear import sear
+import { sear } from '@mainframe-renewal-project/searjs';
 
-result = sear(
-    {
-        "operation": "add",
-        "admin_type": "user",
-        "userid": "ESWIFT",
-        "traits": {
-            "base:name": "ELIJAH SWIFT",
-            "omvs:uid": 24,
-            "omvs:home_directory": "/home/ESWIFT",
-        },
-    },
-)
+const request = {
+  "operation": "add",
+  "admin_type": "user",
+  "userid": "ESWIFT",
+  "traits": {
+    "base:name": "ELIJAH SWIFT",
+    "omvs:uid": 24,
+    "omvs:home_directory": "/home/ESWIFT",
+  },
+};
 
-print(result.result)
+const response = sear(request, true);
+
+console.log(JSON.stringify(response.result, null, 2));
 ```
 
 You can see the full list of traits in [the traits/user section](https://mainframe-renewal-project.github.io/sear-docs/traits/user/)
@@ -206,24 +214,25 @@ You can see the full list of traits in [the traits/user section](https://mainfra
 
 The sample below gives special and read only auditor attributes to the RACF user `LEONARD`.
 
-```python
+```javascript
+'use strict';
 
-from sear import sear
+import { sear } from '@mainframe-renewal-project/searjs';
 
-result = sear(
-    {
-        "operation": "alter",
-        "admin_type": "user",
-        "userid": "LEONARD",
-        "traits": {
-            "base:name": "LEONARD CARCARAMO",
-            "base:special": True,
-            "base:read_only_auditor": True,
-        },
-    },
-)
+const request = {
+  "operation": "alter",
+  "admin_type": "user",
+  "userid": "LEONARD",
+  "traits": {
+    "base:name": "LEONARD CARCARAMO",
+    "base:special": true,
+    "base:read_only_auditor": true,
+  },
+};
 
-print(result.result)
+const response = sear(request, true);
+
+console.log(JSON.stringify(response.result, null, 2));
 ```
 
 You can see the full list of traits in [the traits/user section](https://mainframe-renewal-project.github.io/sear-docs/traits/user/)
@@ -232,17 +241,18 @@ You can see the full list of traits in [the traits/user section](https://mainfra
 
 The below sample deletes the RACF user `LEONARD`.
 
-```python
+```javascript
+'use strict';
 
-from sear import sear
+import { sear } from '@mainframe-renewal-project/searjs';
 
-result = sear(
-    {
-        "operation": "delete",
-        "admin_type": "user",
-        "userid": "LEONARD",
-    },
-)
+const request = {
+  "operation": "delete",
+  "admin_type": "user",
+  "userid": "LEONARD",
+};
 
-print(result.result)
+const response = sear(request, true);
+
+console.log(JSON.stringify(response.result, null, 2));
 ```

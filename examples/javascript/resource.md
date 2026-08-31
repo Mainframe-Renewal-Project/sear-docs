@@ -1,11 +1,15 @@
 ---
 layout: default
 has_toc: false
-parent: Examples
+parent: JavaScript
 ---
 
 
 # Resource profiles
+
+{: .warning }
+
+> Please note JavaScript support is exclusive to SEAR 0.7.0 and later.
 
 Valid operators for this type of request
 
@@ -29,27 +33,28 @@ SEAR provides the `extract` and `search` operators to gather information about g
 
 The sample below extracts information about a specific resource profile.
 
-```python
+```javascript
+'use strict';
 
-from sear import sear
+import { sear } from '@mainframe-renewal-project/searjs';
 
-result = sear(
-    {
-        "operation": "extract",
-        "admin_type": "resource",
-        "resource": "IRR.RADMIN.**",
-        "class": "facility",
-    },
-)
+const request = {
+    "operation": "extract",
+    "admin_type": "resource",
+    "resource": "IRR.RADMIN.**",
+    "class_name": "facility",
+};
 
-print(result.result)
+const response = sear(request, true);
+
+console.log(JSON.stringify(response.result, null, 2));
 ```
 
 #### Returned result
 
 <details>
 
-```python
+```javascript
 {
   "profile": {
     "base": {
@@ -85,39 +90,41 @@ print(result.result)
 
 The sample below gets all general resource profiles in the facility class.
 
-```python
+```javascript
+'use strict';
 
-from sear import sear
+import { sear } from '@mainframe-renewal-project/searjs';
 
-result = sear(
-    {
-        "operation": "search",
-        "admin_type": "resource",
-        "class": "facility",
-    },
-)
+const request = {
+    "operation": "search",
+    "admin_type": "resource",
+    "class_name": "facility",
+};
 
-print(result.result)
+const response = sear(request, true);
+
+console.log(JSON.stringify(response.result, null, 2));
 ```
 
 #### Filtering results
 
 The sample below gets all general resource profiles that start with `IRR` in the `facility` class. It will return a list of resource profiles, to get metadata on them you will have to run the extract operation on every single resource profile in the list.
 
-```python
+```javascript
+'use strict';
 
-from sear import sear
+import { sear } from '@mainframe-renewal-project/searjs';
 
-result = sear(
-    {
-        "operation": "search",
-        "admin_type": "resource",
-        "class": "facility",
-        "resource_filter": "IRR",
-    },
-)
+const request = {
+    "operation": "search",
+    "admin_type": "resource",
+    "class_name": "facility",
+    "resource_filter": "IRR",
+};
 
-print(result.result)
+const response = sear(request, true);
+
+console.log(JSON.stringify(response.result, null, 2));
 ```
 
 ## Updating resource profiles
@@ -128,24 +135,25 @@ SEAR provides 3 main operators for updating the RACF database, `add`, `alter`, a
 
 The sample below creates a resource profile called `IRR.RADMIN.**` in the `facility` class with a UACC of NONE and the owner set to the "eswift" RACF userid.
 
-```python
+```javascript
+'use strict';
 
-from sear import sear
+import { sear } from '@mainframe-renewal-project/searjs';
 
-result = sear(
-    {
-        "operation": "add",
-        "admin_type": "resource",
-        "resource": "IRR.RADMIN.**",
-        "class": "facility",
-        "traits": {
-            "base:universal_access": "None",
-            "base:owner": "SECADM",
-        },
+const request = {
+    "operation": "add",
+    "admin_type": "resource",
+    "resource": "IRR.RADMIN.**",
+    "class_name": "facility",
+    "traits": {
+        "base:universal_access": "None",
+        "base:owner": "SECADM",
     },
-)
+};
 
-print(result.result)
+const response = sear(request, true);
+
+console.log(JSON.stringify(response.result, null, 2));
 ```
 
 You can see the full list of traits in [the traits/resource section](https://mainframe-renewal-project.github.io/sear-docs/traits/resource/)
@@ -154,24 +162,25 @@ You can see the full list of traits in [the traits/resource section](https://mai
 
 The sample below sets SECADM as the owner of the `IRR.RADMIN.**` resource profile in the `facility` class and sets UACC to "read"
 
-```python
+```javascript
+'use strict';
 
-from sear import sear
+import { sear } from '@mainframe-renewal-project/searjs';
 
-result = sear(
-    {
-        "operation": "alter",
-        "admin_type": "resource",
-        "resource": "IRR.RADMIN.**",
-        "class": "facility",
-        "traits": {
-            "base:universal_access": "Read",
-            "base:owner": "SECADM",
-        },
+const request = {
+    "operation": "alter",
+    "admin_type": "resource",
+    "resource": "IRR.RADMIN.**",
+    "class_name": "facility",
+    "traits": {
+        "base:universal_access": "Read",
+        "base:owner": "SECADM",
     },
-)
+};
 
-print(result.result)
+const response = sear(request, true);
+
+console.log(JSON.stringify(response.result, null, 2));
 ```
 
 You can see the full list of traits in [the traits/resource section](https://mainframe-renewal-project.github.io/sear-docs/traits/resource/)
@@ -180,18 +189,19 @@ You can see the full list of traits in [the traits/resource section](https://mai
 
 The sample below deletes the `IRR.RADMIN.**` resource profile in the `facility` class.
 
-```python
+```javascript
+'use strict';
 
-from sear import sear
+import { sear } from '@mainframe-renewal-project/searjs';
 
-result = sear(
-    {
-        "operation": "delete",
-        "admin_type": "resource",
-        "resource": "IRR.RADMIN.**",
-        "class": "facility",
-    },
-)
+const request = {
+    "operation": "delete",
+    "admin_type": "resource",
+    "resource": "IRR.RADMIN.**",
+    "class_name": "facility",
+};
 
-print(result.result)
+const response = sear(request, true);
+
+console.log(JSON.stringify(response.result, null, 2));
 ```

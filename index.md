@@ -119,7 +119,7 @@ flowchart TB
         n16@{ label: "<span style=\"padding-left:\">JSON (UTF-8)</span>" }
         n15["SEAR Java JSON interface (future interface)"]
         n18@{ label: "<span style=\"padding-left:\">JSON (UTF-8)</span>" }
-        n17["SEAR Node.js JSON interface (future interface)"]
+        n17["sear.js JSON interface (0.7.0 or later)"]
         n19["Binary (EBCDIC)"]
         n21@{ label: "<span style=\"padding-left:\">JSON (UTF-8)</span>" }
         n20["SEAR C/C++ JSON interface"]
