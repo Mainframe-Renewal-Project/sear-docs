@@ -37,7 +37,7 @@ The following tables describes the racf options segments and traits that are sup
 | `"base:erase_datasets_on_delete_all"` | `eraseall` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:erase_datasets_on_delete_security_level"` | `erasesec` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:generic_command_classes"` | `gencmd` | `repeat` | `"add"`<br>`"remove"` | `"alter"`<br>`"extract"` |
-| `"base:generic_profile_checking_classes"` | `generic` | `repeat` | `"add"`<br>`"remove"` | `"alter"`<br>`"extract"` |
+| `"base:generic_profile_checking_classes"` | `generic` | `string` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:generic_profile_sharing_classes"` | `genlist` | `string` | `"add"`<br>`"remove"` | `"alter"`<br>`"extract"` |
 | `"base:generic_owner"` | `genowner` | `boolean` | `"set"`<br>`"delete"` | `"alter"`<br>`"extract"` |
 | `"base:global_access_classes"` | `global` | `repeat` | `"add"`<br>`"remove"` | `"alter"`<br>`"extract"` |
