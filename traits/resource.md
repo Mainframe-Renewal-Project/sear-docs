@@ -54,8 +54,8 @@ The following tables describes the resource segments and traits that are support
 | `"base:last_change_date"` | `lchgdat` | `string` | N/A | `"extract"` |
 | `"base:level"` | `level` | `string` | `"set"` | `"add"`<br>`"alter"` |
 | `"base:last_reference_date"` | `lrefdat` | `string` | N/A | `"extract"` |
-| `"base:member_class_name"` | `member` | `string` | `"set"`<br>`"add"`<br>`"remove"` | `"add"`<br>`"alter"` |
-| `"base:member_class_names"` | `member` | `repeat` | N/A | `"extract"` |
+| `"base:member"` | `member` | `string` | `"set"`<br>`"add"`<br>`"remove"` | `"add"`<br>`"alter"` |
+| `"base:members"` | `memcnt` | `repeat` | N/A | `"extract"` |
 | `"base:notify_userid"` | `notify` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"` |
 | `"base:owner"` | `owner` | `string` | `"set"` | `"add"`<br>`"alter"` |
 | `"base:auditing"` | `raudit` | `repeat` | N/A | `"extract"` |
