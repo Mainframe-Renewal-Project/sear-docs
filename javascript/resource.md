@@ -1,11 +1,11 @@
 ---
 layout: default
 has_toc: false
-parent: JavaScript
+parent: JavaScript Examples
 ---
 
 
-# Datasets
+# Resource profiles
 
 {: .warning }
 
@@ -27,11 +27,11 @@ Valid operators for this type of request
 
 ## Extracting information
 
-SEAR provides the `extract` and `search` operators to gather information about dataset profiles.
+SEAR provides the `extract` and `search` operators to gather information about general resource profiles.
 
-### Extracting a specific dataset profile
+### Extracting a specific resource profile
 
-The sample below extracts information about a dataset profile called `FDEGILIO.TEST.*`.
+The sample below extracts information about a specific resource profile.
 
 ```javascript
 'use strict';
@@ -40,8 +40,9 @@ import { sear } from '@mainframe-renewal-project/searjs';
 
 const request = {
     "operation": "extract",
-    "admin_type": "dataset",
-    "dataset": "FDEGILIO.TEST.*",
+    "admin_type": "resource",
+    "resource": "IRR.RADMIN.**",
+    "class_name": "facility",
 };
 
 const response = sear(request, true);
@@ -60,18 +61,14 @@ console.log(JSON.stringify(response.result, null, 2));
       "base:alter_access_count": 0,
       "base:auditing": "FAILURES(READ)",
       "base:control_access_count": 0,
-      "base:create_date": "03/19/24",
-      "base:creation_group_name": "SYS1",
-      "base:dataset_type": "NON-VSAM",
-      "base:erase_datasets_on_delete": false,
+      "base:create_date": "12/20/23",
       "base:global_auditing": "NONE",
-      "base:high_level_qualifier_is_group": false,
-      "base:last_change_date": "03/19/24",
-      "base:last_reference_date": "03/19/24",
-      "base:level": 0,
-      "base:owner": "LEONARD",
+      "base:last_change_date": "12/20/23",
+      "base:last_reference_date": "12/20/23",
+      "base:level": "0",
+      "base:owner": "ESWIFT",
       "base:read_access_count": 0,
-      "base:universal_access": "NONE",
+      "base:universal_access": "READ",
       "base:update_access_count": 0,
       "base:warn_on_insufficient_access": false
     }
@@ -87,31 +84,11 @@ console.log(JSON.stringify(response.result, null, 2));
 
 </details>
 
-### Searching for dataset profiles
+### Searching for resource profiles
 
-#### Getting a list of all dataset profiles
+#### Getting a list of all resource profiles in a class
 
-The sample below gets a list of all dataset profiles on the system.
-
-```javascript
-'use strict';
-
-import { sear } from '@mainframe-renewal-project/searjs';
-
-const request = {
-    "operation": "search",
-    "admin_type": "dataset",
-    "dataset_filter": "LEONARD",
-};
-
-const response = sear(request, true);
-
-console.log(JSON.stringify(response.result, null, 2));
-```
-
-#### Filtering search results for a specific dataset profile
-
-The sample below gets all dataset profiles that start with `LEONARD`. It will return a list of dataset profiles, to get metadata on them you will have to run the extract operation on every single dataset profile in the list.
+The sample below gets all general resource profiles in the facility class.
 
 ```javascript
 'use strict';
@@ -120,8 +97,8 @@ import { sear } from '@mainframe-renewal-project/searjs';
 
 const request = {
     "operation": "search",
-    "admin_type": "dataset",
-    "dataset_filter": "LEONARD",
+    "admin_type": "resource",
+    "class_name": "facility",
 };
 
 const response = sear(request, true);
@@ -129,13 +106,34 @@ const response = sear(request, true);
 console.log(JSON.stringify(response.result, null, 2));
 ```
 
-## Updating dataset profiles
+#### Filtering results
+
+The sample below gets all general resource profiles that start with `IRR` in the `facility` class. It will return a list of resource profiles, to get metadata on them you will have to run the extract operation on every single resource profile in the list.
+
+```javascript
+'use strict';
+
+import { sear } from '@mainframe-renewal-project/searjs';
+
+const request = {
+    "operation": "search",
+    "admin_type": "resource",
+    "class_name": "facility",
+    "resource_filter": "IRR",
+};
+
+const response = sear(request, true);
+
+console.log(JSON.stringify(response.result, null, 2));
+```
+
+## Updating resource profiles
 
 SEAR provides 3 main operators for updating the RACF database, `add`, `alter`, and `delete`.
 
-### Creating a new dataset profile
+### Creating a new resource profile
 
-The sample below creates a dataset profile called `ESWIFT.TEST.**` with a UACC of NONE and the owner set to the `eswift` RACF userid.
+The sample below creates a resource profile called `IRR.RADMIN.**` in the `facility` class with a UACC of NONE and the owner set to the "eswift" RACF userid.
 
 ```javascript
 'use strict';
@@ -144,12 +142,12 @@ import { sear } from '@mainframe-renewal-project/searjs';
 
 const request = {
     "operation": "add",
-    "admin_type": "dataset",
-    "dataset": "ESWIFT.TEST.**",
-    "generic": true,
+    "admin_type": "resource",
+    "resource": "IRR.RADMIN.**",
+    "class_name": "facility",
     "traits": {
         "base:universal_access": "None",
-        "base:owner": "eswift",
+        "base:owner": "SECADM",
     },
 };
 
@@ -158,11 +156,11 @@ const response = sear(request, true);
 console.log(JSON.stringify(response.result, null, 2));
 ```
 
-You can see the full list of traits in [the traits/dataset section](https://mainframe-renewal-project.github.io/sear-docs/traits/dataset/)
+You can see the full list of traits in [the traits/resource section](https://mainframe-renewal-project.github.io/sear-docs/traits/resource/)
 
-### Altering a dataset profile
+### Altering a resource profile
 
-The sample below sets the RACF user `SECADM` as the owner of the `LEONARD.LIB.HLASM` dataset profile and sets UACC to `READ`.
+The sample below sets SECADM as the owner of the `IRR.RADMIN.**` resource profile in the `facility` class and sets UACC to "read"
 
 ```javascript
 'use strict';
@@ -171,8 +169,9 @@ import { sear } from '@mainframe-renewal-project/searjs';
 
 const request = {
     "operation": "alter",
-    "admin_type": "dataset",
-    "dataset": "LEONARD.LIB.HLASM",
+    "admin_type": "resource",
+    "resource": "IRR.RADMIN.**",
+    "class_name": "facility",
     "traits": {
         "base:universal_access": "Read",
         "base:owner": "SECADM",
@@ -184,11 +183,11 @@ const response = sear(request, true);
 console.log(JSON.stringify(response.result, null, 2));
 ```
 
-You can see the full list of traits in [the traits/dataset section](https://mainframe-renewal-project.github.io/sear-docs/traits/dataset/)
+You can see the full list of traits in [the traits/resource section](https://mainframe-renewal-project.github.io/sear-docs/traits/resource/)
 
-### Deleting a dataset profile
+### Deleting a resource profile
 
-The sample below deletes the `LEONARD.LIB.HLASM` dataset profile.
+The sample below deletes the `IRR.RADMIN.**` resource profile in the `facility` class.
 
 ```javascript
 'use strict';
@@ -197,8 +196,9 @@ import { sear } from '@mainframe-renewal-project/searjs';
 
 const request = {
     "operation": "delete",
-    "admin_type": "dataset",
-    "dataset": "LEONARD.LIB.HLASM",
+    "admin_type": "resource",
+    "resource": "IRR.RADMIN.**",
+    "class_name": "facility",
 };
 
 const response = sear(request, true);

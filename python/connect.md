@@ -1,15 +1,11 @@
 ---
 layout: default
 has_toc: false
-parent: JavaScript
+parent: Python Examples
 ---
 
 
 # Connects
-
-{: .warning }
-
-> Please note JavaScript support is exclusive to SEAR 0.7.0 and later.
 
 Valid operators for this type of request
 
@@ -33,24 +29,23 @@ Unlike with most of the other `admin_types` you can only use `alter` and `delete
 
 The sample below connects the RACF user `LEONARD` to the `DEVOPS` group with the group special attribute.
 
-```javascript
-'use strict';
+```python
 
-import { sear } from '@mainframe-renewal-project/searjs';
+from sear import sear
 
-const request = {
-    "operation": "alter",
-    "admin_type": "group-connection",
-    "userid": "LEONARD",
-    "group": "DEVOPS",
-    "traits": {
-        "base:special": true,
+result = sear(
+    {
+        "operation": "alter",
+        "admin_type": "group-connection",
+        "userid": "LEONARD",
+        "group": "DEVOPS",
+        "traits": {
+            "base:special": True,
+        },
     },
-};
+)
 
-const response = sear(request, true);
-
-console.log(JSON.stringify(response.result, null, 2));
+print(result.result)
 ```
 
 You can see the full list of traits in [the traits/group_connection section](https://mainframe-renewal-project.github.io/sear-docs/traits/group_connection/)
@@ -59,19 +54,18 @@ You can see the full list of traits in [the traits/group_connection section](htt
 
 The sample below removes `LEONARD`'s connect from the RACF `DEVOPS` group.
 
-```javascript
-'use strict';
+```python
 
-import { sear } from '@mainframe-renewal-project/searjs';
+from sear import sear
 
-const request = {
-    "operation": "delete",
-    "admin_type": "group-connection",
-    "userid": "LEONARD",
-    "group": "DEVOPS",
-};
+result = sear(
+    {
+        "operation": "delete",
+        "admin_type": "group-connection",
+        "userid": "LEONARD",
+        "group": "DEVOPS",
+    },
+)
 
-const response = sear(request, true);
-
-console.log(JSON.stringify(response.result, null, 2));
+print(result.result)
 ```
