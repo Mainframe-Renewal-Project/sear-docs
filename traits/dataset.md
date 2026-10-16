@@ -45,7 +45,7 @@ The following tables describes the dataset profile segments and traits that are 
 | `"base:dataset_type"` | `dstype` | `string` | N/A | `"extract"` |
 | `"base:erase_datasets_on_delete"` | `erase` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"` |
 | `"base:model_profile_class"` | `fclass` | `string` | `"set"` | `"add"` |
-| `"base:model_profile_generic"` | `fgeneric` | `string` | `"set"` | `"add"` |
+| `"base:model_profile_generic"` | `fgeneric` | `boolean` | `"set"` | `"add"` |
 | `"base:tape_dataset_file_sequence_number"` | `fileseq` | `uint` | `"set"` | `"add"` |
 | `"base:model_profile"` | `from` | `string` | `"set"` | `"add"` |
 | `"base:model_profile_volume"` | `fvolume` | `string` | `"set"` | `"add"` |
@@ -59,7 +59,7 @@ The following tables describes the dataset profile segments and traits that are 
 | `"base:last_change_date"` | `lchgdat` | `string` | N/A | `"extract"` |
 | `"base:level"` | `level` | `uint` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"` |
 | `"base:last_reference_date"` | `lrefdat` | `string` | N/A | `"extract"` |
-| `"base:dataset_model_profile"` | `model` | `string` | `"set"` | `"add"` |
+| `"base:dataset_model_profile"` | `model` | `boolean` | `"set"` | `"add"` |
 | `"base:notify_userid"` | `notify` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"` |
 | `"base:owner"` | `owner` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"` |
 | `"base:auditing"` | `raudit` | `repeat` | N/A | `"extract"` |
@@ -67,8 +67,8 @@ The following tables describes the dataset profile segments and traits that are 
 | `"base:global_auditing"` | `rgaudit` | `string` | N/A | `"extract"` |
 | `"base:security_label"` | `seclabel` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"` |
 | `"base:security_level"` | `seclevel` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"` |
-| `"base:racf_indicated_dataset"` | `set` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
-| `"base:create_only_tape_vtoc_entry"` | `setonly` | `string` | `"set"` | `"add"` |
+| `"base:racf_indicated_dataset"` | `set` | `boolean` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
+| `"base:create_only_tape_vtoc_entry"` | `setonly` | `boolean` | `"set"` | `"add"` |
 | `"base:use_tape_dataset_profile"` | `tape` | `boolean` | N/A | `"extract"` |
 | `"base:universal_access"` | `uacc` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"` |
 | `"base:dataset_allocation_unit"` | `unit` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"` |
@@ -85,10 +85,12 @@ The following tables describes the dataset profile segments and traits that are 
 ## `dfp`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
+| `"dfp:encryption_type"` | `enctypes` | `string` | `"set"`<br>`"add"`<br>`"remove"`<br>`"delete"` | `"extract"` |
 | `"dfp:owner"` | `resowner` | `string` | N/A | `"extract"` |
 | `"dfp:ckds_data_key"` | `datakey` | `string` | N/A | `"extract"` |
 
 ## `tme`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
-| `"tme:roles"` | `roles` | `string` | N/A | `"extract"` |
+| `"tme:role"` | `roles` | `string` | `"set"`<br>`"add"`<br>`"remove"`<br>`"delete"` | `"extract"` |
+| `"tme:roles"` | `rolen` | `repeat` | N/A | `"extract"` |

@@ -101,6 +101,7 @@ The following tables describes the resource segments and traits that are support
 ## `cfdef`
 
 | **Trait** | **RACF Key** | **Data Types** | **Operators Allowed** | **Supported Operations** |
+| `"cfdef:acee"` | `cfacee` | `boolean` | `"set"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"cfdef:custom_field_data_type"` | `cfdtype` | `string` | `"set"` | `"add"`<br>`"extract"` |
 | `"cfdef:valid_first_characters"` | `cffirst` | `string` | `"set"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"cfdef:help_text"` | `cfhelp` | `string` | `"set"` | `"add"`<br>`"alter"`<br>`"extract"` |
@@ -172,6 +173,9 @@ The following tables describes the resource segments and traits that are support
 | `"idtparms:signature_algorithm"` | `sigalg` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"idtparms:identity_token_timeout"` | `idttimeo` | `uint` | `"set"` | `"add"`<br>`"alter"`<br>`"extract"` |
 | `"idtparms:use_for_any_application"` | `anyappl` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
+| `"idtparms:protection_allowed"` | `idtprota` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
+| `"idtparms:signature_label_primary"` | `siglabp` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
+| `"idtparms:signature_key_id_primary"` | `sigkidp` | `string` | `"set"`<br>`"delete"` | `"add"`<br>`"alter"`<br>`"extract"` |
 
 ## `jes`
 
